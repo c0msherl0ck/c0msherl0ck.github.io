@@ -23,7 +23,7 @@ baseurl:
 url: https://c0msherl0ck.github.io
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: air
+minimal_mistakes_skin: Default # air, mint etc.
 search: true
 
 # Build settings
