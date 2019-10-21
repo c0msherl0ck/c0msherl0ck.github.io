@@ -60,7 +60,7 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Sherlock coms"
+  name   : "Sherlock Coms"
   avatar : "/assets/images/sher.jpg"
   bio    : "Forensic Investigator"
   links:
