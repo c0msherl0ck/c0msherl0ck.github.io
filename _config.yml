@@ -80,8 +80,11 @@ author:
 footer:
   links:
     - label: "Linked-in"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.linkedin.com/in/c0msherl0ck/"
+      icon: "fas fa-fw fa-linked-in"
+      url: "https://www.linkedin.com/in/c0msherl0ck/"  
+    # - label: "Linked-in"
+    #  icon: "fas fa-fw fa-link"
+    #  url: "https://www.linkedin.com/in/c0msherl0ck/"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
