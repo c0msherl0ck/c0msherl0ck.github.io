@@ -65,7 +65,7 @@ author:
   bio    : "Forensic Investigator"
   links:
     - label: "Linked-in"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/c0msherl0ck/"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
