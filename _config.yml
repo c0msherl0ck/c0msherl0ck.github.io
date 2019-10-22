@@ -80,7 +80,7 @@ author:
 footer:
   links:
     - label: "Linked-in"
-      icon: "fas fa-fw fa-linked-in"
+      icon: "fas fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/c0msherl0ck/"  
     # - label: "Linked-in"
     #  icon: "fas fa-fw fa-link"
