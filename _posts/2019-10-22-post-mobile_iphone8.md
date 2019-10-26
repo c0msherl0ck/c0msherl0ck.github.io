@@ -19,13 +19,18 @@ This theme supports **link posts**, made famous by John Gruber. To use, just add
 
 - ![Image Alt 텍스트](/assets/images/sher.jpg)
 
-"/assets/images/sher.jpg"
 
 그림(아이튠즈 백업 진행 화면)
 
 백업 진행 시 암호화 체크 상태 해제(분석을 위해서)
 그림(백업 후 경로)
-윈10 경로 : 
+
+|운영체제   |백업경로   |
+|---|---|
+|Windows XP   |C:\Documents and Settings\[user name]\Application Data\Apple Computer\MobileSync\Backup\   |
+|Windows 7  |C:\Users\[user name]\AppData\Roaming\AppleComputer\MobileSync\Backup\   |
+|Windows 10   |C:\Users\holywater\AppData\Roaming\Apple Computer\MobileSync\Backup   |
+|MAC OS X   |~/Library/Application Support/MobileSync/Backup/   |
 
 
 > 참고
