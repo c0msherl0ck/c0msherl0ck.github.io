@@ -9,11 +9,9 @@ tags:
   - iphone
 ---
 
-This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.
-
 > 논리적 이미지 획득
 
-아이폰의 경우 iTunes를 이용한 백업을 통해 논리적 이미지를 획득한다. 단, 로컬 백업 암호화 체크를 해제하여야 정상적인 분석이 가능하다.
+아이폰의 경우 **iTunes**를 이용한 백업을 통해 논리적 이미지를 획득한다. 단, `로컬 백업 암호화 체크를 해제`하여야 정상적인 분석이 가능하다.
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/itunes-backup.jpg" width="100%">
@@ -56,8 +54,6 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 |Manifest.plist|Applications, Date, Encrypt 유무, System Domain Version 등을 기록하는 파일|
 |Status.plist|BackupState, UUID, Version 등을 기록하는 파일|
 |00 ~ ff 폴더|실제 사용자 파일이 저장되어 있는 폴더|
-
-<br>
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/Manifest.jpg" width="100%">
@@ -103,5 +99,5 @@ fileID = SHA1 (domain + "-" + relativePath)
 </p></center>
 
 > 참고
-
-[link](#)
+[[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
+[[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
