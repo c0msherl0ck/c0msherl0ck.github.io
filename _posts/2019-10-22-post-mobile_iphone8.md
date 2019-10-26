@@ -98,6 +98,22 @@ fileID = SHA1 (domain + "-" + relativePath)
 <em>JPG 확장자로 변경 후 파일 확인</em>
 </p></center>
 
+> iBackupBot 을 이용한 분석
+
+앞서 기술한 원리를 통해 백업파일들은 분석해주는 도구가 있다. [iBackupBot](https://www.icopybot.com/itunes-backup-manager.htm) 이라는 도구이며, Freeware 이다.
+
+해당 도구를 다운 받은 후 실행시키면, 앞서 기술한 원리를 바탕으로 백업한 파일들을 맵핑하여 보여준다. 이를 통해 분석에 필요한 파일들을 편리하게 추출할 수 있다.
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone8/tools_1.jpg" width="100%"><br>
+<em>iBackupBot 로딩(약 1분 정도의 시간이 소요)</em>
+</p></center>
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone8/tools_2.jpg" width="100%"><br>
+<em>iBackupBot 에서 확인한 백업 파일들</em>
+</p></center>
+
 > 참고
 
 [[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
