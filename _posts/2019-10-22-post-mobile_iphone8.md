@@ -43,7 +43,13 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 <em>iTunes 백업 파일</em>
 </p></center>
 
-
+<p>
+- Manifest.db: 백업 폴더 안에 저장되어 있는 파일명을 기록하는 sqlite DB 파일
+- Info.plist: Build Version, Device Name, GuID, ICCID, Last Backup Date 등을 기록하는 파일
+- Manifest.plist: Applications, Date, Encrypt 유무, System Domain Version 등을 기록하는 파일
+- Status.plist: BackupState, UUID, Version 등을 기록하는 파일
+- 00~ff Folder : 실제 파일이 저장되어 있는 폴더
+</p>
 
 
 
