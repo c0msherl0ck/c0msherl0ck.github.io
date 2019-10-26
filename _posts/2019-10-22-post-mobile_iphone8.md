@@ -103,9 +103,7 @@ fileID = SHA1 (domain + "-" + relativePath)
 
 > iBackupBot 을 이용한 분석
 
-앞서 기술한 원리를 통해 백업파일들은 분석해주는 도구가 있다. [iBackupBot](https://www.icopybot.com/itunes-backup-manager.htm) 이라는 도구이며, Freeware 이다.
-
-해당 도구를 다운 받은 후 실행시키면, 앞서 기술한 원리를 바탕으로 백업한 파일들을 맵핑하여 보여준다. 이를 통해 분석에 필요한 파일들을 편리하게 추출할 수 있다.
+앞서 기술한 원리를 통해 백업 파일들을 맵핑해주는 도구가 있다. [iBackupBot](https://www.icopybot.com/itunes-backup-manager.htm) 이라는 도구이며, Freeware 이다. 해당 도구를 통해 분석에 필요한 파일들을 편리하게 추출할 수 있다.
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/tools_1.jpg" width="100%"><br>
@@ -122,3 +120,5 @@ fileID = SHA1 (domain + "-" + relativePath)
 [[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
 <br>
 [[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
+<br>
+Forensic Analysis on IOS Devices, Tim Proffitt, SANS Institute
