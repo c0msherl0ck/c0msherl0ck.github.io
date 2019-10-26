@@ -12,13 +12,14 @@ This theme supports **link posts**, made famous by John Gruber. To use, just add
 
 > 아이튠즈를 이용한 아이폰 8 백업
 
-<p>
-  <img data-action="zoom" src="http://github.c0msherl0ck.io/assets/images/sher.jpg" alt="Image Alt 텍스트">
-  <em>여기에 캡션을 작성합니다.</em>
-</p>
+![Image Alt 텍스트](/assets/images/sher.jpg)
 
-- ![Image Alt 텍스트](/assets/images/sher.jpg)
 
+| ![Image Alt 텍스트]({{"/assets/images/bio-photo.png"|relative_url}}) | 
+|:--:| 
+| 여기에 캡션을 작성합니다. |
+
+<center><img src="/assets/images/sher.jpg" width="300" height="300"></center>
 
 그림(아이튠즈 백업 진행 화면)
 
