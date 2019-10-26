@@ -99,5 +99,7 @@ fileID = SHA1 (domain + "-" + relativePath)
 </p></center>
 
 > 참고
+
 [[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
+<br>
 [[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
