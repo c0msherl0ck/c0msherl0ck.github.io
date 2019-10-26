@@ -40,8 +40,11 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
  폴더안에는 다음과 같은 파일과 폴더가 존재한다.
 
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-1.jpg" width="300px"><b>
-<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-2.jpg" width="300px"><b>
+<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-1.jpg" width="300px">
+</p></center>
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-2.jpg" width="300px">
 <em>iTunes 백업 파일</em>
 </p></center>
 
