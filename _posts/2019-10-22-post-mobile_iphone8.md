@@ -55,23 +55,23 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/Manifest.jpg" width="100%">
-<em>Manifest.jpg</em>
+<em>Manifest.db</em>
 </p></center>
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/plist.jpg" width="100%">
-<em>plist.jpg</em>
+<em>status.plist</em>
 </p></center>
 
 Manifest.db 의 Files 테이블에는 fileID(기본키), domain, relativePath 속성이 있으며, domain 속성과 relativePath 속성의 값을 통해 fileID를 생성한다.
 
 <pre><code>
 fileID = SHA1 (domain + "-" + relativePath)
-</pre></code>
+</code></pre>
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/fileID_1.jpg" width="100%"><br>
-<img src="/assets/2019-10-22-post-mobile_iphone8/fileID_2.jpg" width="100%"><br>
+<img src="/assets/2019-10-22-post-mobile_iphone8/fileID_2.jpg" width="500px"><br>
 <em>fileID 생성 원리</em>
 </p></center>
 
@@ -84,7 +84,7 @@ fileID = SHA1 (domain + "-" + relativePath)
 <em>d3 폴더</em>
 </p></center>
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/example_2.jpg" width="100%"><br>
+<img src="/assets/2019-10-22-post-mobile_iphone8/example_2.jpg" width="500px"><br>
 <em>d3c949392557a4a7d75233de0c7f1bb5e9322aa5 파일</em>
 </p></center>
 <center><p>
