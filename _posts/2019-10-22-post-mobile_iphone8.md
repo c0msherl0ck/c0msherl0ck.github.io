@@ -1,5 +1,5 @@
 ---
-title: "아이튠즈 백업을 이용한 아이폰 분석"
+title: "[모바일포렌식] 아이폰 분석"
 categories:
   - mobile
 tags:
@@ -19,19 +19,32 @@ This theme supports **link posts**, made famous by John Gruber. To use, just add
 <em>iTunes 백업 화면</em>
 </p></center>
 
-해당 백업 파일은 다음의 경로에 저장이 된다.
+iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 
 |운영체제   |백업경로   |
 |---|---|
-|Windows XP   |C:\Documents and Settings\[user name]\Application Data\Apple Computer\MobileSync\Backup\   |
-|Windows 7  |C:\Users\[user name]\AppData\Roaming\AppleComputer\MobileSync\Backup\   |
-|Windows 10   |C:\Users\holywater\AppData\Roaming\Apple Computer\MobileSync\Backup   |
-|MAC OS X   |~/Library/Application Support/MobileSync/Backup/   |
+|Windows XP   |C:\Documents and Settings\[user name]\Application Data\Apple Computer\MobileSync\Backup\ |
+|Windows 7  |C:\Users\[user name]\AppData\Roaming\AppleComputer\MobileSync\Backup\ |
+|Windows 10   |C:\Users\holywater\AppData\Roaming\Apple Computer\MobileSync\Backup\ |
+|MAC OS X   |~/Library/Application Support/MobileSync/Backup/ |
 
-<p>
-<cneter><img src="/assets/2019-10-22-post-mobile_iphone8/backup-directory.jpg" width="100%"></cneter>
+필자의 경우 Windows 10 으로 다음과 같이 저장되어있다.
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone8/backup-directory.jpg" width="100%">
 <em>iTunes 백업 파일 경로</em>
-</p>
+</p></center>
+
+해당 폴더안에는 다음과 같은 파일과 폴더가 존재한다.
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-1.jpg" width="500px"><b>
+<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-2.jpg" width="500px"><b>
+<em>iTunes 백업 파일</em>
+</p></center>
+
+
+
 
 
 > 참고
