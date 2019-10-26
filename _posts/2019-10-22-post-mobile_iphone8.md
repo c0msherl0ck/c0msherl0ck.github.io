@@ -37,14 +37,14 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 
 > 백업 파일 분석
 
- 폴더안에는 다음과 같은 파일과 폴더가 존재한다.
+ 백업 폴더안에는 다음과 같은 파일과 폴더가 존재한다.
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-1.jpg" width="300px">
 </p></center>
 
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-2.jpg" width="300px">
+<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-2.jpg" width="300px"><br>
 <em>iTunes 백업 파일</em>
 </p></center>
 
@@ -52,7 +52,7 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 - Info.plist: Build Version, Device Name, GuID, ICCID, Last Backup Date 등을 기록하는 파일
 - Manifest.plist: Applications, Date, Encrypt 유무, System Domain Version 등을 기록하는 파일
 - Status.plist: BackupState, UUID, Version 등을 기록하는 파일
-- 00 ~ ff Folder : 실제 파일이 저장되어 있는 폴더
+- 00 ~ ff Folder : 실제 사용자 파일이 저장되어 있는 폴더
 
 
 
