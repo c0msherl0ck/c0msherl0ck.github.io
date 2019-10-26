@@ -10,7 +10,7 @@ tags:
 
 This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.
 
-> #논리적 이미지 획득
+> 논리적 이미지 획득
 
 아이폰의 경우 iTunes를 이용한 백업을 통해 논리적 이미지를 획득한다. 단, 로컬 백업 암호화 체크를 해제하여야 정상적인 분석이 가능하다.
 
@@ -28,6 +28,7 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 |Windows 10   |C:\Users\holywater\AppData\Roaming\Apple Computer\MobileSync\Backup\ |
 |MAC OS X   |~/Library/Application Support/MobileSync/Backup/ |
 
+<br>
 필자의 경우 Windows 10 에서 다음과 같이 저장되어있다. 폴더명은 제품에 따라 구분되며, 동일 제품을 백업할 경우 새로운 폴더가 생기는 것이 아닌 기존의 폴더가 업데이트된다. 만약, 다른 사람의 아이폰, 아이패드를 백업한다면 제품별 각각 폴더가 생긴다.
 
 <center><p>
@@ -35,7 +36,10 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 <em>iTunes 백업 파일 경로</em>
 </p></center>
 
-> #백업 파일 분석
+<br>
+<br>
+
+> 백업 파일 분석
 
  백업 폴더안에는 다음과 같은 파일과 폴더가 존재한다.
 
@@ -52,6 +56,8 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 |Manifest.plist|Applications, Date, Encrypt 유무, System Domain Version 등을 기록하는 파일|
 |Status.plist|BackupState, UUID, Version 등을 기록하는 파일|
 |00 ~ ff 폴더|실제 사용자 파일이 저장되어 있는 폴더|
+
+<br>
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/Manifest.jpg" width="100%">
