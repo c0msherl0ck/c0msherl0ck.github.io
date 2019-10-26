@@ -71,9 +71,9 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 
 Manifest.db 의 Files 테이블에는 fileID(기본키), domain, relativePath 속성이 있으며, domain 속성과 relativePath 속성의 값을 통해 fileID를 생성한다.
 
-<pre class="highlight">
+'''
 fileID = SHA1 (domain + "-" + relativePath)
-</pre>
+'''
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/fileID_1.jpg" width="100%"><br>
