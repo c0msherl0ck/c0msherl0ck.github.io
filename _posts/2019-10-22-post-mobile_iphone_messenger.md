@@ -1,5 +1,5 @@
 ---
-title: "[모바일포렌식] 아이폰 분석"
+title: "[모바일포렌식] 아이폰 메신저 앱(문자, 카카오톡, 페이스북) 분석"
 categories:
   - Mobile Forensic
 tags:
@@ -8,126 +8,83 @@ tags:
   - ios
   - iphone
   - iBackupBot
+  - SMS
+  - KakaoTalk
+  - Facebook Messenger
 ---
 
-모바일 포렌식에서 메신저 내 채팅 정보는 중요한 증거로, sqlite db 형태로 저장되어 있는 경우가 많다. 이번 글에서는 메신저 앱(카카오톡, 문자, facebook) 별 분석 방법을 소개한다.
+모바일 포렌식에서 메신저 내 채팅 정보는 중요한 증거로, sqlite db 형태로 저장되어 있는 경우가 많다. 이번 글에서는 메신저 앱(문자, 카카오톡, 페이스북) 별 분석 방법을 소개한다.
 
 > iBackupBot 을 이용한 파일 추출
 
+iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를 이용하여 메신저 종류별로 다음의 경로에서 sqlite db 파일을 추출한다. 이전 글 [[모바일 포렌식] 아이폰 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)을 참고
 
-
-
-
-
-
-
-> 백업 파일 생성
-
-아이폰의 경우 **iTunes**를 이용한 백업을 수행한다. 단, `로컬 백업 암호화 체크를 해제`하여야 정상적인 분석이 가능하다.
-
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/itunes-backup.jpg" width="100%">
-<em>iTunes 백업 화면</em>
-</p></center>
-
-iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
-
-|운영체제   |백업경로   |
+|메신저 앱|iBackupBot 상 경로|
 |---|---|
-|Windows XP   |C:\Documents and Settings\[user name]\Application Data\Apple Computer\MobileSync\Backup\ |
-|Windows 7  |C:\Users\[user name]\AppData\Roaming\AppleComputer\MobileSync\Backup\ |
-|Windows 10   |C:\Users\holywater\AppData\Roaming\Apple Computer\MobileSync\Backup\ |
-|MAC OS X   |~/Library/Application Support/MobileSync/Backup/ |
-
-<br>
-필자의 경우 Windows 10 에서 다음과 같이 저장되어 있는 것을 확인하였다. 폴더명은 제품에 따라 구분되며, 동일 제품을 백업할 경우 새로운 폴더가 생기는 것이 아닌 기존의 폴더가 업데이트된다. 만약, 다른 사람의 아이폰, 아이패드를 백업한다면 제품별 각각 폴더가 생긴다.
+|문자|System Files/HomeDomain/SMS/sms.db|
+|카카오톡|User App Files/com.iwilab.KakaoTalk/Libray/PrivateDocuments/Message.sqlite|
+|페이스북 메신저|확인되지 않음(추가 연구 필요)|
 
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/backup-directory.jpg" width="100%">
-<em>iTunes 백업 파일 경로</em>
-</p></center>
-
-<br>
-
-> 백업 파일 분석
-
- 백업 폴더안에는 다음과 같은 파일과 폴더가 존재한다.
-
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-1.jpg" width="400px"><br>
-<img src="/assets/2019-10-22-post-mobile_iphone8/backup-FilesAndFolders-2.jpg" width="400px"><br>
-<em>iTunes 백업 파일</em>
-</p></center>
-
-|파일명|역할|
-|---|---|
-|Manifest.db|백업 폴더 안에 저장되어 있는 파일명을 기록하는 sqlite DB 파일|
-|Info.plist|Build Version, Device Name, GuID, ICCID, Last Backup Date 등을 기록하는 파일|
-|Manifest.plist|Applications, Date, Encrypt 유무, System Domain Version 등을 기록하는 파일|
-|Status.plist|BackupState, UUID, Version 등을 기록하는 파일|
-|00 ~ ff 폴더|실제 핸드폰 내 파일들을 백업한 파일들이 존재|
-
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/Manifest.jpg" width="100%">
-<em>Manifest.db</em>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/SMS.jpg" width="100%">
+<em>문자-sms.db</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/plist.jpg" width="100%">
-<em>status.plist</em>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/KakaoTalk.jpg" width="100%">
+<em>카카오톡-Message.sqlite</em>
 </p></center>
 
-Manifest.db 의 Files 테이블에는 fileID(기본키), domain, relativePath 속성이 있으며, domain 속성과 relativePath 속성의 값을 통해 fileID를 생성한다.
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/facebook.jpg" width="100%">
+<em>페이스북 메신저-확인되지 않음(추가 연구 필요)</em>
+</p></center>
+
+> 문자 DB 분석(sms.db)
+
+`sms.db` 내에는 여러 테이블이 존재하며, 이 중 눈여겨 보아야 하는 테이블은 `chat` 테이블과, `message` 테이블이다. `chat` 테이블에는 문자를 수발신한 전화번호 정보가 저장되며, `message` 테이블에는 실제 문자 내용이 저장된다. 이 두 테이블의 외래키 정보를 이용하여 수발신한 전화번호에 대응되는 문자 메세지 내용을 복구할 수 있다.(iBackupBot 기본 제공 기능)
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/sms.chat.jpg" width="100%">
+<em>sms db 내 chat 테이블</em>
+</p></center>
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/sms.message.jpg" width="100%">
+<em>sms db 내 message 테이블</em>
+</p></center>
+
+message 테이블에서 시간 속성인 date_read는 `UNIX Time` 을 기준으로 기록되는데, 1970년 기준이 아닌 **2001년**을 기준으로 한다. 즉, UNIX Time 변환 값에 **31년**을 더해주어야 정확한 시간 값을 얻을 수 있다. [아이폰 시간 속성](https://developer.apple.com/documentation/foundation/date)
 
 <div class="notice">
-fileID = SHA1 (domain + "-" + relativePath)
+예를 들어, date_read 의 값이 540212434일 경우 1987년 2월 13일 11:00:34(UTC+0) 이 아닌 2018년 2월 13일 11:00:34(UTC+0)가 되며, 이를 통해 필자가 2018년 2월 13일 20:00:34(UTC+9)에 신규가입 문자를 읽은 것을 알 수 있다.
 </div>
 
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/fileID_1.jpg" width="100%"><br>
-<img src="/assets/2019-10-22-post-mobile_iphone8/fileID_2.jpg" width="500px"><br>
-<em>fileID 생성 원리</em>
-</p></center>
-
-00 ~ ff 폴더 내 파일들의 파일명은 상기의 fileID 와 같으며, 각각의 파일이 어떤 파일인지는 mapping 되는 domain, relativePath 속성 값을 통해 알 수 있다.
-
-예를 들어, d3 폴더 내의 d3c949392557a4a7d75233de0c7f1bb5e9322aa5 이라는 파일이 어떤 파일인지 알기 위해서는, fileID 에 해당하는 튜플(노란색 행)을 찾는다. 해당 튜플의 domain 속성의 값이 CameraRollDomain 것을 통해 카메라 앱과 관련된 파일이라는 것과, relativePath 를 통해 JPG 확장자를 가진 사진 파일이라는 것을 알 수 있다.
-
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/example_1.jpg" width="400px"><br>
-<em>d3 폴더</em>
-</p></center>
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/example_2.jpg" width="500px"><br>
-<em>d3c949392557a4a7d75233de0c7f1bb5e9322aa5 파일</em>
-</p></center>
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/example_3.jpg" width="100%"><br>
-<em>Manifest.db 내 Files 테이블에서 fileID 가 d3c949392557a4a7d75233de0c7f1bb5e9322aa5 인 튜플</em>
-</p></center>
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/example_4.jpg" width="100%"><br>
-<em>JPG 확장자로 변경 후 파일 확인</em>
-</p></center>
-
-> iBackupBot 을 이용한 분석
-
-앞서 기술한 원리를 통해 백업파일들은 분석해주는 도구가 있다. [iBackupBot](https://www.icopybot.com/itunes-backup-manager.htm) 이라는 도구이며, Freeware 이다.
-
-해당 도구를 다운 받은 후 실행시키면, 앞서 기술한 원리를 바탕으로 백업한 파일들을 맵핑하여 보여준다. 이를 통해 분석에 필요한 파일들을 편리하게 추출할 수 있다.
-
-<center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/tools_1.jpg" width="100%"><br>
-<em>iBackupBot 로딩(약 1분 정도의 시간이 소요)</em>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/cyberchef.jpg" width="100%">
+<em>UNIX time 계산</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2019-10-22-post-mobile_iphone8/tools_2.jpg" width="100%"><br>
-<em>iBackupBot 에서 확인한 백업 파일들</em>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/timeInterval.jpg" width="100%">
+<em>2001년 기준</em>
 </p></center>
+
+> 카카오톡 DB 분석
+
+카카오톡의 대화내용은 Message 테이블의 message 속성에 저장된다. 대화내용에 기본 암호화 적용 이후, Base64 인코딩을 진행한 형태로 별도의 복호화 과정이 필요하다.
+
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/kakao.message.jpg" width="100%">
+<em>카카오톡 Message 테이블</em>
+</p></center>
+
+> 페이스북 메신저 분석
+
+페이스북 메신저의 대화내용이 저장되는 파일을 찾지 못하였다. 별도의 연구가 더 필요한 부분이다.
 
 > 참고
 
-[[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
+[[모바일 포렌식] 아이폰 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)
 <br>
-[[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
+[IOS Forensics](https://resources.infosecinstitute.com/ios-forensics/#gref)
