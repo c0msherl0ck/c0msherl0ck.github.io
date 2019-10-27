@@ -54,6 +54,11 @@ iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를
 <em>sms db 내 message 테이블</em>
 </p></center>
 
+<center><p>
+<img src="/assets/2019-10-22-post-mobile_iphone_messenger/example.jpg" width="100%">
+<em>iBackupBot 기본 제공 기능</em>
+</p></center>
+
 message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록되는데, 1970년 기준이 아닌 **2001년**을 기준으로 한다. 즉, UNIX Time 변환 값에 **31년**을 더해주어야 정확한 시간 값을 얻을 수 있다. [아이폰 시간 속성](https://developer.apple.com/documentation/foundation/date)
 
 <div class="notice">
