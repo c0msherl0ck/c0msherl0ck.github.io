@@ -1,5 +1,5 @@
 ---
-title: "[모바일포렌식] 아이폰 분석"
+title: "[모바일 포렌식] 아이폰 분석"
 categories:
   - Mobile Forensic
 tags:
