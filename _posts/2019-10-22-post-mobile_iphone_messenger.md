@@ -59,7 +59,7 @@ iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를
 <em>iBackupBot 기본 제공 기능</em>
 </p></center>
 
-message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록되는데, 1970년 기준이 아닌 **2001년**을 기준으로 한다. 즉, UNIX Time 변환 값에 **31년**을 더해주어야 정확한 시간 값을 얻을 수 있다. [아이폰 시간 속성](https://developer.apple.com/documentation/foundation/date)
+message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록되는데, 1970년 기준이 아닌 **2001년**을 기준으로 한다. 즉, UNIX Time 변환 값에 **31년**을 더해주어야 정확한 시간 값을 얻을 수 있다. ([아이폰 시간 속성](https://developer.apple.com/documentation/foundation/date) 참고)
 
 <div class="notice">
 예를 들어, date_read 의 값이 540212434일 경우 1987년 2월 13일 11:00:34(UTC+0) 이 아닌 2018년 2월 13일 11:00:34(UTC+0)가 되며, 이를 통해 필자가 2018년 2월 13일 20:00:34(UTC+9)에 신규가입 문자를 읽은 것을 알 수 있다.
@@ -72,7 +72,7 @@ message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록�
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone_messenger/timeInterval.jpg" width="100%">
-<em>2001년 기준</em>
+<em>2001년을 기준으로 하는 timeInterval</em>
 </p></center>
 
 > 카카오톡 DB 분석
