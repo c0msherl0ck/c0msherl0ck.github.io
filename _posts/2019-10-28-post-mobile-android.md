@@ -121,8 +121,8 @@ adb -d install BusyBox.apk
 설치가 완료되면 다음과 같이 핸드폰에서 BusyBox 앱을 확인할 수 있다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/buxybox_1.jpg" width="100%"><br>
-<img src="/assets/2019-10-28-post-mobile-android/buxybox_2.jpg" width="100%"><br>
+<img src="/assets/2019-10-28-post-mobile-android/busybox_1.jpg" width="100%"><br>
+<img src="/assets/2019-10-28-post-mobile-android/busybox_2.jpg" width="100%"><br>
 <em>BusyBox 설치 확인</em>
 </p></center>
 
@@ -160,13 +160,16 @@ dd 명령어를 통해 물리 이미지를 획득하고, 파이프라인에 연�
 <div class="notice">
 CMD_2 터미널 : dd if=/dev/block/mmcblk0 | busybox nc -l -p 8888
 </div>
+<center><p>
+<img src="/assets/2019-10-28-post-mobile-android/dd.jpg" width="100%">
+<em>dd 명령어를 통한 이미지 획득 및 netcat을 통한 전송</em>
+</p></center>
 <div class="notice">
 CMD_1 터미널 : nc 127.0.0.1 8888 > android_data.dd
 </div>
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/dd.jpg" width="100%">
 <img src="/assets/2019-10-28-post-mobile-android/nc_computer.jpg" width="100%">
-<em>dd 명령어를 통한 이미지 획득 및 netcat을 통한 전송</em>
+<em>netcat을 이용한 데이터 수신 및 컴퓨터 내 파일 생성</em>
 </p></center>
 
 이미지 획득이 완료되면 다음과 같은 메세지가 뜬다. 필자의 경우 약 15GB의 이미지를 획득하는데 1시간 정도 소요되었다.
@@ -174,8 +177,9 @@ CMD_1 터미널 : nc 127.0.0.1 8888 > android_data.dd
 <center><p>
 <img src="/assets/2019-10-28-post-mobile-android/imaging_completed.jpg" width="100%">
 <img src="/assets/2019-10-28-post-mobile-android/final.jpg" width="100%">
-<em>이미지 획득 완료<em>
+<em>이미지 획득 완료</em>
 </p></center>
+
 
 > 참고
 
