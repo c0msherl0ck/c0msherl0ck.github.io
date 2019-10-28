@@ -121,8 +121,8 @@ adb -d install BusyBox.apk
 설치가 완료되면 다음과 같이 핸드폰에서 BusyBox 앱을 확인할 수 있다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/busybox_1.jpg" width="100%"><br>
-<img src="/assets/2019-10-28-post-mobile-android/busybox_2.jpg" width="100%"><br>
+<img src="/assets/2019-10-28-post-mobile-android/busybox_1.jpg" width="50%">
+<img src="/assets/2019-10-28-post-mobile-android/busybox_2.jpg" width="50%"><br>
 <em>BusyBox 설치 확인</em>
 </p></center>
 
