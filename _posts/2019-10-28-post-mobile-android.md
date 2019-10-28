@@ -75,9 +75,10 @@ https://autoroot.chainfire.eu/
 <em>SuperUser 파일</em>
 </p></center>
 
-루팅이 제대로 되었는지 확인하기 위해 cmd 창에서 다음의 명령어를 입력한다. 명령어 입력 시 핸드폰에서 루트권한 요청을 허용하겠다는 알림이 뜬다. `허용`을 클릭한ㄷ.
-<div class='notification'>
-adb shell
+루팅이 제대로 되었는지 확인하기 위해 cmd 창에서 다음의 명령어를 입력한다. 명령어 입력 시 핸드폰에서 루트권한 요청을 허용하겠다는 알림이 뜬다. `허용`을 클릭한다.
+
+<div class="notification">
+adb shell<br>
 su
 </div>
 
@@ -100,7 +101,8 @@ BusyBox 란 리눅스 명령어 모음으로, 안드로이드 폰 내에서 리�
 https://androidapksfree.com/busybox/busybox-latest-version-apk-download/
 
 먼저, 상기의 사이트에서 BusyBox.apk 를 다운로드 한다. 이후 BusyBox.apk 파일이 존재하는 폴더 경로에서 cmd 창을 실행 후(또는, cmd 창에서 해당 파일이 있는 경로로 이동한다.), 다음의 명령어를 통해 핸드폰에 BusyBox를 설치한다.
-<div class='notification'>
+
+<div class="notification">
 adb -d install BusyBox.apk
 </div>
 
