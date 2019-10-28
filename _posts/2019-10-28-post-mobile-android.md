@@ -55,7 +55,7 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 핸드폰을 **다운로드 모드**로 부팅한다.(부팅 시 `볼륨 버튼 하 버튼 + 홈 버튼 + 전원 버튼` 동시 누름)
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/download_mode.jpg" width="50%">
+<img src="/assets/2019-10-28-post-mobile-android/download_mode.jpg" width="50%"><br>
 <em>다운로드 모드 화면</em>
 </p></center>
 
@@ -74,7 +74,7 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 </p></center>
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/SuperUser.jpg" width="50%">
+<img src="/assets/2019-10-28-post-mobile-android/SuperUser.jpg" width="50%"><br>
 <em>SuperUser 파일</em>
 </p></center>
 
@@ -86,7 +86,7 @@ su
 </div>
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/root_permission.jpg" width="50%">
+<img src="/assets/2019-10-28-post-mobile-android/root_permission.jpg" width="50%"><br>
 <em>핸드폰에서 루트권한 요청 허용</em>
 </p></center>
 
@@ -119,6 +119,7 @@ adb -d install BusyBox.apk
 <center><p>
 <img src="/assets/2019-10-28-post-mobile-android/busybox_1.jpg" width="50%">
 <img src="/assets/2019-10-28-post-mobile-android/busybox_2.jpg" width="50%">
+<br>
 <em>BusyBox 설치 확인</em>
 </p></center>
 
