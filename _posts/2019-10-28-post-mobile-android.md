@@ -16,7 +16,7 @@ tags:
 
 adb란? Android Debug Bridge 의 약자로, PC에서 명령어를 통해 안드로이드 핸드폰을 제어할 수 있도록 하는 개발자 도구이다. 이름에서 알 수 있듯이 adb 명령어를 사용하기 위해서는 핸드폰에서 `USB 디버깅 모드`가 선택되어 있어야 한다.
 
-https://developer.android.com/studio/releases/platform-tools
+<https://developer.android.com/studio/releases/platform-tools>
 
 먼저, 상기의 URL에서 `Windows 용 SDK 플랫폼 도구 다운로드` 클릭을 통해, adb 압축파일을 다운로드 받는다. 해당 압축 파일을 해제하고 생성된 폴더의 경로를 **환경변수** 상에 추가하면, windows의 cmd 창에서 adb 명령어를 사용할 수 있다.
 
@@ -36,7 +36,7 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 
 이미지 획득에 필요한 dd 명령어와 파일 접근 권한은 root 권한이 필요하다. 기본적으로 안드로이드 핸드폰의 경우 root 권한이 아닌 user 권한을 가지고 있기 때문에 별도의 루팅 과정이 필요하다. 
 
-https://autoroot.chainfire.eu/
+<https://autoroot.chainfire.eu/>
 
 먼저, 상기의 사이트에서 자신의 핸드폰 기종을 확인하여 루팅에 필요한 파일을 다운로드 받는다. 필자의 경우 다음과 같이 Samsung SHV-E330K 모델에 해당하는 파일을 다운로드하였다.
 
@@ -105,7 +105,7 @@ su
 
 BusyBox 란 리눅스 명령어 모음으로, 안드로이드 폰 내에서 리눅스 명령어를 사용할 수 있도록 해준다. 이미지 획득시 **netcat** 명령어(기능)을 사용하기 위해 BusyBox를 설치한다.
 
-https://androidapksfree.com/busybox/busybox-latest-version-apk-download/
+<https://androidapksfree.com/busybox/busybox-latest-version-apk-download/>
 
 먼저, 상기의 사이트에서 BusyBox.apk 를 다운로드 한다. 이후 BusyBox.apk 파일이 존재하는 폴더 경로에서 cmd 창을 실행 후(또는, cmd 창에서 해당 파일이 있는 경로로 이동한다.), 다음의 명령어를 통해 핸드폰에 BusyBox를 설치한다.
 
@@ -128,7 +128,7 @@ adb -d install BusyBox.apk
 
 > 컴퓨터에 netcat 설치하기
 
-https://eternallybored.org/misc/netcat/
+<https://eternallybored.org/misc/netcat/>
 
 상기의 사이트에서 **netcat**을 다운로드 받고, `nc.exe`를 `C:\Windows\System32` 경로에 복사 붙여넣기 한다. 해당 경로는 cmd 창에서 사용할 수 있는 윈도우 기본 명령어들이 존재하는 곳이다.
 
