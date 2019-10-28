@@ -66,6 +66,15 @@ dd 방식의 이미징은 물리적 이미지 획득 방법으로 비할당 영�
 <em>unallocated space</em>
 </p></center>
 
+> Timeline 분석
+
+Autopsy 상단의 메뉴 중 [Tools]-[Timeline]을 클릭하면 다음과 같이 시간대별 사용자 행위를 분석할 수 있다. 필자의 경우 2016년 군 복무 시절 주말 외박을 위해 동서울터미널을 이용하였고, 주말간 핸드폰으로 연애의 발견, 또 오해영 등의 드라마를 본 것을 알 수 있다.
+
+<center><p>
+<img src="/assets/2019-10-29-post-mobile-android-autopsy/timeline.jpg" width="100%">
+<em>timeline</em>
+</p></center>
+
 > 참고
 
 [Using Autopsy to examine an Android image - A solid, open source tool](https://freeandroidforensics.blogspot.com/2014/11/using-autopsy-to-examine-android-image.html)
