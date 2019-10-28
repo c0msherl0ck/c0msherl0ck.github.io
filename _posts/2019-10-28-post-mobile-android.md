@@ -55,7 +55,7 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 핸드폰을 **다운로드 모드**로 부팅한다.(부팅 시 `볼륨 버튼 하 버튼 + 홈 버튼 + 전원 버튼` 동시 누름)
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/download_mode.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/download_mode.jpg" width="50%">
 <em>다운로드 모드 화면</em>
 </p></center>
 
@@ -74,11 +74,11 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 </p></center>
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/SuperUser.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/SuperUser.jpg" width="50%">
 <em>SuperUser 파일</em>
 </p></center>
 
-루팅이 제대로 되었는지 확인하기 위해 cmd 창에서 다음의 명령어를 입력한다. 명령어 입력 시 핸드폰에서 루트권한 요청을 허용하겠다는 알림이 뜬다. `허용`을 클릭한다.
+루팅이 제대로 되었는지 확인하기 위해 cmd 창에서 다음의 명령어를 입력한다. 명령어 입력 시 핸드폰에서 루트권한 요청하는 알림이 뜬다. `허용`을 클릭한다.
 
 <div class="notice">
 adb shell<br>
@@ -86,7 +86,7 @@ su
 </div>
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/root_permission.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/root_permission.jpg" width="50%">
 <em>핸드폰에서 루트권한 요청 허용</em>
 </p></center>
 
@@ -117,8 +117,8 @@ adb -d install BusyBox.apk
 설치가 완료되면 다음과 같이 핸드폰에서 BusyBox 앱을 확인할 수 있다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/busybox_1.jpg" width="100%">
-<img src="/assets/2019-10-28-post-mobile-android/busybox_2.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/busybox_1.jpg" width="50%">
+<img src="/assets/2019-10-28-post-mobile-android/busybox_2.jpg" width="50%">
 <em>BusyBox 설치 확인</em>
 </p></center>
 
