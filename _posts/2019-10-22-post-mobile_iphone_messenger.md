@@ -17,7 +17,7 @@ tags:
 
 > iBackupBot 을 이용한 파일 추출
 
-iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를 이용하여 메신저 종류별로 다음의 경로에서 sqlite db 파일을 추출한다. 이전 글 [[모바일 포렌식] 아이폰 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)을 참고
+iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를 이용하여 메신저 종류별로 다음의 경로에서 sqlite db 파일을 추출한다. 이전 글 [[모바일 포렌식] 아이폰 이미지 획득 및 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)을 참고
 
 |메신저 앱|iBackupBot 상 경로|
 |---|---|
