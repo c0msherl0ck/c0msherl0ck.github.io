@@ -59,16 +59,12 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 <em>다운로드 모드 화면</em>
 </p></center>
 
-`odin`을 실행하고, `AP` 버튼을 클릭하여 다운로드 받은 파일 중 md5 파일을 선택한다.
+`odin`을 실행하고, `AP` 버튼을 클릭하여 다운로드 받은 파일 중 md5 파일을 선택하고, `start`를 누른다.
 
 <center><p>
 <img src="/assets/2019-10-28-post-mobile-android/odin.jpg" width="100%">
 <em>odin software</em>
 </p></center>
-
-odin_succeed.jpg
-
-`start`를 누른다.
 
 완료 시 다음과 같이 obin software에서는 `Succeed` 메세지를 확인할 수 있고, 핸드폰에서는 `SuperUser 파일`이 생성된 것을 확인할 수 있다.
 
