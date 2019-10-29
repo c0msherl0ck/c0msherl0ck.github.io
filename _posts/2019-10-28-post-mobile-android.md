@@ -145,7 +145,7 @@ CMD_1 터미널 : adb forward tcp:8888 tcp:8888
 
 su 명령어를 통해 root 계정으로 변경한다.(`ls /data` 는 root 권한으로만 실행이 가능한 명령어로 root 권한을 취득했는지 확인하기 위한 테스트 용도이다.)
 <div class="notice">
-CMD_2 터미널 : adb -d shell
+CMD_2 터미널 : adb -d shell<br>
 CMD_2 터미널 : su
 </div>
 <center><p>
