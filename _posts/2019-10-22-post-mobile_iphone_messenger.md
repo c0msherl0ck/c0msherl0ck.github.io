@@ -1,4 +1,5 @@
 ---
+comments:true
 title: "[모바일 포렌식] 아이폰 메신저 앱(문자, 카카오톡, 페이스북) 분석"
 categories:
   - Mobile Forensic
@@ -93,3 +94,28 @@ message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록�
 [[모바일 포렌식] 아이폰 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)
 <br>
 [IOS Forensics](https://resources.infosecinstitute.com/ios-forensics/#gref)
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+{% endif %}
