@@ -1,5 +1,4 @@
 ---
-comments: true
 title: "[모바일 포렌식] 안드로이드 핸드폰 이미지 획득"
 categories:
   - Mobile Forensic
@@ -9,6 +8,7 @@ tags:
   - android
   - samsung galaxy
   - adb
+comments: true
 ---
 
 안드로이드 운영체제를 사용하는 핸드폰의 경우, adb(Android Debug Bridge)를 통해 핸드폰에 dd 명령어를 입력함으로써 **물리적 이미지**를 획득한다. 이번 글에서는 Rooting, BusyBox 설치 등 이미징 사전 준비단계부터 이미지 획득까지 전 과정에 대해 서술한다.
