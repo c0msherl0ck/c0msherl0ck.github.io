@@ -1,5 +1,4 @@
 ---
-layout: default
 comments: true
 title: "[모바일 포렌식] Autopsy 도구를 이용한 안드로이드 이미지 분석"
 categories:
