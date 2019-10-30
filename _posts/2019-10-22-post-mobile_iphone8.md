@@ -1,5 +1,4 @@
 ---
-comments: true
 title: "[모바일 포렌식] 아이폰 이미지 획득 및 분석"
 categories:
   - Mobile Forensic
@@ -9,6 +8,7 @@ tags:
   - ios
   - iphone
   - iBackupBot
+comments: true
 ---
 
 모바일 포렌식 도구에서 아이폰의 경우 백업 방식을 이용하여 **논리적 이미지**를 획득한다. 해당 방식은 iTunes 백업 방식을 응용한 것으로, 이번 글에서는 별도의 유로 도구 없이도 아이폰을 분석할 수 있는 방안에 대해 소개한다.
