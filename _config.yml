@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Sherlock Coms
+title: Science of Deduction
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  법의학의 창시자 로카르는 다음과 같이 말했다. "모든 사건 현장에는 추적가능한 흔적이 남는다."
+  디지털 포렌식이란 이처럼 디지털 기기에 남는 흔적을 분석하여 사건을 재구성하고 추론하는 과학적인 방법을 이야기 한다.
+  디지털 기기에 남는 흔적들에 대해 알아보자.
 baseurl: 
 url: https://c0msherl0ck.github.io
 twitter_username: username

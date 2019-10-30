@@ -8,6 +8,7 @@ tags:
   - android
   - samsung galaxy
   - adb
+comments: true
 ---
 
 안드로이드 운영체제를 사용하는 핸드폰의 경우, adb(Android Debug Bridge)를 통해 핸드폰에 dd 명령어를 입력함으로써 **물리적 이미지**를 획득한다. 이번 글에서는 Rooting, BusyBox 설치 등 이미징 사전 준비단계부터 이미지 획득까지 전 과정에 대해 서술한다.
@@ -145,7 +146,7 @@ CMD_1 터미널 : adb forward tcp:8888 tcp:8888
 
 su 명령어를 통해 root 계정으로 변경한다.(`ls /data` 는 root 권한으로만 실행이 가능한 명령어로 root 권한을 취득했는지 확인하기 위한 테스트 용도이다.)
 <div class="notice">
-CMD_2 터미널 : adb -d shell
+CMD_2 터미널 : adb -d shell<br>
 CMD_2 터미널 : su
 </div>
 <center><p>
@@ -184,3 +185,28 @@ CMD_1 터미널 : nc 127.0.0.1 8888 > android_data.dd
 <br>
 [Imaging Android with ADB, Root, Netcat and DD](https://dfir.science/2017/04/Imaging-Android-with-root-netcat-and-dd.html)
 <br>
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+{% endif %}
