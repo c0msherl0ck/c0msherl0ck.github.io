@@ -1,4 +1,5 @@
 ---
+comments: true
 title: "[모바일 포렌식] 아이폰 이미지 획득 및 분석"
 categories:
   - Mobile Forensic
@@ -122,3 +123,28 @@ fileID = SHA1 (domain + "-" + relativePath)
 [[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
 <br>
 Forensic Analysis on IOS Devices, Tim Proffitt, SANS Institute
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+{% endif %}
