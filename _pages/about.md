@@ -25,7 +25,7 @@ title: "About Digital Forensic"
 
 디지털 환경도 이와 유사하다. 사용자가 디지털 기기(컴퓨터, 핸드폰 등)를 사용함에 따라 디지털 기기 안에는 그 흔적(파일, 로그, 데이터 등)들이 남는다. 흔적은 크게 두가지로 분류된다. 하나는 디지털 기기가 자동적으로 생성한 것(`Computer Generated Evidence`)이며, 다른 하나는 사용자가 직접 생성한 것(`User Generated Evidence`)이다.
 
-자신의 컴퓨터를 살펴보자. `C:\ `경로의 폴더와 파일들 중 본인이 직접 생성한 것 있는가? 대부분의 경우 없을 것이다. 이처럼 사용자 자신이 생성하지 않았음에도 컴퓨터 내에는 컴퓨터가 자동으로 생성한 파일들이 존재하며, 이런 파일들을 Computer Generated Evidence 라고 한다. 반면, Microsoft Office, 한글 문서 파일 등과 같이 사용자가 직접 생성해야만 생기는 파일들을 User Generated Evidence 라 한다.
+자신의 컴퓨터를 살펴보자. `C:\ `경로의 폴더와 파일들 중 본인이 직접 생성한 것이 있는가? 대부분의 경우 없을 것이다. 이처럼 사용자 자신이 생성하지 않았음에도 컴퓨터 내에는 컴퓨터가 자동으로 생성한 파일들이 존재하며, 이런 파일들을 Computer Generated Evidence 라고 한다. 반면, Microsoft Office, 한글 문서 파일 등과 같이 사용자가 직접 생성해야만 생기는 파일들을 User Generated Evidence 라 한다.
 
 # 기존 과학수사와의 비교
 
