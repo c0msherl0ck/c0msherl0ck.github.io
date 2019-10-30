@@ -11,7 +11,7 @@ tags:
   - SMS
   - KakaoTalk
   - Facebook Messenger
- comments: true
+comments: true
 ---
 
 모바일 포렌식에서 메신저 내 채팅 정보는 중요한 증거로, sqlite db 형태로 저장되어 있는 경우가 많다. 이번 글에서는 메신저 앱(문자, 카카오톡, 페이스북) 별 분석 방법을 소개한다.
