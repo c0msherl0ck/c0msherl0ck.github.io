@@ -1,5 +1,4 @@
 ---
-comments: true
 title: "[모바일 포렌식] Autopsy 도구를 이용한 안드로이드 이미지 분석"
 categories:
   - Mobile Forensic
@@ -9,6 +8,7 @@ tags:
   - android
   - samsung galaxy
   - autopsy
+comments: true
 ---
 
 Autopsy는 EnCase와 같은 통합 포렌식 분석 도구이며 무료이다. 흔히 무료라고 하면 기능상의 제약이 있을 것 같지만, 안드로이드 이미지 프로세싱에 적합한 android analyzer 등 강력한 기능을 제공한다.
