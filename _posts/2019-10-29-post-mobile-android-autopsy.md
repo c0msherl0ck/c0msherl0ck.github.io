@@ -21,13 +21,13 @@ Autopsy 도구는 매우 직관적이고 간편하므로 별도의 설명없이 
 
 <center><p>
 <img src="/assets/2019-10-29-post-mobile-android-autopsy/1.jpg" width="100%">
-<em></em>
-</p>Case Information</center>
+<em>Case Information</em>
+</p></center>
 
 <center><p>
 <img src="/assets/2019-10-29-post-mobile-android-autopsy/2.jpg" width="100%">
-<em></em>
-</p>Optional Information</center>
+<em>Optional Information</em>
+</p></center>
 
 <center><p>
 <img src="/assets/2019-10-29-post-mobile-android-autopsy/3.jpg" width="100%">
