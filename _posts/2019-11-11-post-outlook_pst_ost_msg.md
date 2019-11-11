@@ -18,7 +18,7 @@ comments: true
 Outlook 2016 에서 전자 메일 계정을 추가하면 계정 관련 정보의 로컬 복사본이 **자동으로** 컴퓨터에 저장되며, 이때 컴퓨터에 저장되는 파일의 확장자가 `.ost` 이다. `.ost` 파일에는 추가한 계정의 모든 전자 메일, 일정 데이터, 연락처 등이 저장되며, 이를 통해 인터넷이 연결되어 있지 않더라도 사용자는 이전에 자신이 수신한 메일을 확인할 수 있다.
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/account_setting.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/account_setting.jpg" width="50%">
 <em>전자 메일 계정 추가 화면</em>
 </p></center>
 
@@ -28,12 +28,12 @@ OST 파일의 위치는 다음과 같으며, [계정 설정]-[데이터 파일] 
 C:\Users\[사용자명]\AppData\Local\Microsoft\Outlook\[전자 메일 계정]
 ```
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/ost_location_1.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/ost_location_1.jpg" width="50%">
 <em>OST 파일 위치</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/ost_location_2.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/ost_location_2.jpg" width="50%">
 <em>계정별 OST 파일 확인</em>
 </p></center>
 
@@ -42,22 +42,22 @@ C:\Users\[사용자명]\AppData\Local\Microsoft\Outlook\[전자 메일 계정]
 Outlook 2016 에서 `.pst` 파일은 주로 **백업**을 위해 사용된다. `.ost` 파일이 사용자의 의도와 무관하게 자동적으로 생성된 것과 달리, `.pst` 파일은 사용자가 **가져오기/내보내기** 기능을 통해 백업에 필요한 항목을 선택한 후 생성한다.
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/import.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/import.jpg" width="50%">
 <em>가져오기 - 다른 프로그램이나 파일</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/import_2.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/import_2.jpg" width="50%">
 <em>가져오기 - pst 파일</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/export.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/export.jpg" width="50%">
 <em>내보내기 - 파일</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/export_2.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/export_2.jpg" width="50%">
 <em>내보내기 - pst 파일</em>
 </p></center>
 
@@ -66,7 +66,7 @@ Outlook 2016 에서 `.pst` 파일은 주로 **백업**을 위해 사용된다. `
 `.pst` 와 `.ost` 는 메일을 저장하기는 하지만, 개별 메일을 선택적으로 저장할 수는 없다. `.msg` 의 경우 개별 메일을 선택하여 **다른 이름으로 저장** 기능을 통해 선택적 추출 및 저장이 가능하다.(**첨부파일 포함**)
 
 <center><p>
-<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/msg.jpg" width="100%">
+<img src="/assets/2019-11-11-post-outlook_pst_ost_msg/msg.jpg" width="50%">
 <em>다른 이름으로 저장</em>
 </p></center>
 
