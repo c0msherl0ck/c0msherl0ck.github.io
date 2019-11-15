@@ -11,11 +11,11 @@ tags:
 comments: true
 ---
 
-모바일 포렌식 도구에서 아이폰의 경우 백업 방식을 이용하여 **논리적 이미지**를 획득한다. 해당 방식은 iTunes 백업 방식을 응용한 것으로, 이번 글에서는 별도의 유로 도구 없이도 아이폰을 분석할 수 있는 방안에 대해 소개한다.
+아이폰의 경우 iTunes 백업을 이용한 **논리적 이미지** 획득 방법과, JailBreak 이후 Cydia의 OpenSSH를 이용한 **물리적 이미지** 획득 방법이 있다. 이번 글에서는 iTunes 백업을 이용한 **논리적 이미지** 획득 방법과 iBackupBot를 이용해 백업된 파일을 분석하는 방안에 대해 서술한다.
 
 > 백업 파일 생성
 
-아이폰의 경우 **iTunes**를 이용한 백업을 수행한다. 단, `로컬 백업 암호화 체크를 해제`하여야 정상적인 분석이 가능하다.
+아이폰의 경우 **iTunes**를 이용하여 백업을 수행한다. 단, `로컬 백업 암호화 체크를 해제`하여야 정상적인 분석이 가능하다.
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone8/itunes-backup.jpg" width="100%">
@@ -122,7 +122,9 @@ fileID = SHA1 (domain + "-" + relativePath)
 <br>
 [[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
 <br>
-Forensic Analysis on IOS Devices, Tim Proffitt, SANS Institute
+[플래시 메모리 이미지 획득/IOS](http://forensic.korea.ac.kr/DFWIKI/index.php/%ED%94%8C%EB%9E%98%EC%8B%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%9D%B4%EB%AF%B8%EC%A7%80_%ED%9A%8D%EB%93%9D/IOS)
+<br>
+[Forensic Analysis on IOS Devices](https://www.sans.org/reading-room/whitepapers/forensics/paper/34092)
 
 {% if page.comments %}
 
