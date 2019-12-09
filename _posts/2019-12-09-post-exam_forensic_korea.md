@@ -65,7 +65,7 @@ MBR은 증거물의 가장 첫번째 섹터에 존재하나, USB 내 Volume이 �
 
 # 증거 파일 찾기
 
-VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 우선적으로 선택한다.
+VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 우선적으로 선택한다.
 
 
 
