@@ -14,11 +14,10 @@ comments: true
 한국포렌식학회 주관의 디지털포렌식전문가 2급 실기 시험 후기와 전략에 대해 기술한다. 필자의 경우 한국포렌식학회에서 출판한 실기 책을 공부하였으나, 시험문제의 유형이 다르기 때문에 문제풀이 전략을 다르게 세워야겠다고 느꼈고, 이외에도 시험장에서의 분석 프로그램 설치, CD 굽기 등 평소 많이 접해보지 않은 사항들에 대해 기술한다.
 
 - EnCase 설치
-- 문제풀이 전략
--- 이미징
--- VBR 복구
--- 증거물 찾기
--- 법률 관련 문제
+- 이미징
+- VBR 복구
+- 증거물 찾기
+- 법률 관련 문제
 - 증거물 제출(CD 굽기)
 
 # EnCase 설치
@@ -65,7 +64,17 @@ MBR은 증거물의 가장 첫번째 섹터에 존재하나, USB 내 Volume이 �
 
 # 증거 파일 찾기
 
-VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 우선적으로 선택한다.
+VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 우선적으로 선택한다.
+
+<center><p>
+<img src="/assets/폴더명/파일명.jpg" width="100%"><br>
+<em>프로세싱 옵션</em>
+</p></center>
+
+증거파일을 찾는 방법은 한국포렌식학회에서 출판한 실기 책과 다르게 접근하는 것이 좋다. 실기 책에서 풀이한 문제 유형과 최근 문제 유형이 다르기 때문이다. 큰 차이점은 USB 내 Windows-To-Go를 통해 운영체제가 설치되어 있어, 시스템 파일들이 많다는 점이며 이러한 파일들은 EnCase File Signature Analysis 결과 Bad Signature, Alias로 판단되어 다수의 불필요한 파일들까지 검토해야 하기에 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 문서를 은닉하는 경우, File Signature Analysis 결과 Match 로 정상 판단되기 때문에 발견하기 어렵다.
+
+
+
 
 
 
