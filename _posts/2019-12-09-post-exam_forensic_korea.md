@@ -71,18 +71,62 @@ VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱�
 <em>프로세싱 옵션</em>
 </p></center>
 
-증거파일을 찾는 방법은 한국포렌식학회에서 출판한 실기 책과 다르게 접근하는 것이 좋다. 실기 책에서 풀이한 문제 유형과 최근 문제 유형이 다르기 때문이다. 큰 차이점은 USB 내 Windows-To-Go를 통해 운영체제가 설치되어 있어, 시스템 파일들이 많다는 점이며 이러한 파일들은 EnCase File Signature Analysis 결과 Bad Signature, Alias로 판단되어 다수의 불필요한 파일들까지 검토해야 하기에 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 문서를 은닉하는 경우, File Signature Analysis 결과 Match 로 정상 판단되기 때문에 발견하기 어렵다.
+증거파일을 찾는 방법은 한국포렌식학회에서 출판한 실기 책과 다르게 접근하는 것이 좋다. 실기 책에서 풀이한 문제 유형과 최근 문제 유형이 다르기 때문이다. 큰 차이점은 USB 내 Windows-To-Go를 통해 운영체제가 설치되어 있어, 시스템 파일들이 많다는 점이며 이러한 파일들은 EnCase File Signature Analysis 결과 Bad Signature, Alias로 판단되기 때문에 기존 실기 책의 풀이 방법과 같이 File Signature Analysis 결과로 필터링할 경우 다수의 불필요한 파일들까지 검토해야 하기에 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 문서를 은닉하는 경우, File Signature Analysis 결과 Match 로 정상 판단되기 때문에 발견하기 어렵다.
+
+|실기 책|최신 시험|
+|---|---|
+|USB 내 단일볼륨(USB 첫 번째 섹터가 VBR)|USB 내 다수의 볼륨 존재(USB 첫 번째 섹터가 MBR)|
+|운영체제가 설치되어 있지 않고, 시스템 파일 존재하지 않음|운영체제가 설치되어 있으며, 시스템 파일 존재|
+
+필자가 제안하는 문제풀이 접근 전략은 다음과 같다.
+
+1. 파일 이름 또는 시간 순서로 정렬 후, 파일 순차 검토(시스템 파일을 포함하여 불필요한 파일들을 검토하는 시간을 줄이기 위해서)
+  1.1. 파일 이름으로 정렬 시, 파일 이름이 **한글**인 파일들(혐의자가 생성한 파일)을 중점적으로 검토
+  1.2. 파일 생성 시간 순서로 정렬 시, 가장 **최근**부터 역순으로 검토
+2. 파일 검토 시 체크 사항
+ 2.1. EnCase **DOC 탭에서 내용(문서, 그림) 확인**, 확인되지 않을 경우 안티포렌식 행위로 손상된 증거 파일일 확률이 높음
+ 2.2. File Signature Analysis 확인 (`Bad Signature` / `Alias` / `Match`)
+   2.2.1. `Bad Signature` : 파일 시그니처가 손상 되었으므로, 해당 파일을 추출 후 HxD를 통해 파일 시그니처를 복구한다.(Bad Signature의 경우 EnCase Doc 탭에서 내용 확인이 불가능하다.) 해당 확장자에 해당하는 파일 시그니처는 별도로 외우고 있지 않아도, 다른 정상 파일의 파일 시그니처를 참고하여 확인할 수 있다.
+   
+<center><p>
+<img src="/assets/폴더명/파일명.jpg" width="50%"><img src="/assets/폴더명/파일명.jpg" width="50%"><br>
+<em>docx 파일의 시그니처 훼손</em><em>docx 파일의 시그니처 복구</em>
+</p></center>
+
+<center><p>
+<img src="/assets/폴더명/파일명.jpg" width="50%"><br>
+<em>docx 파일 시그니처 복구 후 열람</em>
+</p></center>
+   
+   2.2.2. `Alias` : 파일 시그니처와 파일 확장자가 다르므로, 확장자를 시그니처에 맞게 변경한 후 내용을 확인한다.(Alias의 경우 EnCase Doc 탭에서 내용 확인이 가능하다.) EnCase의 File Type 컬럼은 File Signature에 따른 파일 형태를 구분하며, Category 컬럼은 파일 확장자에 따라 파일 형태를 구분한다.
+   
+<center><p>
+<img src="/assets/폴더명/파일명.jpg" width="50%"><br>
+<em>파일 확장자 jpg에서 zip으로 변경 후 열람</em>
+</p></center>
+   
+   2.2.3. `Match` : OOXML 문서 파일 내 문서를 은닉할 경우, File Signature Analysis 가 Match 로 분류된다. 이 경우 해당 파일을 추출하여 확장자를 zip 으로 변경하거나, EnCase의 **View File Structure** 기능을 통해 은닉된 파일을 확인할 수 있다.
 
 
+증거 파일을 안티포렌식한 사례
+- zip 파일의 확장자를 변경
+- 
+- 
+- 
 
-
+|증거 파일을 안티포렌식한 사례|발견 방법|
+|---|---|
+|zip 파일의 확장자를 변경|File Signature Analysis 결과가 Alias, 해당 파일 추출하여 |
+|||
+|||
+|||
 
 
 [인라인 링크](https://)
 
 
 <center><p>
-<img src="/assets/폴더명/파일명.jpg" width="100%">
+<img src="/assets/폴더명/파일명.jpg" width="100%"><br>
 <em>주석</em>
 </p></center>
 
