@@ -10,21 +10,27 @@ tags:
 comments: true
 ---
 
-> 제목
+3줄 요약
 
-내용
+# 제목
 
-[인라인 링크](https://)
-
+|파일명|역할|
+|---|---|
+|||
+|||
+|||
 
 <center><p>
-<img src="/assets/폴더명/파일명.jpg" width="100%">
+<img src="/assets/폴더명/파일명.jpg" width="100%"><br>
 <em>주석</em>
 </p></center>
 
 > 참고
 
 [](https://)
+
+[인라인 링크](https://)
+
 
 
 {% if page.comments %}
