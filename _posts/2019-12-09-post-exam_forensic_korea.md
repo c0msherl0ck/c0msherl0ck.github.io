@@ -43,10 +43,9 @@ comments: true
   - 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
   <br>폴더 경로(상세 경로는 시험지에 기재되어 있음) ```C:\Users\sungsoo.kim\Documents\EnCase```
   <br><center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></p></center>
-  <br>
   - 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
   <br>폴더 경로(상세 경로는 시험지에 기재되어 있음) : ```C:\Program Files\EnCase8.08```
-  
+  <br><center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></p></center>
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
 <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></p></center>
