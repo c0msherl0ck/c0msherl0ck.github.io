@@ -41,10 +41,11 @@ comments: true
 - **EnCase 프로그램 실행 후, 다시 종료**(이 과정을 하지 않을 경우 내 문서 폴더 하위에 EnCase 관련 폴더가 생성되지 않는다.)
 - 자격 증명 관련 파일 복사
   - 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
-  폴더 경로(상세 경로는 시험지에 기재되어 있음) C:\Users\sungsoo.kim\Documents\EnCase
-
+  <br>폴더 경로(상세 경로는 시험지에 기재되어 있음) ```C:\Users\sungsoo.kim\Documents\EnCase```
+  <br><center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></p></center>
+  <br>
   - 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
-  폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Program Files\EnCase8.08
+  <br>폴더 경로(상세 경로는 시험지에 기재되어 있음) : ```C:\Program Files\EnCase8.08```
   
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
