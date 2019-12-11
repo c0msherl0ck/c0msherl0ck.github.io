@@ -13,15 +13,15 @@ comments: true
 
 한국포렌식학회 주관의 디지털포렌식전문가 2급 실기 시험과 관련하여, 한국포렌식학회에서 출판한 실기 책에 소개된 문제와 풀이방법은 실제 최신 시험 경향과 다르기 때문에 최신 경향에 맞는 풀이방법에 대해 기술한다. 이 밖에도 시험장에서의 분석 프로그램 설치, CD 굽기 등 평소 많이 접해보지 못한 내용 등 실기 책에 기술되지 않은 내용을 위주로 한다.
 
-- EnCase 설치
-- 이미징
-- VBR 복구
-- 증거물 찾기
-- 법률 관련 문제
-- 답안 및 증거물 제출(CD 굽기)
+1. EnCase 설치
+2. 이미징
+3. VBR 복구
+4. 증거물 찾기
+5. 법률 관련 문제
+6. 답안 및 증거물 제출(CD 굽기)
 
 
-# EnCase 설치
+# 1. EnCase 설치
 
 시험장 컴퓨터 바탕화면에 분석 프로그램 폴더가 존재한다. 해당 폴더 내에는 EnCase, FTK, Autopsy, KFolt, EnCase Imager, FTK Imager, HxD 프로그램과 EnCase License 활성화를 위한 파일들이 존재한다.
 
@@ -40,29 +40,29 @@ comments: true
   <br><center><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></center>
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
-# 이미징
+# 2. 이미징
 - 논리적 쓰기 방지
 - 증거물 이미지 생성
 - 생성된 이미지 확인
 
-## 논리적 쓰기 방지
+## 2.1. 논리적 쓰기 방지
 
 1. 레지스트리 값 변경
 2. EnCase FastBloc 이용 방법
 
-## 증거물 이미지 생성
+## 2.2. 증거물 이미지 생성
 
 EnCase를 통해서 이미지 생성이 바로 가능하지만, FTK Imager를 이용한 이미지 생성 방법이 가장 직관적이고 쉽다. 또한, HxD를 통해 VBR 복구를 용이하게 하기 위해 DD 이미지 형태로 생성한다.
 
-## 생성된 이미지 확인
+## 2.3. 생성된 이미지 확인
 FTK Imager의 경우 이미지가 생성된 폴더에 이미지 정보가 텍스트 파일로 저장되어 있다. 해당 내용을 확인하여 이미지 정보를 답안에 기록한다.
 
-# VBR 복구
+# 3. VBR 복구
 FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라이브 하위 폴더가 제대로 보이지 않는 경우 HxD를 통해 VBR 복구를 진행한다.
 - Back-up VBR
 - HxD를 통한 VBR 복구
 
-## Back-up VBR
+## 3.1. Back-up VBR
 
 FAT32의 경우 Back-up VBR이 기존 VBR(Volume Start Sector) + 6 의 위치에 존재한다.
 NTFS의 경우 Back-up VBR이 해당 Volume의 마지막에 존재한다.(Volume Start Sector + Volume Size를 통해 접근)
@@ -74,7 +74,7 @@ NTFS의 경우 Back-up VBR이 해당 Volume의 마지막에 존재한다.(Volume
 
 Volume Start Sector 및 Volume Size는 MBR에서 확인할 수 있다. MBR은 증거물의 가장 첫번째 섹터에 존재하고, VBR은 각 볼륨의 첫 번째 섹터에 존재하나, USB 내 Volume이 한 개만 존재할 경우 증거물의 첫 번째 섹터에 VBR이 존재한다. (최근 경향은 USB 증거물이 Windows-to-go 형태로 운영체제가 설치되어 있고, 여러 드라이브가 존재하는 형태가 존재한다. 한국포렌식학회 출판 실기 책에서는 USB 내 단일 볼륨으로 VBR이 가장 먼저 등장한다.)
 
-## HxD를 통한 VBR 복구
+## 3.2. HxD를 통한 VBR 복구
 
 1. HxD 디스크 이미지 열기 기능을 통해 DD 이미지 열기(디스크 이미지 열기 기능 사용 시, 섹터 단위로 이미지 확인 및 이동이 가능)
 2. MBR에서 확인한 Volume Start Sector 및 Volume Size 정보를 통해 Back-up VBR로 이동
@@ -85,7 +85,7 @@ Volume Start Sector 및 Volume Size는 MBR에서 확인할 수 있다. MBR은 �
 6. 수정된 이미지 EnCase 에서 확인
 
 
-# 증거 파일 찾기
+# 4. 증거 파일 찾기
 
 VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 우선적으로 선택한다.
 
@@ -129,13 +129,13 @@ VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱�
   EnCase Report 탭에서 Hash 정보와 파일 경로가 반드시 포함되도록 증거 파일의 메타 정보와 내용을 답안에 기록한다.
 
 
-# 법률 관련 문제
+# 5. 법률 관련 문제
 
 - 전문법칙 (형사소송법 제 313조, 315조)
 - 압수 절차, 피압수자 참여 보장, 제 3자 참여
 - 별건 정보 발견 시 수사 중단 후, 압수수색 영장 별도로 청구
 
-# 답안 및 증거물 제출(CD 굽기)
+# 6. 답안 및 증거물 제출(CD 굽기)
 
 답안과 증거물은 CD로 제출하지만, 요즘 실생활에서 CD를 많이 사용하지 않고, 노트북 또한 CD 드라이브를 지원하지 않는 경우가 많으므로 절차가 생소할 수 있으므로 사전에 절차를 확인하는 것이 좋다.
 
