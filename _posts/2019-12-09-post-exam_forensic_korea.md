@@ -32,11 +32,11 @@ comments: true
 - EnCase 설치 프로그램 x64.exe 실행 및 설치(별도의 설정 변경없이 계속해서 다음을 클릭하여 진행)
 - **EnCase 프로그램 실행 후, 다시 종료**(이 과정을 하지 않을 경우 내 문서 폴더 하위에 EnCase 관련 폴더가 생성되지 않는다.)
 - 자격 증명 관련 파일 복사
-  - 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
-  <br>폴더 경로(상세 경로는 시험지에 기재되어 있음) ```C:\Users\sungsoo.kim\Documents\EnCase```
+  - **2개**의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
+  <br>Folder Path : ```C:\Users\sungsoo.kim\Documents\EnCase```(시험지에 기재되어 있음)
   <br><center><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></center>
-  - 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
-  <br>폴더 경로(상세 경로는 시험지에 기재되어 있음) : ```C:\Program Files\EnCase8.08```
+  - **1개**의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
+  <br>Folder Path : ```C:\Program Files\EnCase8.08```(시험지에 기재되어 있음)
   <br><center><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></center>
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
@@ -63,16 +63,21 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 - HxD를 통한 VBR 복구
 
 ## 3.1. Back-up VBR
-
-FAT32의 경우 Back-up VBR이 기존 VBR(Volume Start Sector) + 6 의 위치에 존재한다.
-NTFS의 경우 Back-up VBR이 해당 Volume의 마지막에 존재한다.(Volume Start Sector + Volume Size를 통해 접근)
+운영체제 별 Back-up VBR 위치는 아래 표와 같다.
 
 |운영체제|VBR|Back-up VBR|
 |---|---|
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
-|NTFS|Volume Start Sector|Volume Start Sector + Volume Size|
+|NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
 
-Volume Start Sector 및 Volume Size는 MBR에서 확인할 수 있다. MBR은 증거물의 가장 첫번째 섹터에 존재하고, VBR은 각 볼륨의 첫 번째 섹터에 존재하나, USB 내 Volume이 한 개만 존재할 경우 증거물의 첫 번째 섹터에 VBR이 존재한다. (최근 경향은 USB 증거물이 Windows-to-go 형태로 운영체제가 설치되어 있고, 여러 드라이브가 존재하는 형태가 존재한다. 한국포렌식학회 출판 실기 책에서는 USB 내 단일 볼륨으로 VBR이 가장 먼저 등장한다.)
+Back-up VBR 찾는 방법
+- USB 증거물 내 Volume 1개만 존재할 경우(실기 책 문제 유형)
+  - FAT32 : 
+  - NTFS : 
+- USB 증거물 내 Volume 다수 존재(최신 시험 경향)
+  USB 증거물의 첫 번째 섹터에 존재하는 MBR에서 Volume Start Sector 및 Volume Size를 확인할 수 있다.
+  
+MBR은 증거물의 가장 첫번째 섹터에 존재하고, VBR은 각 볼륨의 첫 번째 섹터에 존재하나, USB 내 Volume이 한 개만 존재할 경우 증거물의 첫 번째 섹터에 VBR이 존재한다. (최근 경향은 USB 증거물이 Windows-to-go 형태로 운영체제가 설치되어 있고, 여러 드라이브가 존재하는 형태가 존재한다. 한국포렌식학회 출판 실기 책에서는 USB 내 단일 볼륨으로 VBR이 가장 먼저 등장한다.)
 
 ## 3.2. HxD를 통한 VBR 복구
 
