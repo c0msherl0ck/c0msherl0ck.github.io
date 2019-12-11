@@ -32,12 +32,12 @@ comments: true
 1. EnCase 설치 프로그램 x64.exe 실행 및 설치(별도의 설정 변경없이 계속해서 다음을 클릭하여 진행)
 2. **EnCase 프로그램 실행 후, 다시 종료**(이 과정을 하지 않을 경우 내 문서 폴더 하위에 EnCase 관련 폴더가 생성되지 않는다.)
 3. 자격 증명 관련 파일 복사
-  1. 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
-  폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Users\sungsoo.kim\Documents\EnCase
-  <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></p></center>
-  2. 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
-  폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Program Files\EnCase8.08
-  <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></p></center>
+   1. 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
+   폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Users\sungsoo.kim\Documents\EnCase
+   <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></p></center>
+   2. 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
+   폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Program Files\EnCase8.08
+   <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></p></center>
 4. EnCase 프로그램 실행 후, **License Activation** 클릭
 
 
@@ -105,9 +105,9 @@ VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱�
 
 필자가 제안하는 문제풀이 전략은 다음과 같다.
 
-```
+<div class="notice">
 파일 생성 시간 순서로 정렬하여, 가장 최근부터 역순으로 검토 중 EnCase Doc 탭에서 내용이 확인이 되지 않는 파일을 중점적으로 안티포렌식 행위에 따라 적절한 조치 이후 파일 내용을 확인한다.
-```
+</div>
 
 |안티포렌식 행위|조치 방법|
 |---|---|
