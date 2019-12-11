@@ -32,10 +32,10 @@ comments: true
 1. EnCase 설치 프로그램 x64.exe 실행 및 설치(별도의 설정 변경없이 계속해서 다음을 클릭하여 진행)
 2. **EnCase 프로그램 실행 후, 다시 종료**(이 과정을 하지 않을 경우 내 문서 폴더 하위에 EnCase 관련 폴더가 생성되지 않는다.)
 3. 자격 증명 관련 파일 복사
-   1. 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
+   3.1. 2개의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
    폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Users\sungsoo.kim\Documents\EnCase
    <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></p></center>
-   2. 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
+   3.2. 1개의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
    폴더 경로(상세 경로는 시험지에 기재되어 있음) : C:\Program Files\EnCase8.08
    <center><p><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></p></center>
 4. EnCase 프로그램 실행 후, **License Activation** 클릭
@@ -122,9 +122,9 @@ VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱�
 2. 파일 검토 시 체크 사항
    2.1. EnCase **DOC 탭에서 내용(문서, 그림) 확인**, 확인되지 않을 경우 안티포렌식 행위로 손상된 증거 파일일 확률이 높음
    2.2. File Signature Analysis 확인 (`Bad Signature` / `Alias` / `Match`)
-        2.2.1. `Bad Signature` : 파일 시그니처가 손상 되었으므로, 해당 파일을 추출 후 HxD를 통해 파일 시그니처를 복구한다.(Bad Signature의 경우 EnCase Doc 탭에서 내용 확인이 불가능하다.) 해당 확장자에 해당하는 파일 시그니처는 별도로 외우고 있지 않아도, 다른 정상 파일의 파일 시그니처를 참고하여 확인할 수 있다.
-        2.2.2. `Alias` : 파일 시그니처와 파일 확장자가 다르므로, 확장자를 시그니처에 맞게 변경한 후 내용을 확인한다.(Alias의 경우 EnCase Doc 탭에서 내용 확인이 가능하다.) EnCase의 File Type 컬럼은 File Signature에 따른 파일 형태를 구분하며, Category 컬럼은 파일 확장자에 따라 파일 형태를 구분한다.   
-        2.2.3. `Match` : OOXML 문서 파일(docx, pptx, xlsx) 내 문서를 은닉할 경우, File Signature Analysis 결과가 Match로 정상으로 분류된다. 이 경우 해당 파일을 추출하여 확장자를 zip 으로 변경하거나, EnCase의 **View File Structure** 기능을 통해 은닉된 파일을 확인할 수 있다.
+      2.2.1. `Bad Signature` : 파일 시그니처가 손상 되었으므로, 해당 파일을 추출 후 HxD를 통해 파일 시그니처를 복구한다.(Bad Signature의 경우 EnCase Doc 탭에서 내용 확인이 불가능하다.) 해당 확장자에 해당하는 파일 시그니처는 별도로 외우고 있지 않아도, 다른 정상 파일의 파일 시그니처를 참고하여 확인할 수 있다.
+      2.2.2. `Alias` : 파일 시그니처와 파일 확장자가 다르므로, 확장자를 시그니처에 맞게 변경한 후 내용을 확인한다.(Alias의 경우 EnCase Doc 탭에서 내용 확인이 가능하다.) EnCase의 File Type 컬럼은 File Signature에 따른 파일 형태를 구분하며, Category 컬럼은 파일 확장자에 따라 파일 형태를 구분한다.   
+      2.2.3. `Match` : OOXML 문서 파일(docx, pptx, xlsx) 내 문서를 은닉할 경우, File Signature Analysis 결과가 Match로 정상으로 분류된다. 이 경우 해당 파일을 추출하여 확장자를 zip 으로 변경하거나, EnCase의 **View File Structure** 기능을 통해 은닉된 파일을 확인할 수 있다.
 
 3. 증거 파일 정보 기록
   EnCase Report 탭에서 Hash 정보와 파일 경로가 반드시 포함되도록 증거 파일의 메타 정보와 내용을 답안에 기록한다.
