@@ -40,6 +40,7 @@ comments: true
   <br><center><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></center>
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
+<br>
 # 2. 이미징
 - 논리적 쓰기 방지
 - 증거물 이미지 생성
@@ -57,6 +58,7 @@ EnCase를 통해서 이미지 생성이 바로 가능하지만, FTK Imager를 �
 ## 2.3. 생성된 이미지 확인
 FTK Imager의 경우 이미지가 생성된 폴더에 이미지 정보가 텍스트 파일로 저장되어 있다. 해당 내용을 확인하여 이미지 정보를 답안에 기록한다.
 
+<br>
 # 3. VBR 복구
 FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라이브(볼륨) 하위 폴더가 제대로 보이지 않는 경우 Back-up VBR를 이용하여 VBR 복구를 진행한다.
 
@@ -76,7 +78,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 
 <center><em>표 1. USB 첫 번째 섹터 비교</em></center>
 
-
+<br>
 
 |운영체제|VBR|Back-up VBR|
 |---|---|
@@ -85,7 +87,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 
 <center><em>표 2. 운영체제 별 Back-up VBR 위치</em></center>
 
-
+<br>
 # 4. 증거 파일 찾기
 
 VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 선택한다.
@@ -104,6 +106,7 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 
 <center><em>표 3. 실기 책과 최신 시험 문제 유형 차이점</em></center>
 
+<br>
 최신 시험 유형은 Windows-To-Go를 통해 USB 내 운영체제를 설치하여 시스템 파일들이 많다. 그러므로, 실기 책에서 소개된 풀이방법과 같이 File Signature Analysis 결과로 필터링하여 Bad Signature, Alias 파일을 검토할 경우, 다수의 불필요한 파일들까지 검토하게 되어 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 증거를 은닉하는 경우, OOXML 문서 파일의 File Signature Analysis 결과가 Match 로 정상 판단되기 때문에 발견하기 어렵다.
 
 필자가 제안하는 문제풀이 전략은 다음과 같다.
@@ -128,13 +131,14 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 - **증거 파일 정보 기록**
   EnCase Report 탭에서 Hash 정보와 파일 경로가 반드시 포함되도록 증거 파일의 메타 정보와 내용을 답안에 기록한다.
 
-
+<br>
 # 5. 법률 관련 문제
 
 - 전문법칙 (형사소송법 제 313조, 315조)
 - 압수 절차, 피압수자 참여 보장, 제 3자 참여
 - 별건 정보 발견 시 수사 중단 후, 압수수색 영장 별도로 청구
 
+<br>
 # 6. 답안 및 증거물 제출(CD 굽기)
 
 답안과 증거물은 CD로 제출하지만, 요즘 실생활에서 CD를 많이 사용하지 않고, 노트북 또한 CD 드라이브를 지원하지 않는 경우가 많으므로 절차가 생소할 수 있으므로 사전에 절차를 확인하는 것이 좋다.
