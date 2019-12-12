@@ -34,10 +34,10 @@ comments: true
 - 자격 증명 관련 파일 복사
   - WIBU 관련 파일을 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
   <br>Folder Path : `C:\Users\[사용자명]\Documents\EnCase`(시험지에 기재되어 있음)
-  <br><center><img src="/assets/2019-12-09-post-exam_forensic_korea/1.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></center>
+  <br><center><img src="/assets/2019-12-09-post-exam_forensic_korea/1.jpg" width="100%"><br><em>자격 증명 파일 복사 1</em></center>
   - Cert 파일을 `Program Files` 폴더 하위의 EnCase 폴더 내 경로에 복사
   <br>Folder Path : `C:\Program Files\EnCase8\Certs`(시험지에 기재되어 있음)
-  <br><center><img src="/assets/2019-12-09-post-exam_forensic_korea/2.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></center>
+  <br><center><img src="/assets/2019-12-09-post-exam_forensic_korea/2.jpg" width="100%"><br><em>자격 증명 파일 복사 2</em></center>
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
 <br>
