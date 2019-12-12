@@ -161,7 +161,8 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 
 [디지털포렌식 자격검정시험](https://exam.forensickorea.org/)
 
-
+<br>
+<br>
 
 {% if page.comments %}
 
