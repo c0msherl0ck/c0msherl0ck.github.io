@@ -23,11 +23,11 @@ comments: true
 
 # 1. EnCase 설치
 
-시험장 컴퓨터 바탕화면에 분석 프로그램 폴더가 존재한다. 해당 폴더 내에는 EnCase, FTK, Autopsy, KFolt, EnCase Imager, FTK Imager, HxD 프로그램과 EnCase License 활성화를 위한 파일들이 존재한다.
+시험장 컴퓨터 바탕화면에 분석 프로그램 폴더가 존재한다. 해당 폴더 내에는 EnCase, FTK, Autopsy, KFolt, EnCase Imager, FTK Imager, HxD 프로그램과 EnCase License 활성화를 위한 파일들이 존재한다.(해당 도구 이외의 다른 도구 사용을 원할 시, 사전에 신청한 프로그램에 한해 반입 및 설치가 가능하다.)
 
-필자의 경우 EnCase Certified Examiner를 취득하였고, 실무에서 EnCase를 계속해서 접하기 때문에 EnCase 8.08(분석), FTK Imager 3.0.4.2(이미징), HxD(파일 시그니처 복구 및 VBR 복구) 3가지를 설치하였다.
+필자의 경우 EnCase Certified Examiner를 취득하였고, 실무에서 EnCase를 계속해서 접하기 때문에 EnCase(분석), FTK Imager(이미징), HxD(파일 시그니처 복구 및 VBR 복구) 3가지를 설치하였다.
 
-다른 분석 프로그램과 다르게 EnCase의 경우 설치 후, 추가적으로 License Activation 절차를 진행해야 한다. 해당 절차를 시험장에서 처음 접할 경우 당혹스러울 수 있다. EnCase 설치 및 자격 활성화 절차는 다음과 같다.
+다른 프로그램과 다르게 **EnCase**는 설치 후, **License Activation** 절차를 진행해야 한다. 해당 절차를 시험장에서 처음 진행할 경우 당혹스러울 수 있으므로 사전에 절차를 숙지하도록 한다. License Activation 절차는 다음과 같다.
 
 - EnCase 설치 프로그램 x64.exe 실행 및 설치(별도의 설정 변경없이 계속해서 다음을 클릭하여 진행)
 - **EnCase 프로그램 실행 후, 다시 종료**(이 과정을 하지 않을 경우 내 문서 폴더 하위에 EnCase 관련 폴더가 생성되지 않는다.)
@@ -58,37 +58,27 @@ EnCase를 통해서 이미지 생성이 바로 가능하지만, FTK Imager를 �
 FTK Imager의 경우 이미지가 생성된 폴더에 이미지 정보가 텍스트 파일로 저장되어 있다. 해당 내용을 확인하여 이미지 정보를 답안에 기록한다.
 
 # 3. VBR 복구
-FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라이브 하위 폴더가 제대로 보이지 않는 경우 HxD를 통해 VBR 복구를 진행한다.
-- Back-up VBR
-- HxD를 통한 VBR 복구
+FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라이브(볼륨) 하위 폴더가 제대로 보이지 않는 경우 Back-up VBR를 이용하여 VBR 복구를 진행한다.
 
-## 3.1. Back-up VBR
-운영체제 별 Back-up VBR 위치는 아래 표와 같다.
+1. HxD 디스크 이미지 열기 기능을 통해 DD 이미지 열기(디스크 이미지 열기 기능 사용 시, 섹터 단위로 이미지 확인 및 이동이 가능)
+2. MBR(표 1. 참고)에서 확인한 Volume Start Sector 및 Volume Size 정보를 통해 Back-up VBR로 이동
+3. Back-up VBR 복사(Ctrl + C, [표 2.] 참고)
+4. Volume Start Sector에 덮어씌우기(**Ctrl + B**)
+<br>만약, 붙여넣기(Ctrl+V)를 하게 되면, 해당 영역이 수정되는 것이 아니라 추가되므로 이미지가 정상적으로 열리지 않는다.
+5. 다른 이름으로 저장
+6. 수정된 이미지 확인
+
+|실기 책|최신 경향|
+|---|---|
+|USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
+|USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
+<em>표 1. USB 첫 번째 섹터 비교</em>
 
 |운영체제|VBR|Back-up VBR|
 |---|---|
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
 |NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
-
-Back-up VBR 찾는 방법
-- USB 증거물 내 Volume 1개만 존재할 경우(실기 책 문제 유형)
-  - FAT32 : 
-  - NTFS : 
-- USB 증거물 내 Volume 다수 존재(최신 시험 경향)
-  USB 증거물의 첫 번째 섹터에 존재하는 MBR에서 Volume Start Sector 및 Volume Size를 확인할 수 있다.
-  
-MBR은 증거물의 가장 첫번째 섹터에 존재하고, VBR은 각 볼륨의 첫 번째 섹터에 존재하나, USB 내 Volume이 한 개만 존재할 경우 증거물의 첫 번째 섹터에 VBR이 존재한다. (최근 경향은 USB 증거물이 Windows-to-go 형태로 운영체제가 설치되어 있고, 여러 드라이브가 존재하는 형태가 존재한다. 한국포렌식학회 출판 실기 책에서는 USB 내 단일 볼륨으로 VBR이 가장 먼저 등장한다.)
-
-## 3.2. HxD를 통한 VBR 복구
-
-1. HxD 디스크 이미지 열기 기능을 통해 DD 이미지 열기(디스크 이미지 열기 기능 사용 시, 섹터 단위로 이미지 확인 및 이동이 가능)
-2. MBR에서 확인한 Volume Start Sector 및 Volume Size 정보를 통해 Back-up VBR로 이동
-3. Back-up VBR 복사(Ctrl + C)
-4. Volume Start Sector에 덮어씌우기(**Ctrl + B**)
-  만약, 붙여넣기(Ctrl+V)를 하게 되면, 해당 영역이 수정되는 것이 아니라 추가되므로 이미지가 정상적으로 열리지 않는다.
-5. 다른 이름으로 저장
-6. 수정된 이미지 EnCase 에서 확인
-
+<em>표 2. 운영체제 별 Back-up VBR 위치</em>
 
 # 4. 증거 파일 찾기
 
@@ -101,11 +91,10 @@ VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱�
 
 증거 파일을 찾는 방법은 한국포렌식학회에서 출판한 실기 책의 풀이방법과 다르게 접근하는 것이 좋다. 실기 책에서 풀이한 문제 유형과 최근 문제 유형이 다르기 때문이다. 가장 큰 차이점은 USB 내 Windows-To-Go를 통해 운영체제가 설치되어 있어, 시스템 파일들이 많다는 점이며 이러한 파일들은 EnCase의 File Signature Analysis 결과 Bad Signature, Alias로 판단되기 때문에 기존 실기 책에 소개된 풀이 방법과 같이 File Signature Analysis 결과로 필터링할 경우 다수의 불필요한 파일들까지 검토해야 하기에 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 문서를 은닉하는 경우, File Signature Analysis 결과 Match 로 정상 판단되기 때문에 발견하기 어렵다.
 
-|실기 책|최신 시험|
+|실기 책|최신 경향|
 |---|---|
-|USB 내 단일볼륨(USB 첫 번째 섹터가 VBR)|USB 내 다수의 볼륨 존재(USB 첫 번째 섹터가 MBR)|
-|운영체제가 설치되어 있지 않고, 시스템 파일 존재하지 않음|운영체제가 설치되어 있으며, 다수의 시스템 파일 존재|
-|증거 파일의 안티포렌식 행위가 확장자 변경에 한정|증거 파일의 안티포렌식 행위가 다양함|
+|운영체제가 설치되어 있지 않고, 시스템 파일 존재하지 않음|운영체제가 설치되어 있으며, 다수의 **시스템 파일** 존재|
+|증거 파일의 안티포렌식 행위가 **확장자 변경**에 **한정**|증거 파일의 안티포렌식 행위가 **다양함**|
 
 필자가 제안하는 문제풀이 전략은 다음과 같다.
 
