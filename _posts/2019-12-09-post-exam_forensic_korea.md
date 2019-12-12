@@ -112,12 +112,12 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 파일 생성 시간 순서로 정렬하여, 가장 최근부터 역순으로 검토 중 EnCase Doc 탭에서 내용이 확인이 되지 않는 파일을 중점적으로 안티포렌식 행위에 따라 적절한 조치 이후 파일 내용을 확인한다.
 </div>
 
-|안티포렌식 행위|조치 방법|
+|안티포렌식 행위|Fils Signature Analysis 결과|조치 방법|
 |---|---|
-|zip 파일의 확장자를 변경|File Signature Analysis 결과가 Alias 이다. 해당 파일 추출하여 확장자를 zip 으로 변경 후 내용 확인|
-|docx, jpg 파일의 시그니처 훼손|File Signature Analysis 결과가 Bad Signature 이다. 해당 파일을 추출하여 HxD를 통해 파일 시그니처를 복구 후 내용 확인|
-|OOXML 파일(docx, pptx, xlsx) 내 문서 은닉|OOXML 파일은 압축 파일 형태이기 때문에, 해당 파일을 추출하여 확장자를 zip 으로 변경 후 내용 확인|
-|압축 파일에 비밀번호가 걸려 있음|비밀번호를 다른 증거 파일에서 찾아 압축 해제 후 내용 확인|
+|zip 파일의 확장자를 변경|Alias|파일 추출하여 확장자를 zip 으로 변경 후 내용 확인(또는, EnCase의 **View File Structure** 기능사용)|
+|docx, jpg 파일의 시그니처 훼손|Bad Signature|파일 추출하여 HxD를 통해 파일 시그니처를 복구 후 내용 확인(파일 시그니처는 다른 정상 파일에서 확인)|
+|OOXML 문서 파일(docx, pptx, xlsx) 내 증거 은닉|Match|OOXML 문서 파일은 압축 파일 형태이기 때문에, 해당 파일을 추출하여 확장자를 zip 으로 변경 후 내용 확인(또는, EnCase의 **View File Structure** 기능사용)|
+|압축 파일에 비밀번호가 걸려 있음|-|비밀번호를 다른 증거 파일에서 찾아 압축 해제 후 내용 확인|
 
 - 파일 이름 또는 시간 순서로 정렬 후, 파일 순차 검토(시스템 파일을 포함하여 불필요한 파일들을 검토하는 시간을 줄이기 위해서)
   - 파일 이름으로 정렬 시, 파일 이름이 **한글**인 파일들(혐의자가 생성한 파일)을 중점적으로 검토
@@ -125,9 +125,6 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 - 파일 검토 시 체크 사항
   - EnCase **DOC 탭에서 내용(문서, 그림) 확인**, 확인되지 않을 경우 안티포렌식 행위로 손상된 증거 파일일 확률이 높음
   - File Signature Analysis 확인 (`Bad Signature` / `Alias` / `Match`)
-    - `Bad Signature` : 파일 시그니처가 손상 되었으므로, 해당 파일을 추출 후 HxD를 통해 파일 시그니처를 복구한다.(Bad Signature의 경우 EnCase Doc 탭에서 내용 확인이 불가능하다.) 해당 확장자에 해당하는 파일 시그니처는 별도로 외우고 있지 않아도, 다른 정상 파일의 파일 시그니처를 참고하여 확인할 수 있다.
-    - `Alias` : 파일 시그니처와 파일 확장자가 다르므로, 확장자를 시그니처에 맞게 변경한 후 내용을 확인한다.(Alias의 경우 EnCase Doc 탭에서 내용 확인이 가능하다.) EnCase의 File Type 컬럼은 File Signature에 따른 파일 형태를 구분하며, Category 컬럼은 파일 확장자에 따라 파일 형태를 구분한다.   
-    - `Match` : OOXML 문서 파일(docx, pptx, xlsx) 내 문서를 은닉할 경우, File Signature Analysis 결과가 Match로 정상으로 분류된다. 이 경우 해당 파일을 추출하여 확장자를 zip 으로 변경하거나, EnCase의 **View File Structure** 기능을 통해 은닉된 파일을 확인할 수 있다.
 - **증거 파일 정보 기록**
   EnCase Report 탭에서 Hash 정보와 파일 경로가 반드시 포함되도록 증거 파일의 메타 정보와 내용을 답안에 기록한다.
 
