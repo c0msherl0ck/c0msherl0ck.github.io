@@ -73,9 +73,10 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 |---|---|
 |USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
 |USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
-[표 1. USB 첫 번째 섹터 비교]
 
+<em>표 1. USB 첫 번째 섹터 비교</em>
 
+<br>
 |운영체제|VBR|Back-up VBR|
 |---|---|
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
@@ -112,10 +113,10 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 
 |안티포렌식 행위|조치 방법|
 |---|---|
-|zip 파일의 확장자를 다른 것으로 변경|File Signature Analysis 결과가 Alias 이다. 해당 파일 추출하여 확장자를 zip 으로 변경 후 내용 확인|
+|zip 파일의 확장자를 변경|File Signature Analysis 결과가 Alias 이다. 해당 파일 추출하여 확장자를 zip 으로 변경 후 내용 확인|
 |docx, jpg 파일의 시그니처 훼손|File Signature Analysis 결과가 Bad Signature 이다. 해당 파일을 추출하여 HxD를 통해 파일 시그니처를 복구 후 내용 확인|
-|OOXML 파일(docx, pptx, xlsx) 내 문서 은닉|OOXML 파일은 압축 파일 형태이기 때문에, 해당 파일을 추출하여 확장자를 zip 으로 변경 후 열람|
-|zip 파일의 확장자를 변경|OOXML 파일은 압축 파일 형태이기 때문에, 해당 파일을 추출하여 확장자를 zip 으로 변경 후 열람|
+|OOXML 파일(docx, pptx, xlsx) 내 문서 은닉|OOXML 파일은 압축 파일 형태이기 때문에, 해당 파일을 추출하여 확장자를 zip 으로 변경 후 내용 확인|
+|압축 파일에 비밀번호가 걸려 있음|비밀번호를 다른 증거 파일에서 찾아 압축 해제 후 내용 확인|
 
 1. 파일 이름 또는 시간 순서로 정렬 후, 파일 순차 검토(시스템 파일을 포함하여 불필요한 파일들을 검토하는 시간을 줄이기 위해서)
    1.1. 파일 이름으로 정렬 시, 파일 이름이 **한글**인 파일들(혐의자가 생성한 파일)을 중점적으로 검토
