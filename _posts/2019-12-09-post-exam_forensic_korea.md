@@ -92,10 +92,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 
 VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 선택한다.
 
-<center><p>
-<img src="/assets/폴더명/파일명.jpg" width="100%"><br>
-<em>프로세싱 옵션</em>
-</p></center>
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/프로세싱 옵션.jpg" width="100%"><br><em>굽기 완료</em></p></center>
 
 증거 파일을 찾는 방법은 실기 책에서 소개한 풀이방법과 다르게 접근하는 것이 좋다. 실기 책과 최신 시험 문제의 유형이 다르기 때문이다. 가장 큰 차이점은 <표 3>과 같다. 
 
@@ -152,6 +149,7 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 2. 답안 및 증거 파일 복사
 3. CD 선택 후, [관리]-[드라이브 도구]-[**굽기 완료**]
 
+<br>
 <center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/디스크 굽기.png" width="60%"><br><em>CD/DVD 플레이어에서 사용</em></p></center>
 <center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="70%"><br><em>굽기 완료</em></p></center>
 
