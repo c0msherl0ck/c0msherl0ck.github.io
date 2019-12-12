@@ -61,28 +61,30 @@ FTK Imager의 경우 이미지가 생성된 폴더에 이미지 정보가 텍스
 FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라이브(볼륨) 하위 폴더가 제대로 보이지 않는 경우 Back-up VBR를 이용하여 VBR 복구를 진행한다.
 
 1. HxD 디스크 이미지 열기 기능을 통해 DD 이미지 열기(디스크 이미지 열기 기능 사용 시, 섹터 단위로 이미지 확인 및 이동이 가능)
-2. MBR(표 1. 참고)에서 확인한 Volume Start Sector 및 Volume Size 정보를 통해 Back-up VBR로 이동
-3. Back-up VBR 복사(Ctrl + C, [표 2.] 참고)
+2. <표 1>를 참고하여 MBR에서 Volume Start Sector 및 Volume Size 정보를 확인
+3. <표 2>를 참고하여 Back-up VBR 위치로 이동 및 복사
 4. Volume Start Sector에 덮어씌우기(**Ctrl + B**)
 <br>만약, 붙여넣기(Ctrl+V)를 하게 되면, 해당 영역이 수정되는 것이 아니라 추가되므로 이미지가 정상적으로 열리지 않는다.
 5. 다른 이름으로 저장
 6. 수정된 이미지 확인
 
-
+<center>
 |실기 책|최신 경향|
 |---|---|
 |USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
 |USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
 
 <em>표 1. USB 첫 번째 섹터 비교</em>
+</center>
 
-
+<center><p>
 |운영체제|VBR|Back-up VBR|
 |---|---|
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
 |NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
-<em>표 2. 운영체제 별 Back-up VBR 위치</em>
 
+<em>표 2. 운영체제 별 Back-up VBR 위치</em>
+</p></center>
 
 # 4. 증거 파일 찾기
 
