@@ -32,11 +32,11 @@ comments: true
 - EnCase 설치 프로그램 x64.exe 실행 및 설치(별도의 설정 변경없이 계속해서 다음을 클릭하여 진행)
 - **EnCase 프로그램 실행 후, 다시 종료**(이 과정을 하지 않을 경우 [내 문서] 폴더 하위에 EnCase 관련 폴더가 생성되지 않는다.)
 - 자격 증명 관련 파일 복사
-  - **2개**의 파일 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
-  <br>Folder Path : ```C:\Users\sungsoo.kim\Documents\EnCase```(시험지에 기재되어 있음)
+  - **2개**의 파일을 `내 문서` 폴더 하위의 EnCase 폴더 내 경로에 복사
+  <br>Folder Path : `C:\Users\sungsoo.kim\Documents\EnCase`(시험지에 기재되어 있음)
   <br><center><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 1</em></center>
-  - **1개**의 파일(Cert)을 Program Files 폴더 하위의 EnCase 폴더 내 경로에 복사
-  <br>Folder Path : ```C:\Program Files\EnCase8.08```(시험지에 기재되어 있음)
+  - **1개**의 파일(Cert)을 `Program Files` 폴더 하위의 EnCase 폴더 내 경로에 복사
+  <br>Folder Path : `C:\Program Files\EnCase8.08`(시험지에 기재되어 있음)
   <br><center><img src="/assets/폴더명/파일명.jpg" width="70%"><br><em>자격 증명 파일 복사 2</em></center>
 - EnCase 프로그램 실행 후, **License Activation** 클릭
 
