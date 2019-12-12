@@ -74,7 +74,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 |USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
 |USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
 
-<em>표 1. USB 첫 번째 섹터 비교</em>
+<center><em>표 1. USB 첫 번째 섹터 비교</em></center>
 
 
 
@@ -83,7 +83,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
 |NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
 
-<em>표 2. 운영체제 별 Back-up VBR 위치</em>
+<center><em>표 2. 운영체제 별 Back-up VBR 위치</em></center>
 
 
 # 4. 증거 파일 찾기
@@ -102,7 +102,7 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 |운영체제가 설치되어 있지 않고, 시스템 파일 존재하지 않음|Windows-To-Go를 통해 USB 내 운영체제가 설치되어 있으며, 다수의 **시스템 파일** 존재|
 |증거 파일의 안티포렌식 행위가 **확장자 변경**에 **한정**|증거 파일의 안티포렌식 행위가 **다양함**|
 
-<em>표 3. 실기 책과 최신 시험 문제 유형 차이점</em>
+<center><em>표 3. 실기 책과 최신 시험 문제 유형 차이점</em></center>
 
 최신 시험 유형은 Windows-To-Go를 통해 USB 내 운영체제를 설치하여 시스템 파일들이 많다. 그러므로, 실기 책에서 소개된 풀이방법과 같이 File Signature Analysis 결과로 필터링하여 Bad Signature, Alias 파일을 검토할 경우, 다수의 불필요한 파일들까지 검토하게 되어 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 증거를 은닉하는 경우, OOXML 문서 파일의 File Signature Analysis 결과가 Match 로 정상 판단되기 때문에 발견하기 어렵다.
 
