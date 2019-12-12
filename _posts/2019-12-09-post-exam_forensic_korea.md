@@ -13,12 +13,12 @@ comments: true
 
 한국포렌식학회 주관의 디지털포렌식전문가 2급 실기 시험과 관련하여, 한국포렌식학회에서 출판한 실기 책에 소개된 문제와 풀이방법은 실제 최신 시험 경향과 다르기 때문에 최신 경향에 맞는 풀이방법에 대해 기술한다. 이 밖에도 시험장에서의 분석 프로그램 설치, CD 굽기 등 평소 많이 접해보지 못한 내용 등 **실기 책에 기술되지 않은 내용**을 위주로 한다.
 
-1. EnCase 설치
-2. 이미징
-3. VBR 복구
-4. 증거물 찾기
-5. 법률 관련 문제
-6. 답안 및 증거물 제출(CD 굽기)
+> 1. EnCase 설치
+> 2. 이미징
+> 3. VBR 복구
+> 4. 증거물 찾기
+> 5. 법률 관련 문제
+> 6. 답안 및 증거물 제출(CD 굽기)
 
 <br>
 # 1. EnCase 설치
@@ -155,13 +155,13 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 <br>
 <center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/디스크 굽기.png" width="60%"><br><em>그림 4. CD/DVD 플레이어에서 사용</em></p></center>
 <center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="100%"><br><em>그림 5. 굽기 완료</em></p></center>
+
 <br>
-
-
-> 참고
+# 참고
 
 [디지털포렌식 자격검정시험](https://exam.forensickorea.org/)
-<br>
+
+
 
 {% if page.comments %}
 
