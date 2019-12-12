@@ -76,7 +76,8 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 
 <em>표 1. USB 첫 번째 섹터 비교</em>
 
-<br>
+
+
 |운영체제|VBR|Back-up VBR|
 |---|---|
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
