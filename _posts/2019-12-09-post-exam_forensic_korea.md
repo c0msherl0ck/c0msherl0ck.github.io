@@ -1,7 +1,7 @@
 ---
 title: "디지털포렌식전문가 2급 실기"
 categories:
-  - Certificate
+  - 자격증
 tags:
   - 디지털포렌식전문가 2급
   - EnCase
