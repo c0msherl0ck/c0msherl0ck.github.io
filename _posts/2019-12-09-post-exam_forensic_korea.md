@@ -68,13 +68,12 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 5. 다른 이름으로 저장
 6. 수정된 이미지 확인
 
-<div>
+
 |실기 책|최신 경향|
 |---|---|
 |USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
 |USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
-
-<em>표 1. USB 첫 번째 섹터 비교</em>
+[표 1. USB 첫 번째 섹터 비교]
 
 
 |운영체제|VBR|Back-up VBR|
@@ -83,7 +82,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 |NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
 
 <em>표 2. 운영체제 별 Back-up VBR 위치</em>
-</div>
+
 
 # 4. 증거 파일 찾기
 
