@@ -152,9 +152,10 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 2. 답안 및 증거 파일 복사
 3. CD 선택 후, [관리]-[드라이브 도구]-[**굽기 완료**]
 
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>CD/DVD 플레이어에서 사용</em></p></center>
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>굽기 완료</em></p></center>
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/디스크 굽기.png" width="100%"><br><em>CD/DVD 플레이어에서 사용</em></p></center>
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="100%"><br><em>굽기 완료</em></p></center>
 
+<br>
 
 > 참고
 
