@@ -90,9 +90,9 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 <br>
 # 4. 증거 파일 찾기
 
-VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 선택한다.
+VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 <그림 3>과 같이 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 선택한다.
 
-<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/프로세싱 옵션.jpg" width="100%"><br><em>프로세싱 옵션</em></p></center>
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/프로세싱 옵션.jpg" width="100%"><br><em>그림 3. 프로세싱 옵션</em></p></center>
 
 증거 파일을 찾는 방법은 실기 책에서 소개한 풀이방법과 다르게 접근하는 것이 좋다. 실기 책과 최신 시험 문제의 유형이 다르기 때문이다. 가장 큰 차이점은 <표 3>과 같다. 
 
@@ -122,7 +122,10 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
   - <표 4> 참고하여 안티포렌식 행위 별 조치 후, 파일 내용 확인
 - **증거 파일 정보 기록**
   - EnCase Report 탭에서 **Hash 정보**와 **파일 경로**가 반드시 포함되도록 증거 파일의 메타 정보와 내용을 답안에 기록
+
+
 <br>
+
 
 |안티포렌식 행위|Fils Signature Analysis 결과|조치 방법|
 |---|---|
@@ -150,12 +153,13 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 3. CD 선택 후, [관리]-[드라이브 도구]-[**굽기 완료**]
 
 <br>
-<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/디스크 굽기.png" width="60%"><br><em>CD/DVD 플레이어에서 사용</em></p></center>
-<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="100%"><br><em>굽기 완료</em></p></center>
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/디스크 굽기.png" width="60%"><br><em>그림 4. CD/DVD 플레이어에서 사용</em></p></center>
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="100%"><br><em>그림 5. 굽기 완료</em></p></center>
 <br>
 
 
 > 참고
+
 [디지털포렌식 자격검정시험](https://exam.forensickorea.org/)
 <br>
 
