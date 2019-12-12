@@ -20,7 +20,7 @@ comments: true
 5. 법률 관련 문제
 6. 답안 및 증거물 제출(CD 굽기)
 
-
+<br>
 # 1. EnCase 설치
 
 시험장 컴퓨터 바탕화면에 분석 프로그램 폴더가 존재한다. 해당 폴더 내에는 EnCase, FTK, Autopsy, KFolt, EnCase Imager, FTK Imager, HxD 프로그램과 EnCase License 활성화를 위한 파일들이 존재한다.(해당 도구 이외의 다른 도구 사용을 원할 시, 사전에 신청한 프로그램에 한해 반입 및 설치가 가능하다.)
