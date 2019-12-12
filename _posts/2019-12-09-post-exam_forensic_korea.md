@@ -73,7 +73,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 |USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
 |USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
 
-<center><em>표 1. USB 첫 번째 섹터 비교</em></center>
+<em>표 1. USB 첫 번째 섹터 비교</em>
 
 <br>
 
@@ -82,7 +82,7 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
 |NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
 
-<center><em>표 2. 운영체제 별 Back-up VBR 위치</em></center>
+<em>표 2. 운영체제 별 Back-up VBR 위치</em>
 
 
 # 4. 증거 파일 찾기
