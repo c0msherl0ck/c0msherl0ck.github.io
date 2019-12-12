@@ -151,14 +151,13 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 
 <br>
 <center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/디스크 굽기.png" width="60%"><br><em>CD/DVD 플레이어에서 사용</em></p></center>
-<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="70%"><br><em>굽기 완료</em></p></center>
-
+<center><p><img src="/assets/2019-12-09-post-exam_forensic_korea/굽기 완료.jpg" width="100%"><br><em>굽기 완료</em></p></center>
 <br>
 
+
 > 참고
-
-[](https://)
-
+[디지털포렌식 자격검정시험](https://exam.forensickorea.org/)
+<br>
 
 {% if page.comments %}
 
