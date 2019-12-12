@@ -178,7 +178,7 @@ VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을
 # 참고
 
 [디지털포렌식 자격검정시험](https://exam.forensickorea.org/)
-<br>국가법령정보센터 형사소송법](http://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%98%95%EC%82%AC%EC%86%8C%EC%86%A1%EB%B2%95)
+<br>[국가법령정보센터 형사소송법](http://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%98%95%EC%82%AC%EC%86%8C%EC%86%A1%EB%B2%95)
 <br>
 <br>
 
