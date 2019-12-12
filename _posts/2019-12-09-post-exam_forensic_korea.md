@@ -68,41 +68,45 @@ FTK Imager를 통해 생성된 이미지 확인 시, VBR 이 훼손되어 드라
 5. 다른 이름으로 저장
 6. 수정된 이미지 확인
 
-<center>
+<p><center>
 |실기 책|최신 경향|
 |---|---|
 |USB 내 단일볼륨|USB 내 다수의 볼륨 존재|
 |USB 첫 번째 섹터가 VBR|USB 첫 번째 섹터가 MBR|
 
 <em>표 1. USB 첫 번째 섹터 비교</em>
-</center>
+</center></p>
 
-<center><p>
+<p><center>
 |운영체제|VBR|Back-up VBR|
 |---|---|
 |FAT32|Volume Start Sector|Volume Start Sector + 6 |
 |NTFS|Volume Start Sector|Volume Start Sector + Volume Size(Volume의 마지막)|
 
 <em>표 2. 운영체제 별 Back-up VBR 위치</em>
-</p></center>
+</center></p>
 
 # 4. 증거 파일 찾기
 
-VBR 복구가 완료된 .dd 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 우선적으로 선택한다.
+VBR 복구가 완료된 DD 이미지를 EnCase에 불러온 후, 프로세싱을 진행한다. 프로세싱 옵션은 프로세싱 시간을 고려하여 Recovered Folders, File Signature Analysis, Hash Analysis(MD5, SHA1) 옵션 3가지를 선택한다.
 
 <center><p>
 <img src="/assets/폴더명/파일명.jpg" width="100%"><br>
 <em>프로세싱 옵션</em>
 </p></center>
 
-증거 파일을 찾는 방법은 한국포렌식학회에서 출판한 실기 책의 풀이방법과 다르게 접근하는 것이 좋다. 실기 책에서 풀이한 문제 유형과 최근 문제 유형이 다르기 때문이다. 가장 큰 차이점은 USB 내 Windows-To-Go를 통해 운영체제가 설치되어 있어, 시스템 파일들이 많다는 점이며 이러한 파일들은 EnCase의 File Signature Analysis 결과 Bad Signature, Alias로 판단되기 때문에 기존 실기 책에 소개된 풀이 방법과 같이 File Signature Analysis 결과로 필터링할 경우 다수의 불필요한 파일들까지 검토해야 하기에 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 문서를 은닉하는 경우, File Signature Analysis 결과 Match 로 정상 판단되기 때문에 발견하기 어렵다.
+증거 파일을 찾는 방법은 한국포렌식학회에서 출판한 실기 책의 풀이방법과 다르게 접근하는 것이 좋다. 실기 책에서 소개된 문제와 최신 시험 문제의 유형이 다르기 때문이다. 가장 큰 차이점은 <표 3>과 같다. 
 
 |실기 책|최신 경향|
 |---|---|
-|운영체제가 설치되어 있지 않고, 시스템 파일 존재하지 않음|운영체제가 설치되어 있으며, 다수의 **시스템 파일** 존재|
+|운영체제가 설치되어 있지 않고, 시스템 파일 존재하지 않음|Windows-To-Go를 통해 USB 내 운영체제가 설치되어 있으며, 다수의 **시스템 파일** 존재|
 |증거 파일의 안티포렌식 행위가 **확장자 변경**에 **한정**|증거 파일의 안티포렌식 행위가 **다양함**|
 
-필자가 제안하는 문제풀이 전략은 다음과 같다.
+<em>표 3. 실기 책과 최신 시험 문제 유형 차이점</em>
+
+최신 시험 문제에서는 USB 내 Windows-To-Go를 통해 운영체제를 설치하여 시스템 파일들이 많기 때문에, 실기 책에서 소개된 풀이방법과 같이 File Signature Analysis 결과로 필터링하여 Bad Signature, Alias 파일을 검토할 경우, 다수의 불필요한 파일들까지 검토하게 되어 시간적 소모가 크다. 또한, OOXML 문서(docx, pptx, xlsx) 내 문서를 은닉하는 경우, File Signature Analysis 결과 Match 로 정상 판단되기 때문에 발견하기 어렵다.
+
+최신 시험 경향에 따라, 필자가 제안하는 문제풀이 전략은 다음과 같다.
 
 <div class="notice">
 파일 생성 시간 순서로 정렬하여, 가장 최근부터 역순으로 검토 중 EnCase Doc 탭에서 내용이 확인이 되지 않는 파일을 중점적으로 안티포렌식 행위에 따라 적절한 조치 이후 파일 내용을 확인한다.
