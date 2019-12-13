@@ -54,11 +54,16 @@ comments: true
 
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>EnCaes User Guide - Recovering Folders</em></p></center>
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>EnCase - Folder Structure</em></p></center>
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>Rstudio - Folder Structure</em></p></center>
 
 `Winhex` 도구의 `File Recovery by Type` 기능을 이용하면 **$MFT 파일을 분석하지 않고도** 파일 복구가 가능하다.(**폴더는 복구 대상이 아님**) 디스크 전체에서 파일 시그니처 기반의 파일 카빙을 통해 특정 파일 유형(Pictures, Documents, E-mail 등)을 선택하여 **다수의 파일들**을 복구하고, 그 중 찾는 파일이 있는지 **일일이 내용을 확인**하는 방식으로 진행한다.(**단,** $MFT를 분석하지 않았기 때문에 파일 이름은 알 수 없음)
 
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>Winhex - File Recovery by Type</em></p></center>
+
+|도구|EnCase|Winhex|R-Studio||
+|---|---|---|---|---|
+|기능|Recovering Folders|File Recovery by Type|Recognized2|Raw Files|
+|복구 방법|$MFT 분석|File Signature 분석|$MFT 분석|File Signature 분석|
+|복구 대상|폴더 및 파일|특정 유형 파일|폴더 및 파일|특정 유형 파일|
 
 
 # 3. Eraser(삭제 도구)
