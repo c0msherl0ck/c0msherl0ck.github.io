@@ -60,7 +60,7 @@ comments: true
 
 <center><p><img src="/assets/2019-12-13-post-deleted_file_recovery/Winhex Recovery.jpg" width="70%"><br><em>Winhex - File Recovery by Type</em></p></center>
 
-`R-studio`는 앞서 말한 EnCase와 Winhex 파일 복구 방법 2가지를 모두 갖추고 있다.
+`R-studio`는 앞서 말한 EnCase와 Winhex 파일 복구 방법 2가지를 모두 지원한다.
 
 [데이터 복구 프로그램 R-STUDIO 사용법](https://uuu8uuu.tistory.com/361)
 
