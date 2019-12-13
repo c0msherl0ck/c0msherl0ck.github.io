@@ -59,32 +59,15 @@ comments: true
 
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>Winhex - File Recovery by Type</em></p></center>
 
-|도구|EnCase|Winhex|R-Studio||
-|---|---|---|:---:|---|
+|도구|EnCase|Winhex|R-Studio|
+|:---:|:---:|:---:|:---:|:---:|
 |기능|Recovering Folders|File Recovery by Type|Recognized2|Raw Files|
 |복구 방법|$MFT 분석|File Signature 분석|$MFT 분석|File Signature 분석|
 |복구 대상|폴더 및 파일|특정 유형 파일|폴더 및 파일|특정 유형 파일|
+|폴더 및 파일명|O|X|O|X|
 
 
-
-
-
-
-
-|             |          Grouping           ||
-First Header  | Second Header | Third Header |
- ------------ | :-----------: | -----------: |
-Content       |          *Long Cell*        ||
-Content       |   **Cell**    |         Cell |
-
-New section   |     More      |         Data |
-And more      | With an escaped '\|'         ||  
-[Prototype table]
-
-
-
-
-
+<br>
 
 # 3. Eraser(삭제 도구)
 
