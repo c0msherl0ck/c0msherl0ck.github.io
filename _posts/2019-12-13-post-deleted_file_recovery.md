@@ -24,16 +24,20 @@ comments: true
 일반적인 파일 삭제는 **단순히 휴지통이라는 폴더에 파일을 이동**하는 것과 동일하며, 휴지통 폴더 경로는 다음과 같다.
 ```C:\$Recycle.Bin\[User SID]```
 
-이 때, 휴지통이라는 폴더 이름은 윈도우가 사용자 편의를 위해 임의로 수정해서 보여주는 것이며, FTK Imager를 통해 확인할 경우, 휴지통 폴더의 원래 이름 `사용자에 부여된 윈도우 SID(Security Identifier)`을 확인할 수 있다.
+윈도우에서 확인 시 User SID 대신 사용자 편의를 위해 휴지통이라는 이름으로 수정해서 보여주는 것이며, FTK Imager를 통해 확인할 경우 원래 폴더명인 `User SID(Security Identifier)`을 확인할 수 있다.
 
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>휴지통 폴더 경로</em></p></center>
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>휴지통 폴더 경로(SID)</em></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>윈도우 탐색기로 확인한 휴지통</em></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>FTK Imager로 확인한 휴지통</em></p></center>
 
 사용자에 부여된 SID는 다음과 같이 확인 가능하다.
 
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>SID 혹인</em></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>SID 확인</em></p></center>
 
-일반적인 업무용 PC의 경우 사용자 계정이 1명이기 때문에, 휴지통 폴더가 1개만 생성되지만, 서버와 같이 여러 사용자가 
+일반적인 업무용 PC의 경우 사용자 계정이 1명이므로 휴지통 폴더가 1개만 생성되지만, 서버와 같이 여러 사용자가 사용할 경우 **사용자별로 휴지통 폴더가 생성**된다.
+
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>서버(다계정) 휴지통</em></p></center>
+
+휴지통으로 파일 이동(파일 삭제) 시, $R~(실제 데이터 / Real), $I~(삭제 전 파일 경로 등 메타 데이터 / Information) 2개의 파일로 구분되어 저장되며, 휴지통에서 파일 복원 시 해당 정보를 이용하여 삭제 전 경로에 파일을 복원한다. EnCase의 경우 $I~ 파일을 이용하여, $R~ 
 
 # 2. Shift + Delete
 
