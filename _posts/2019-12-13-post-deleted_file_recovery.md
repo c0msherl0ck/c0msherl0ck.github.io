@@ -60,7 +60,7 @@ comments: true
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>Winhex - File Recovery by Type</em></p></center>
 
 |도구|EnCase|Winhex|R-Studio||
-|---|---|---|---|---|
+|---|---|---|:---:|---|
 |기능|Recovering Folders|File Recovery by Type|Recognized2|Raw Files|
 |복구 방법|$MFT 분석|File Signature 분석|$MFT 분석|File Signature 분석|
 |복구 대상|폴더 및 파일|특정 유형 파일|폴더 및 파일|특정 유형 파일|
