@@ -51,11 +51,16 @@ comments: true
 
 `Shift + Delete`를 통한 삭제는 앞서 기술한 `휴지통 비우기`와 **같은 방법**으로 $MFT에서 해당 파일과 관련된 Records를 삭제하고, 데이터가 차지하고 있는 영역을 Unallocated로 변경하여, 해당 영역에 다른 데이터가 저장 가능하도록 한다.
 
-**그러나,** $R~, $I~ 파일이 없기 때문에, 삭제된 비할당 영역에 대한 정보(데이터 위치 및 파일 이름)를 알기 힘들다. $MFT 파일 내에서 삭제된 Records를 통해 정보를 얻을 수도 있지만, $MFT 파일은 운영체제의 빈번한 임시파일 생성 및 삭제로 인해 삭제된 Records가 금방 덮어씌워져 복구하기가 사실상 어렵다.
+**그러나,** $R~, $I~ 파일이 없기 때문에, 삭제된 비할당 영역에 대한 정보(데이터 위치 및 파일 이름)를 알기 위해서는 **$MFT 파일 내에서 삭제된 Records를 분석**해야 한다. EnCase 및 R-Studio 에서는 $MFT 분석을 통해 삭제된 **폴더 및 파일** 복구를 지원하며, **Folder Structure** 확인이 가능하다.
 
-```
-그러므로, **디스크 전체**에서 파일 시그니처 기반의 파일 카빙(File Carving)을 통해, 디스크 전체 비할당 영역에서 덮어씌워지지 않은 **다수의 파일들**을 복구하고, 개별 파일의 내용을 **일일이 확인**하는 방식으로 진행한다.
-```
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>EnCaes User Guide - Recovering Folders</em></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>EnCase - Folder Structure</em></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>Rstudio - Folder Structure</em></p></center>
+
+`Winhex` 도구의 `File Recovery by Type` 기능을 이용하면 **$MFT 파일을 분석하지 않고도** 파일 복구가 가능하다.(**폴더는 복구 대상이 아님**) 디스크 전체에서 파일 시그니처 기반의 파일 카빙을 통해 특정 파일 유형(Pictures, Documents, E-mail 등)을 선택하여 **다수의 파일들**을 복구하고, 그 중 찾는 파일이 있는지 **일일이 내용을 확인**하는 방식으로 진행한다.(**단,** $MFT를 분석하지 않았기 때문에 파일 이름은 알 수 없음)
+
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>Winhex - File Recovery by Type</em></p></center>
+
 
 # 3. Eraser(삭제 도구)
 
