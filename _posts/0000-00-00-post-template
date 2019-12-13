@@ -12,7 +12,23 @@ comments: true
 
 3줄 요약
 
+
 # 제목
+
+
+- aa
+  - bb
+    - cc
+- dd
+
+
+```
+aaaaaaaaaaaaaaaaa
+```
+
+
+`bbbbbbbbbbbbbb`
+
 
 |파일명|역할|
 |---|---|
@@ -20,10 +36,7 @@ comments: true
 |||
 |||
 
-<center><p>
-<img src="/assets/폴더명/파일명.jpg" width="100%"><br>
-<em>주석</em>
-</p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
 
 > 참고
 
