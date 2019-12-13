@@ -85,9 +85,10 @@ Eraser 삭제 도구 이용 시, 데이터 영역을 난수로 덮어씌우기 �
 
 # 참고
 
-[데이터 복구 프로그램 R-STUDIO 사용법](https://uuu8uuu.tistory.com/361)
+[데이터 복구 프로그램 R-STUDIO 사용법](https://uuu8uuu.tistory.com/361)<br>
 [blueangel's ForensicNote - NTFS Log Tracker](https://sites.google.com/site/forensicnote/ntfs-log-tracker)
 
+<br>
 
 {% if page.comments %}
 
