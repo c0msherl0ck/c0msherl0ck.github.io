@@ -8,6 +8,9 @@ tags:
   - Shift + Delete
   - Eraser
   - $MFT
+  - EnCase
+  - Winhex
+  - R-Studio
 comments: true
 ---
 
@@ -81,10 +84,11 @@ $MFT에서 파일 시스템 로그(파일 생성, 삭제, 수정 등)를 분석�
 
 # 3. Eraser(삭제 도구)
 
-Eraser 삭제 도구 이용 시, 데이터 영역을 난수로 덮어씌우기 때문에 **데이터 복구는 불가능**하다. 그러나, $MFT 파일 분석을 통해 Eraser를 통해 삭제한 **File Path(파일명, 폴더구조)**는 확인할 수 있다. $MFT 분석에는 `NTFS Log Tracker`를 사용한다.
+Eraser 삭제 도구 이용 시, 데이터 영역을 난수로 덮어씌우기 때문에 **데이터 복구는 불가능**하다. 그러나, $MFT 파일 분석을 통해 Eraser를 통해 삭제한 파일의 **File Path(파일명, 폴더구조)**는 확인할 수 있다. $MFT 분석에는 `NTFS Log Tracker`를 사용한다.
 
 [blueangel's ForensicNote - NTFS Log Tracker](https://sites.google.com/site/forensicnote/ntfs-log-tracker)
 
+<br>
 
 # 참고
 
