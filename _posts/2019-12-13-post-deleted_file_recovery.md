@@ -24,7 +24,7 @@ comments: true
 일반적인 파일 삭제는 **단순히 휴지통이라는 폴더에 파일을 이동**하는 것과 동일하며, 휴지통 폴더 경로는 다음과 같다.
 ```C:\$Recycle.Bin\[User SID]```
 
-윈도우에서 확인 시 User SID 대신 사용자 편의를 위해 휴지통이라는 이름으로 수정해서 보여주는 것이며, FTK Imager를 통해 확인할 경우 원래 폴더명인 `User SID(Security Identifier)`을 확인할 수 있다.
+윈도우 탐색기 창에서 확인 시 사용자 편의를 위해 User SID 대신 휴지통이라는 이름으로 수정해서 보여주는 것이며, FTK Imager를 통해 확인할 경우 원래 폴더명인 `User SID(Security Identifier)`을 확인할 수 있다.
 
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>윈도우 탐색기로 확인한 휴지통</em></p></center>
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>FTK Imager로 확인한 휴지통</em></p></center>
@@ -37,7 +37,7 @@ comments: true
 
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>서버(다계정) 휴지통</em></p></center>
 
-휴지통으로 파일 이동(파일 삭제) 시, $R~(실제 데이터 / Real), $I~(삭제 전 파일 경로 등 메타 데이터 / Information) 2개의 파일로 구분되어 저장되며, 휴지통에서 파일 복원 시 해당 정보를 이용하여 삭제 전 경로에 파일을 복원한다. EnCase의 경우 $I~ 파일을 이용하여, $R~ 
+휴지통으로 파일 이동(파일 삭제) 시, $R~(실제 데이터 / Real), $I~(삭제 전 파일 경로 등 메타 데이터 / Information) 2개의 파일로 구분되어 저장되며, 휴지통에서 파일 복원 시 해당 정보를 이용하여 삭제 전 경로에 파일을 복원한다. EnCase의 경우 $R~ 파일에 대응되는 $I~ 파일의 정보를 이용하여, 삭제 전 이름을 표기해준다.
 
 # 2. Shift + Delete
 
