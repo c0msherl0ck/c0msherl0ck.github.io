@@ -71,7 +71,7 @@ comments: true
 |복구 방법|$MFT 분석|File Signature 분석|$MFT 분석|File Signature 분석|
 |복구 대상|폴더 및 파일|특정 유형 파일|폴더 및 파일|특정 유형 파일|
 |File Path(파일명, 폴더구조)|△|X|△|X|
-|Data|△|△|△|△|
+|Data(파일 내용)|△|△|△|△|
 
 *△ : 해당 영역이 덮어씌워지지 않았을 경우 복구 가능*
 
