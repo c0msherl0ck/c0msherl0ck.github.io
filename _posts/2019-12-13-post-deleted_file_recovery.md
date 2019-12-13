@@ -13,7 +13,7 @@ tags:
 comments: true
 ---
 
-윈도우 환경에서 사용자가 파일을 삭제하는 방법은 크게 3가지(`Delete`/`Shift + Delete`/`삭제 도구 이용`)로 분류할 수 있다. 이번 글에서는 각각의 사용자 삭제 행위 별 복구 방법에 대해 알아본다.
+윈도우 환경에서 사용자가 파일을 삭제하는 방법은 크게 3가지(`Delete`/`Shift + Delete`/`삭제 도구 이용`)로 분류할 수 있다. 이번 글에서는 윈도우 NTFS 파일 시스템에서 사용자 삭제 행위 별 복구 방법에 대해 알아본다.
 
 > 1. Delete & 휴지통 비우기
 > 2. Shift + Delete
@@ -70,9 +70,14 @@ comments: true
 |기능|Recovering Folders|File Recovery by Type|Recognized2|Raw Files|
 |복구 방법|$MFT 분석|File Signature 분석|$MFT 분석|File Signature 분석|
 |복구 대상|폴더 및 파일|특정 유형 파일|폴더 및 파일|특정 유형 파일|
-|File Path(파일명, 폴더구조)|O|X|O|X|
+|File Path(파일명, 폴더구조)|△|X|△|X|
 |Data|△|△|△|△|
-[△ : 데이터 영역이 덮어씌워지지 않았을 경우 복구 가능]
+
+*△ : 해당 영역이 덮어씌워지지 않았을 경우 복구 가능*
+
+<div class="notice">
+$MFT에서 파일 시스템 로그(파일 생성, 삭제, 수정 등)를 분석하여 File Path를 알 수 있지만, 기간이 오래 되면(약 일주일 이상) 복구할 수 없다. 사용자의 PC 사용 습관에 따라 차이가 있지만, PC가 켜져 있을 경우 시스템 파일들이 계속해서 생성 및 삭제되기 때문에 $MFT 내 삭제된 Records 흔적들이 덮어씌워지기 때문이다.
+</div>
 
 <br>
 
