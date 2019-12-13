@@ -38,7 +38,9 @@ comments: true
 
 <center><p><img src="/assets/2019-12-13-post-deleted_file_recovery/SID.jpg" width="80%"><br><em>SID 확인</em></p></center>
 
-휴지통으로 파일 이동(파일 삭제) 시, **$R~**(`실제 데이터 / Real`), **$I~**(`삭제 전 파일 경로 등 메타 데이터 / Information`) 2개의 파일로 구분되어 저장되며, **휴지통에서 파일 복원 시 해당 정보를 이용하여 삭제 전 경로에 파일을 복원한다.** EnCase의 경우 $R~ 파일에 대응되는 $I~ 파일의 정보를 이용하여, 삭제 전 을 표시하는 기능을 제공한다.(FTK Imager는 지원하지 않는 기능)
+휴지통으로 파일 이동(파일 삭제) 시, **$R~**(`실제 데이터 / Real`), **$I~**(`삭제 전 파일 경로 등 메타 데이터 / Information`) 2개의 파일로 구분되어 저장되며, **휴지통에서 파일 복원 시 해당 정보를 이용하여 삭제 전 경로에 파일을 복원한다.**
+
+EnCase의 경우 $R~ 파일에 대응되는 $I~ 파일의 정보를 이용하여, 삭제 전 을 표시하는 기능을 제공한다.(FTK Imager는 지원하지 않는 기능)
 
 <center><p><img src="/assets/2019-12-13-post-deleted_file_recovery/휴지통 파일 비교_EnCase_FTK_imager.jpg" width="100%"><br><em>EnCase vs FTK Imager</em></p></center>
 
