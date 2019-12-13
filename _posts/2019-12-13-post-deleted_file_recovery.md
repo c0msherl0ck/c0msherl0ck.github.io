@@ -66,6 +66,17 @@ comments: true
 |복구 대상|폴더 및 파일|특정 유형 파일|폴더 및 파일|특정 유형 파일|
 
 
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
+
+
 # 3. Eraser(삭제 도구)
 
 
