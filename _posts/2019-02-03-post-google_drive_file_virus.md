@@ -35,7 +35,7 @@ comments: true
 
 > 다운로드 받고자 하는 악성코드 파일(소유자가 '나' 가 아닌 상태일 것이다.)을 우클릭하여 **[사본 만들기]**를 클릭한다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/4.png" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/4.jpg" width="50%"></p></center>
 
 > 소유자가 '나' 인 사본 파일이 생성된 것을 확인할 수 있다.
 
