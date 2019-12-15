@@ -75,7 +75,7 @@ http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 
 > 3.4. 계정 확인 (명령어 : id)
 
-nobody 계정은 가장 권한이 낮은 계정 중 하나로, apache web server process를 구동시키기 위한 계정이다.
+**`nobody` 계정은 가장 권한이 낮은 계정 중 하나로, apache web server process를 구동시키기 위한 계정이다.**
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/3.4.png"></p></center>
 
@@ -101,7 +101,7 @@ nobody 계정은 가장 권한이 낮은 계정 중 하나로, apache web server
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/3.7.3.png"></p></center>
 
-3.7.4. 권한 상승 실패로 여전히 nobody 계정이다.(nobody 는 
+3.7.4. 권한 상승 실패로 여전히 nobody 계정이다.
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/3.7.4.png"></p></center>
 
