@@ -40,6 +40,7 @@ https://www.encryptomatic.com/viewer/
 # 2. Email HEADER 분석
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/2.png"></p></center>
+<center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/2.3.png"></p></center>
 
 > 2.1. Received-SPF : none
 
@@ -51,7 +52,7 @@ SENDER 주소 osman.alshikh@saudianfal.com 가 등록되지 않은 메일서버
 
 > 2.3. X-session-IP : 108.66.43.104 조회
 
-http://ipaddress.is/
+http://ipaddress.is 에서 해당 IP 조회
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/2.3.png"></p></center>
 
