@@ -31,15 +31,9 @@ VMware [Edit]-[Virtual Network Editor]-[VMnet8] 에서 다음과 같이 설정�
 VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 - 공격대상 서버의 IP : 10.10.10.10
 - 공격자 PC 의 IP : 10.10.10.1
-- 공격대상 서버 URL : 10.10.10.10/test/
-- 서비스 계정(id : test, pw : test)
-
-<em>공격대상 서버 URL</em>
+- 공격대상 서버 URL : 10.10.10.10/test/<br>
 <center><p><img src="/assets/2019-01-28-post-web_sql/1.2.png"></p></center>
-
-<br>
-
-<em>서비스 계정</em>
+- 서비스 계정(id : test, pw : test)<br>
 <center><p><img src="/assets/2019-01-28-post-web_sql/1.3.png"></p></center>
 
 <br>
