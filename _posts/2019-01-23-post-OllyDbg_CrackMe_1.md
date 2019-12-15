@@ -4,6 +4,8 @@ categories:
   - Reversing
 tags:
   - OllyDbg
+  - Immunity Dbg
+  - x64 Dbg
   - CrackMe
   - Reversing
 comments: true
@@ -103,13 +105,7 @@ JNZ SHORT CrackMe1.00401172 // Zero flag 가 1이 아닐 경우, 해당 주소�
 <center><p><img src="/assets/2019-01-23-post-OllyDbg_CrackMe_1/3.6.2.jfif"></p></center>
 
 
-# 참고
-
-[](https://)
-
-[인라인 링크](https://)
-
-
+<br>
 
 {% if page.comments %}
 
