@@ -168,17 +168,17 @@ Received: from saudianfal.com ([UNAVAILABLE]. [45.126.211.209])
   - MDA(Mail Delivery Agent) : sendmail 등의 MTA가 서버에서 수신한 메일을 /var/spool/mail/user 등과 같은 사용자의 로컬메일 박스 파일로 옮기는 역할을 한다. 대표적인 예로 procmail 이 있다.
 - 메일 전송과정별 추가되는 헤더
   - 발송자, MUA(①) → ② →  ③ → MTA → ④ → MTA → ⑤ → MDA → ⑥ → MUA, 수신자
-<br>① : 사용자가 MUA를 이용해 메일을 작성하는 과정에서는 다음과 같은 메일 헤더가 사용된다.
+    - ① : 사용자가 MUA를 이용해 메일을 작성하는 과정에서는 다음과 같은 메일 헤더가 사용된다.
 From, To, Cc, Bcc, Subject, Reply-to, Priority, Precedence, Resent-To, Resent-Cc
-<br>② : MUA를 통해 메일을 발송할 때는 다음과 같은 헤더가 자동으로 추가된다.
+    - ② : MUA를 통해 메일을 발송할 때는 다음과 같은 헤더가 자동으로 추가된다.
 Date, From, Sender, X-Mailer, Mime-Version, Content-Type, Content-Transfer-Encoding
-<br>③ : MUA를 통해 발송된 메일을 MTA가 수신할 때는 다음과 같은 추가적인 헤더가 포함된다.
+    - ③ : MUA를 통해 발송된 메일을 MTA가 수신할 때는 다음과 같은 추가적인 헤더가 포함된다.
 From, Date, Message-Id, Received, Return-Path
-<br>④ : MTA에서 다른 MTA로 전송되는 과정에서는 다음과 같은 헤더가 추가된다.
+    - ④ : MTA에서 다른 MTA로 전송되는 과정에서는 다음과 같은 헤더가 추가된다.
 "Received Header"
-<br>⑤ : MTA가 MDA로 전송하는 과정에서 다음과 같은 헤더가 추가된다.
+    - ⑤ : MTA가 MDA로 전송하는 과정에서 다음과 같은 헤더가 추가된다.
 Apparently-To, From
-<br>⑥ : 특별한 헤더가 추가되지 않는다.(???)
+    - ⑥ : 특별한 헤더가 추가되지 않는다.(???)
 
 
 > 6.2. Received Header 
