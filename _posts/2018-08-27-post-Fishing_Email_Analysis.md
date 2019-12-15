@@ -1,12 +1,12 @@
 ---
-title: "제목"
+title: "피싱메일 분석(.eml) SPF(Sender Policy Framework)"
 categories:
-  - 카테고리
+  - E-mail
 tags:
-  - a
-  - c
-  - b
-  - c
+  - SPF
+  - Fishing mail
+  - E-mail header
+  - Recevied header
 comments: true
 ---
 
