@@ -92,7 +92,7 @@ comments: true
 필기 합격률 * 실기 합격률 = 0.27 * 0.22 = 0.06
 ```
 
-<center><p><img src="/assets/2018-12-07-post-Engineer_information_security/3.jfif"></p></center>
+<center><p><img src="/assets/2018-12-07-post-Engineer_information_security/3.png"></p></center>
 
 [출처] http://haker.tistory.com/112
 
