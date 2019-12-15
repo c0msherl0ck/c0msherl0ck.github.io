@@ -119,9 +119,9 @@ http://10.10.10.10/wizboard/table/root/board04/updir/shell.php.kr
 
 cmd 창을 2개 생성 후 다음과 같이 명령어를 입력한다.<br>
 - `cmd_1` : nc -l -p 31337<br>
-31337 포트를 이용한 프로그램 실행 중 상태 (31337 포트는 임의로 선택한 것이다.)<br>
+31337 포트를 이용한 프로그램 실행(31337 포트는 임의로 선택한 것이다.)<br>
 - `cmd_2` : netstat -an<br>
-31337 포트가 리스팅 상태인지(프로그램이 제대로 실행되었는지) 확인
+31337 포트가 리스닝 상태인지 확인
 
 <center><p><img src="/assets/2019-01-28-post-file_upload_attack/4.1.jpg"></p></center>
 
