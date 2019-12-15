@@ -34,9 +34,13 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 - 공격대상 서버 URL : 10.10.10.10/test/
 - 서비스 계정(id : test, pw : test)
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/1.2.png"></p><em>공격대상 서버 URL</em></center>
+<em>공격대상 서버 URL</em>
+<center><p><img src="/assets/2019-01-28-post-web_sql/1.2.png"></p></center>
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/1.3.png"></p><em>서비스 계정</em></center>
+<br>
+
+<em>서비스 계정</em>
+<center><p><img src="/assets/2019-01-28-post-web_sql/1.3.png"></p></center>
 
 <br>
 
