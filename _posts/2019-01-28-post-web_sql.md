@@ -1,5 +1,5 @@
 ---
-title: "SQL 익젝션 공격 실습(SQL Injection Attack)"
+title: "SQL 인젝션 공격 실습(SQL Injection Attack)"
 categories:
   - Web
 tags:
@@ -10,7 +10,7 @@ tags:
 comments: true
 ---
 
-파일 업로드 공격 취약점을 이용하여 서버의 root 권한을 획득하는 방법에 대해 기술한다.
+SQL Injection 공격 취약점을 이용하여 서버의 root 권한을 획득하는 방법에 대해 기술한다.
 
 > 1. 실습 환경설정
 > 2. SQL Injection 취약점 확인 (Blind SQL Injection, Union SQL Injection 이용)
@@ -34,12 +34,15 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 - 공격대상 서버 URL : 10.10.10.10/test/
 - 서비스 계정(id : test, pw : test)
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/1.2.png"></p><br><em>공격대상 서버 URL</em></center>
-<center><p><img src="/assets/2019-01-28-post-web_sql/1.3.png"></p><br><em>서비스 계정</em></center>
+<center><p><img src="/assets/2019-01-28-post-web_sql/1.2.png"></p><em>공격대상 서버 URL</em></center>
+
+<center><p><img src="/assets/2019-01-28-post-web_sql/1.3.png"></p><em>서비스 계정</em></center>
+
+<br>
 
 # 2. SQL Injection 취약점 확인 (Blind SQL Injection, Union SQL Injection 이용)
 
-로그인 이후, FREE BOARD, USER BOARD(취약점 존재), Q&A BOARD, SERVICE BOARD 등 게시판에서 취약점이 있는지 여부를 확인한다.
+로그인 이후, FREE BOARD, **USER BOARD(취약점 존재)**, Q&A BOARD, SERVICE BOARD 등 게시판에서 취약점이 있는지 여부를 확인한다.
 
 <center><p><img src="/assets/2019-01-28-post-web_sql/2.png"></p></center>
 
@@ -48,9 +51,8 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 ```
 10.10.10.10/test/board.php?no=1 and 1=1 (TRUE)
 10.10.10.10/test/board.php?no=1 and 1=0 (FALSE)
-위 둘의 URL 실행결과가 다른 것을 통해 SQL Injection 공격 취약점이 존재하는 것을 파악할 수 있다.
 ```
-
+위 둘의 URL 실행결과가 다른 것을 통해 SQL Injection 공격 취약점이 존재하는 것을 파악할 수 있다.
 ```
 [10.10.10.10/test/board.php?no=1 and 1=1 결과화면]
 ```
@@ -73,8 +75,8 @@ http://10.10.10.10/test/board.php?no=0 order by 2 --
 ~
 http://10.10.10.10/test/board.php?no=0 order by 8 -- 까지는 에러가 발생하지 않는다..
 http://10.10.10.10/test/board.php?no=0 order by 9 -- 부터 에러가 발생한다.
-그러므로, 컬럼은 총 8개이다.
 ```
+**그러므로, 컬럼은 총 8개이다.**
 
 <center><p><img src="/assets/2019-01-28-post-web_sql/2.2.1.png"></p></center>
 
