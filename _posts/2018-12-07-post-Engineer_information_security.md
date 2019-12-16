@@ -1,9 +1,10 @@
 ---
 title: "[자격증] 정보보안기사 12회 합격 후기"
 categories:
-  - 자격증
+  - Certificate
 tags:
   - 정보보안기사
+  - 자격증
   - 독학
 comments: true
 ---
