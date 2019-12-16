@@ -64,7 +64,7 @@ PDF 자료 [MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/mas
   - 윈도우 XP : 63섹터
   - 윈도우 Vista/7/8 : 2048 섹터
 - MBR 부트 코드의 크기와 역할
-  - Master Boot Record(512 byte) = Boot Code(446 byte) + Partition Table Entry(64) + MBR signature(2 byte)
+  - Master Boot Record(512 byte) = Boot Code(446 byte) + Partition Table Entry(64 byte) + MBR signature(2 byte)
 - MBR 파티션 테이블에 저장할 수 있는 주 파티션 개수는?
   - 4개
 - MBR signature?
