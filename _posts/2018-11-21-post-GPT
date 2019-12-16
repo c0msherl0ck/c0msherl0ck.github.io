@@ -1,1 +1,120 @@
+---
+title: "GPT 분석"
+categories:
+  - File System
+tags:
+  - GPT
+  - MBR
+comments: true
+---
+
+GPT 방식은 MBR 방식과 달리 파티션 하나당 2TB 이상의 용량을 사용할 수 있다.
+GPT 파티션 방식은 UEFI 모드, MBR 파티션 방식은 Legacy 모드로 설정 후 부팅한다.
+이번 글에서는 GPT 분석을 통해 파티션의 위치와 개수를 찾는 방법에 대해 기술한다.
+
+> 1. GPT 구조
+> 2. Protected MBR(0번 섹터)
+> 3. GPT Header(1번 섹터)
+> 4. GPT (GUID Partition Table, 2번 섹터)
+> 5. Backup partition table (LBA n-32 = 262111 섹터)
+> 6. Backup GPT header (LBA n = 262143 섹터)
+
+# 1. GPT 구조
+
+<center><p><img src="/assets/2018-11-21-post-GPT/1.png"></p></center>
+
+# 2. Protected MBR(0번 섹터)
+
+<center><p><img src="/assets/2018-11-21-post-GPT/2.png"></p></center>
+
+호환성을 위해 남겨둔 MBR
+
+- partition type : 0xEE (GPT를 의미)
+- LBA starting address : 0x1, 큰 의미 없다.
+- size in sector : 0x FF FF FF FF, 큰 의미 없다.
+
+# 3. GPT Header(1번 섹터)
+
+<center><p><img src="/assets/2018-11-21-post-GPT/3-1.png"></p></center>
+
+<center><p><img src="/assets/2018-11-21-post-GPT/3-2.png"></p></center>
+
+- Header size : 0x5C, 92
+- LBA of GPT header(this sector) : 0x01
+- LBA of backup GPT header(last sector of disk) : 0x3FFFF, 262143 sector
+  - 마지막 섹터에는 Backup GPT header 가 존재한다.
+- Starting LBA for partitions(defined in partition tables) : 0x22, 34 sector, 
+- Ending LBA for paritions(defined in partition tables) : 0x3FFDE, 262110 sector
+  - partition 을 위해 할당된 공간이 34~262110 섹터라는 의미로, 그 다음 262111번 섹터에는 Backup partition table 정보가 있다.
+- Starting LBA of partition entries : 0x2, 2 sector
+- Number of partition entries : 0x80, 128 개
+  - 표현가능한 파티션 개수
+- Size of each entry : 0x80, 128 byte
+
+# 4. GPT (GUID Partition Table, 2번 섹터)
+
+<center><p><img src="/assets/2018-11-21-post-GPT/4-1.png"></p></center>
+
+> 한개의 엔트리당 128 byte 이며, 구조는 다음과 같다.
+
+<center><p><img src="/assets/2018-11-21-post-GPT/4-2.png"></p></center>
+
+<center><p><img src="/assets/2018-11-21-post-GPT/4-3.png"></p></center>
+
+<div class="notice>>
+위의 정보를 통해 해당 디스크의 파티션이 총 6개라는 것과 각각에 할당된 범위를 알 수 있다.
+</div>
+
+|Partition Number|Hex|Decimal|
+|---|---|---|
+|1|0x80 ~ 0xA07F|128 ~ 41087|
+|2|0xA080 ~ 0x1407F|41088 ~ 82047|
+|3|0x14080 ~ 0x1E07F|82048 ~ 123007|
+|4|0x1E080 ~ 0x2807F|123008 ~ 163967|
+|5|0x28080 ~ 0x3207F|163968 ~ 204927|
+|6|0x32080 ~ 0x3F07F|204928 ~ 258175|
+
+<center><p><img src="/assets/2018-11-21-post-GPT/4-4.png"></p></center>
+<center><p><img src="/assets/2018-11-21-post-GPT/4-5.png"></p></center>
+<center><p><img src="/assets/2018-11-21-post-GPT/4-6.png"></p></center>
+<center><p><img src="/assets/2018-11-21-post-GPT/4-7.png"></p></center>
+<center><p><img src="/assets/2018-11-21-post-GPT/4-8.png"></p></center>
+<center><p><img src="/assets/2018-11-21-post-GPT/4-9.png"></p></center>
+
+<br>
+
+# 5. Backup partition table (LBA n-32 = 262111 섹터)
+
+<center><p><img src="/assets/2018-11-21-post-GPT/5.png"></p></center>
+
+# 6. Backup GPT header (LBA n = 262143 섹터)
+
+<center><p><img src="/assets/2018-11-21-post-GPT/6.png"></p></center>
+
+<br>
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+{% endif %}
 
