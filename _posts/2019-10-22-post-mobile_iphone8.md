@@ -13,7 +13,12 @@ comments: true
 
 아이폰의 경우 iTunes 백업을 이용한 **논리적 이미지** 획득 방법과, JailBreak 이후 Cydia의 OpenSSH를 이용한 **물리적 이미지** 획득 방법이 있다. 이번 글에서는 iTunes 백업을 이용한 **논리적 이미지** 획득 방법과 iBackupBot를 이용해 백업된 파일을 분석하는 방안에 대해 서술한다.
 
-> 백업 파일 생성
+> 1. 백업 파일 생성
+> 2. 백업 파일 분석
+> 3. iBackupBot 을 이용한 분석
+> 4. 참고
+
+# 1. 백업 파일 생성
 
 아이폰의 경우 **iTunes**를 이용하여 백업을 수행한다. 단, `로컬 백업 암호화 체크를 해제`하여야 정상적인 분석이 가능하다.
 
@@ -41,7 +46,7 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 
 <br>
 
-> 백업 파일 분석
+# 2. 백업 파일 분석
 
  백업 폴더안에는 다음과 같은 파일과 폴더가 존재한다.
 
@@ -102,7 +107,7 @@ fileID = SHA1 (domain + "-" + relativePath)
 <em>JPG 확장자로 변경 후 파일 확인</em>
 </p></center>
 
-> iBackupBot 을 이용한 분석
+# 3. iBackupBot 을 이용한 분석
 
 앞서 기술한 원리를 통해 백업 파일들을 맵핑해주는 도구가 있다. [iBackupBot](https://www.icopybot.com/itunes-backup-manager.htm) 이라는 도구이며, Freeware 이다. 해당 도구를 통해 분석에 필요한 파일들을 편리하게 추출할 수 있다.
 
@@ -116,7 +121,7 @@ fileID = SHA1 (domain + "-" + relativePath)
 <em>iBackupBot 에서 확인한 백업 파일들</em>
 </p></center>
 
-> 참고
+# 4. 참고
 
 [[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
 <br>
