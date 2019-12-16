@@ -59,7 +59,7 @@ URL의 문자열 인코딩은 Percent Encoding 인데 반해, 메모장의 문�
 <center><p><img src="/assets/2018-08-14-post-character_encoding/ANSI.jpg"></p></center>
 
 # 참고
-- [FREESTROKES' Develog](https://freestrokes.tistory.com/71)
+- [FREESTROKES' Develog - 인코딩과 디코딩 (Encoding & Decoding)](https://freestrokes.tistory.com/71)
 - [ASCII 와 ANSI encoding](https://pragp.tistory.com/entry/ASCII-%EC%99%80-ANSI-encoding)
 - [퍼센트 인코딩](https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9)
 
