@@ -40,7 +40,7 @@ comments: true
 |파티션 라벨|파티션 ID|GUID|
 |파티션 작성 툴|fdisk|parted|
 
-[하드 디스크의 이해](http://webdir.tistory.com/160)
+[출처 : 하드 디스크의 이해](http://webdir.tistory.com/160)
 
 > 파티션 할당 방식 차이
 
