@@ -13,7 +13,14 @@ comments: true
 
 안드로이드 운영체제를 사용하는 핸드폰의 경우, adb(Android Debug Bridge)를 통해 backup 명령어를 통해 **논리적 이미지**를 획득하는 방법과 dd 명령어를 입력함으로써 **물리적 이미지**를 획득하는 방법이 있다. 이번 글에서는 **물리적 이미지** 획득을 위한 Rooting, BusyBox 설치 등 이미징 사전 준비단계부터 이미지 획득까지 전 과정에 대해 서술한다.
 
-> adb(Android Debug Bridge) 설치
+> 1. adb(Android Debug Bridge) 설치
+> 2. 핸드폰 루팅하기
+> 3. 핸드폰에 BusyBox 설치하기(netcat 기능 지원)
+> 4. 컴퓨터에 netcat 설치하기
+> 5. 안드로이드폰 이미지 획득하기
+> 6. 참고
+
+# 1. adb(Android Debug Bridge) 설치
 
 adb란? Android Debug Bridge 의 약자로, PC에서 명령어를 통해 안드로이드 핸드폰을 제어할 수 있도록 하는 개발자 도구이다. 이름에서 알 수 있듯이 adb 명령어를 사용하기 위해서는 핸드폰에서 `USB 디버깅 모드`가 선택되어 있어야 한다.
 
@@ -33,7 +40,7 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 <em>adb devices 결과</em>
 </p></center>
 
-> 핸드폰 루팅하기
+# 2. 핸드폰 루팅하기
 
 이미지 획득에 필요한 dd 명령어와 파일 접근 권한은 root 권한이 필요하다. 기본적으로 안드로이드 핸드폰의 경우 root 권한이 아닌 user 권한을 가지고 있기 때문에 별도의 루팅 과정이 필요하다. 
 
@@ -98,7 +105,7 @@ su
 <em>su 명령어를 통한 root 권한 취득 확인</em>
 </p></center>
 
-> 핸드폰에 BusyBox 설치하기(netcat 기능 지원)
+# 3. 핸드폰에 BusyBox 설치하기(netcat 기능 지원)
 
 BusyBox 란 리눅스 명령어 모음으로, 안드로이드 폰 내에서 리눅스 명령어를 사용할 수 있도록 해준다. 이미지 획득시 **netcat** 명령어(기능)을 사용하기 위해 BusyBox를 설치한다.
 
@@ -124,13 +131,13 @@ adb -d install BusyBox.apk
 <em>BusyBox 설치 확인</em>
 </p></center>
 
-> 컴퓨터에 netcat 설치하기
+# 4. 컴퓨터에 netcat 설치하기
 
 <https://eternallybored.org/misc/netcat/>
 
 상기의 사이트에서 **netcat**을 다운로드 받고, `nc.exe`를 `C:\Windows\System32` 경로에 복사 붙여넣기 한다. 해당 경로는 cmd 창에서 사용할 수 있는 윈도우 기본 명령어들이 존재하는 곳이다.
 
-> 안드로이드폰 이미지 획득하기
+# 5. 안드로이드폰 이미지 획득하기
 
 cmd 창을 2개 띄운다. (CMD_1)하나는 컴퓨터에 명령어를 입력하기 위함이고, (CMD_2)다른 하나는 adb 를 통해 핸드폰에 명령어를 입력하기 위함이다.
 
@@ -179,7 +186,7 @@ CMD_1 터미널 : nc 127.0.0.1 8888 > android_data.dd
 </p></center>
 
 
-> 참고
+# 6. 참고
 
 [Android Forensics: imaging android filesystem using ADB and DD](https://www.andreafortuna.org/2018/12/03/android-forensics-imaging-android-file-system-using-adb-and-dd/)
 <br>
