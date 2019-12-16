@@ -1,9 +1,10 @@
 ---
 title: "[자격증] 디지털포렌식전문가 2급 실기"
 categories:
-  - 자격증
+  - Certificate
 tags:
   - 디지털포렌식전문가 2급
+  - 
   - EnCase
   - FTK Imager
   - HxD
