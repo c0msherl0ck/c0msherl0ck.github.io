@@ -20,9 +20,9 @@ comments: true
 > 1. 문자열 인코딩 디코딩이란?
 > 2. 문자열 인코딩 종류
 > 3. URL을 메모장에 복사할 때 깨지는 이유
+> 4. 참고
 
-
-# 문자열 인코딩 디코딩이란?
+# 1. 문자열 인코딩 디코딩이란?
 
 <div class="notice">
 컴퓨터는 문자를 인식할 수 없기 때문에 숫자로 변환되어 저장됩니다. 변환해주기 위해서는 기준이 있어야하는데 이것을 문자 코드라고 하며 대표적으로 ASCII코드 또는 유니코드가 있습니다.<br>
@@ -34,7 +34,7 @@ comments: true
 출처: [FREESTROKES' Develog](https://freestrokes.tistory.com/71)
 </div>
 
-# 문자열 인코딩 종류
+# 2. 문자열 인코딩 종류
 
 - **ASCII Encoding** (128개의 문자, `영어만` 표현 가능)
 - **ANSI Encoding** (ASCII 확장, Code Page 추가, `다양한 언어` 표현 가능)
@@ -50,7 +50,7 @@ comments: true
 - **Percent(%) Encoding** (`URL`에 문자를 표현)
 
 
-# URL을 메모장에 복사할 때 깨지는 이유
+# 3. URL을 메모장에 복사할 때 깨지는 이유
 
 URL의 문자열 인코딩은 Percent Encoding 인데 반해, 메모장의 문자열 인코딩은 ANSI Encoding(윈도우 처음 설치 시 언어를 한글로 선택하면 기본 인코딩 방식이 CP949로 설정된다.)으로, 문자열 인코딩이 다르기 때문이다.
 
@@ -58,7 +58,7 @@ URL의 문자열 인코딩은 Percent Encoding 인데 반해, 메모장의 문�
 
 <center><p><img src="/assets/2018-08-14-post-character_encoding/ANSI.jpg"></p></center>
 
-# 참고
+# 4. 참고
 - [FREESTROKES' Develog - 인코딩과 디코딩 (Encoding & Decoding)](https://freestrokes.tistory.com/71)
 - [ASCII 와 ANSI encoding](https://pragp.tistory.com/entry/ASCII-%EC%99%80-ANSI-encoding)
 - [퍼센트 인코딩](https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9)
