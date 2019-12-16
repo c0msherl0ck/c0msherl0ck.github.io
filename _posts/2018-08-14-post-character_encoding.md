@@ -1,7 +1,7 @@
 ---
 title: "문자열 인코딩 종류(Character Encoding)"
 categories:
-  - 문자열
+  - Character
 tags:
   - 문자열
   - Encoding
