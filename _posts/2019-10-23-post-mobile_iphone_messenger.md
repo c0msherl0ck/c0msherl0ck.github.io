@@ -16,7 +16,13 @@ comments: true
 
 모바일 포렌식에서 메신저 내 채팅 정보는 중요한 증거로, sqlite db 형태로 저장되어 있는 경우가 많다. 이번 글에서는 메신저 앱(문자, 카카오톡, 페이스북) 별 분석 방법을 소개한다.
 
-> iBackupBot 을 이용한 파일 추출
+> 1. iBackupBot 을 이용한 파일 추출
+> 2. 문자 DB 분석(sms.db)
+> 3. 카카오톡 DB 분석
+> 4. 페이스북 메신저 분석
+> 5. 참고
+
+# 1. iBackupBot 을 이용한 파일 추출
 
 iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를 이용하여 메신저 종류별로 다음의 경로에서 sqlite db 파일을 추출한다. 이전 글 [[모바일 포렌식] 아이폰 이미지 획득 및 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)을 참고
 
@@ -41,7 +47,7 @@ iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를
 <em>페이스북 메신저-확인되지 않음(추가 연구 필요)</em>
 </p></center>
 
-> 문자 DB 분석(sms.db)
+# 2. 문자 DB 분석(sms.db)
 
 `sms.db` 내에는 여러 테이블이 존재하며, 이 중 눈여겨 보아야 하는 테이블은 `chat` 테이블과, `message` 테이블이다. `chat` 테이블에는 문자를 수발신한 전화번호 정보가 저장되며, `message` 테이블에는 실제 문자 내용이 저장된다. 이 두 테이블의 외래키 정보를 이용하여 수발신한 전화번호에 대응되는 문자 메세지 내용을 복구할 수 있다.(iBackupBot 기본 제공 기능)
 
@@ -76,7 +82,7 @@ message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록�
 <em>2001년을 기준으로 하는 timeInterval</em>
 </p></center>
 
-> 카카오톡 DB 분석
+# 3. 카카오톡 DB 분석
 
 카카오톡의 대화내용은 Message 테이블의 message 속성에 저장된다. 대화 내용을 기본적으로 암호화며, 암호화된 내용을 Base64 인코딩하여 저장한다. 대화 내용을 복구하기 위해서는 별도의 복호화 과정이 필요하며 해당 내용은 많은 블로그에서 역공학의 방법을 통해 소개하고 있으므로 생략한다. 
 
@@ -85,11 +91,11 @@ message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록�
 <em>카카오톡 Message 테이블</em>
 </p></center>
 
-> 페이스북 메신저 분석
+# 4. 페이스북 메신저 분석
 
 페이스북 메신저를 비롯하여, 텔레그램 등의 메신저 앱들은 iTunes Backup 시 대화 내용을 백업하지 않도록 설정되어 있다.(*안티포렌식*) 해당 앱들의 대화 내용 데이터를 얻기 위해서는 JailBreak(관리자 권한 획득) 이후, **물리적 이미지**를 획득해야 한다.
 
-> 참고
+# 5. 참고
 
 [[모바일 포렌식] 아이폰 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/)
 <br>
