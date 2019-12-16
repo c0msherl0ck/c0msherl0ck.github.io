@@ -1,10 +1,11 @@
 ---
-title: "SQL 인젝션 공격 실습(SQL Injection Attack)"
+title: "Blind SQL 인젝션 공격 실습(SQL Injection Attack)"
 categories:
   - Web
 tags:
   - Web hacking
   - SQL Injection
+  - Blind SQL Injection
   - netcat
   - webshell
 comments: true
