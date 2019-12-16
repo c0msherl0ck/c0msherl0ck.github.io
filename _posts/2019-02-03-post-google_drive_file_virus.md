@@ -17,11 +17,11 @@ comments: true
 
 > 구글 공유 드라이브에서 악성코드 샘플을 다운로드 받을 때, 다음의 문구가 뜨며 다운로드가 되지 않는다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/1.png" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/1.png"></p></center>
 
 > 더블클릭하여 [미리보기] 상태에서 다운로드를 시도해도 다음과 같은 메세지가 뜬다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/2.png" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/2.png"></p></center>
 
 <br>
 
@@ -31,19 +31,19 @@ comments: true
 
 > 공유 드라이브를 **[내 드라이브에 추가]**한다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/3.png" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/3.png"></p></center>
 
 > 다운로드 받고자 하는 악성코드 파일(소유자가 '나' 가 아닌 상태일 것이다.)을 우클릭하여 **[사본 만들기]**를 클릭한다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/4.jpg" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/4.jpg"></p></center>
 
 > 소유자가 '나' 인 사본 파일이 생성된 것을 확인할 수 있다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/5.png" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/5.png"></p></center>
 
 > 사본 파일 다운로드 클릭 후, 다음과 같은 경고창이 뜨면 **[감염된 파일 다운로드]**를 클릭한다.
 
-<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/6.png" width="50%"></p></center>
+<center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/6.png"></p></center>
 
 <br>
 
