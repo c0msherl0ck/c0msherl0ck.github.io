@@ -44,10 +44,14 @@ comments: true
 
 > 파티션 할당 방식 차이
 
+`MBR 방식
+`
 <center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/MBR.png"></p></center>
 
-<center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/GPT.png"></p></center>
+`GPT 방식`
 
+<center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/GPT.png"></p></center>
+<br>
 상세 내용은 이전 분석 글을 참고한다.<br>
 [MBR과 EBR 분석](https://c0msherl0ck.github.io/file%20system/post-MBR/)<br>
 [GPT 분석](https://c0msherl0ck.github.io/file%20system/post-GPT/)
