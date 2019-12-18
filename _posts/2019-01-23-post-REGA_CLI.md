@@ -13,7 +13,7 @@ REGA 도구를 후킹하여 CLI 명령어를 따서, GUI 기반의 해당 프로
 
 > 1. REGA 실행 후, 기능 살펴보기
 > 2. x64Dbg 를 통한 후킹
-> 3. 명령어 작동 확인
+> 3. 명령어  확인
 
 # 1. REGA 실행 후, 기능 살펴보기
 
@@ -73,7 +73,7 @@ STACK 창에서 보았을때 나타나는 표현을 CMD 창에 그대로 입력�
 Immunity Dbg 와 x64Dbg 두 가지 도구를 통해 코드 analysis 를 진행했을 때 해석되는 정도가 다르다. CreateProcessW, CreateProcessA  를 찾는 것은 x64Dbg 를 통해 보는 것이 편한 반면, 어셈블리 함수 단위 해석은 Immunity Dbg 이 더 낫다. 두 가지 도구 모두 이용해서 분석을 진행해야 한다.
 </div>
 
-# 3. 명령어 작동 확인
+# 3. 명령어 동작 확인
 
 <center><p><img src="/assets/2019-01-23-post-REGA_CLI/3.jpg"></p></center>
 
