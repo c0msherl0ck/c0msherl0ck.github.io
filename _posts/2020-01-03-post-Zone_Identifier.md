@@ -3,16 +3,23 @@ title: "Zone.Identifier"
 categories:
   - File System
 tags:
-  - ADS
+  - Alternative Data Stream
   - Zone.Identifier
 comments: true
 ---
 
-EnCase에서 압축파일을 확인할 경우, Zone.Identifier 
+EnCase에서 파일 목록 확인 시, 파일 이름의 끝에 Zone.Identifier가 붙은 파일들을 확인할 수 있다. 해당 파일들은 사실 파일이 아니며 NTFS 파일 시스템의 Alternative Data Stream에 저장된 데이터를 의미한다. 이번 글에서는 Zone.Identifier가 언제 생성되는지, 어떠한 데이터를 저장하는지 알아본다.
+
+<center><p><img src="/assets/2020-01-03-post-Zone_Identifier/파일명.jpg"><br><em>EnCase - Zone.Identifier 확인</em></p></center>
+
+>
+>
+>
+
+
 
 
 # 제목
-
 
 - aa
   - bb
