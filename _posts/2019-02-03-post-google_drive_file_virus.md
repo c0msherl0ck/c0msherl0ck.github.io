@@ -33,7 +33,7 @@ comments: true
 <div class="notice">
 구글 드라이브 정책 상 바이러스에 감염된 파일은 소유자만 다운로드할 수 있다. 그러므로, 공유된 악성코드 샘플의 소유자를 변경하는 방법을 통해 다운로드한다.
 </div>
-
+<br>
 `2.1.` 공유 드라이브를 **[내 드라이브에 추가]**한다.
 
 <center><p><img src="/assets/2019-02-03-post-google_drive_file_virus/3.png"></p></center>
