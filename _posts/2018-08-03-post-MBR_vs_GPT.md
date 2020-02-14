@@ -29,8 +29,7 @@ comments: true
 </div>
 
 # 2. MBR vs GPT
-
-> 기능상 차이
+## 2.1 기능상 차이
 
 ||MBR|GPT|
 |:---:|:---:|:---:|
@@ -42,7 +41,7 @@ comments: true
 
 [출처 : 하드 디스크의 이해](http://webdir.tistory.com/160)
 
-> 파티션 할당 방식 차이
+## 2.2 파티션 할당 방식 차이
 
 이전 글 [MBR과 EBR 분석](https://c0msherl0ck.github.io/file%20system/post-MBR/)과 [GPT 분석](https://c0msherl0ck.github.io/file%20system/post-GPT/)을 참고한다.
 
@@ -58,7 +57,7 @@ comments: true
 
 PDF 자료 [MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/master/Filesystem) 내 Quiz 에 대한 정답은 아래와 같다.
 
-> MBR 과 GPT
+## 3.1 MBR 과 GPT
 
 - 윈도우 7에서 MBR Slack 의 크기는?
   - 윈도우 XP : 63섹터
@@ -80,7 +79,7 @@ PDF 자료 [MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/mas
 - GPT 에서 생성 가능한 주 파티션 개수는?
   - 128개
 
-> File System
+## 3.2 File System
 
 - 파일 시스템을 메타 영역과 데이터 영역으로 구분하는 이유?
   - 파일에 접근할 때, 메타 정보(메타 영역에 파일에 대한 메타정보들이 있다.)를 기준으로 접근하여 실린더 헤드가 불필요하게 움직이는 거리를 최소화 시키기 위하여.
