@@ -46,9 +46,9 @@ comments: true
 
 이전 글 [MBR과 EBR 분석](https://c0msherl0ck.github.io/file%20system/post-MBR/)과 [GPT 분석](https://c0msherl0ck.github.io/file%20system/post-GPT/)을 참고한다.
 
-<center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/MBR.png"></p>MBR EBR 파티션 할당 방식</center>
+<center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/MBR.png"></p><em>MBR EBR 파티션 할당 방식</em></center>
 
-<center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/GPT.png"></p>GPT 파티션 할당 </center>
+<center><p><img src="/assets/2018-08-03-post-MBR_vs_GPT/GPT.png"></p><em>GPT 파티션 할당</em></center>
 
 <br>
 
