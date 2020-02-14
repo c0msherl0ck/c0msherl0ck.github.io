@@ -26,13 +26,13 @@ comments: true
 분석한 실제 피싱메일 파일은 다음의 경로에서 다운로드 받을 수 있다.
 [피싱메일 실습 다운로드](https://github.com/c0msherl0ck/c0msherl0ck.github.io/tree/master/assets/2018-08-27-post-Fishing_Email_Analysis/spam.eml)
 
-> 1.1. EML Viewer 를 통한 확인
+## 1.1. EML Viewer 를 통한 확인
 
 `https://www.encryptomatic.com/viewer`
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/1.1.png"></p></center>
 
-> 1.2. MS OUTLOOK 을 통한 확인
+## 1.2. MS OUTLOOK 을 통한 확인
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/1.2.png"></p></center>
 
@@ -41,21 +41,21 @@ comments: true
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/2.png"></p></center>
 
-> 2.1. Received-SPF : none
+## 2.1. Received-SPF : none
 
 SENDER 주소 osman.alshikh@saudianfal.com 가 등록되지 않은 메일서버
 
-> 2.2. Authentication-Results : spf=none
+## 2.2. Authentication-Results : spf=none
 
 SENDER 주소 osman.alshikh@saudianfal.com 가 등록되지 않은 메일서버
 
-> 2.3. X-session-IP : 108.66.43.104 조회
+## 2.3. X-session-IP : 108.66.43.104 조회
 
 `http://ipaddress.is`
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/2.3.png"></p></center>
 
-> 2.4. Received Part
+## 2.4. Received Part
 
 ```
 Received:
@@ -116,20 +116,20 @@ Received: from saudianfal.com ([UNAVAILABLE]. [45.126.211.209])
 
 # 3. Email CONTENT 분석
 
-> 3.1. 메일 내용 중 "3316", "88" 이라는 숫자 의심
+## 3.1. 메일 내용 중 "3316", "88" 이라는 숫자 의심
 
 - 88 번 port 는 커베로스 - 인증 에이전트에 사용되는 Well Known Port 이다.
 - 3316 port 를 통해 어떠한 행위를 할 수 있는지 검색 결과, Trojan 이나 Virus 가 사용할 수도 있다는 내용이 있다.
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/3.1.png"></p></center>
 
-> 3.2. content 내 의심되는 URL 찾기
+## 3.2. content 내 의심되는 URL 찾기
 
 `http://ygeucpu.cf/(.)/nav.php?email=charsyam@naver.com`
 
 <center><p><img src="/assets/2018-08-27-post-Fishing_Email_Analysis/3.2.png"></p></center>
 
-> 3.3. 해당 URL 접속
+## 3.3. 해당 URL 접속
 
 다음과 같이 사기성(Phishing) 사이트인 것을 알 수 있다.
 
@@ -147,19 +147,19 @@ Received: from saudianfal.com ([UNAVAILABLE]. [45.126.211.209])
 
 # 5. Additional info about SPF
 
-> 5.1. SPF(Sender Policy Framework) 란?
+## 5.1. SPF(Sender Policy Framework) 란?
 
 - 메일서버 정보를 사전에 DNS에 공개 등록함으로써 수신자로 하여금 이메일에 표시된 발송자 정보가 실제 메일서버의 정보와 일치하는지를 확인할 수 있도록 하는 인증기술
 - 대다수 스팸발송자가 자신의 신원을 감추기 위하여 발송자 주소나 전송경로를 허위로 표기하거나 변경하는 경우가 많다는데 착안
 
-> 5.2. SPF를 이용한 이메일 인증절차
+## 5.2. SPF를 이용한 이메일 인증절차
 
 - `발신자` : 자신의 메일서버 정보와 정책을 나타내는 SPF 레코드를 해당 DNS에 등록
 - `수신자` : 이메일 수신시 발송자의 DNS에 등록된 SPF 레코드를 확인하여 해당 이메일에 표시된 발송IP와 대조하고 그 결과값에 따라 수신여부를 결정<br>(메일서버나 스팸차단솔루션에 SPF 확인기능이 설치되어 있어야 함)
 
 # 6. Additional info about Email Header
 
-> 6.1. 메일전송 과정
+## 6.1. 메일전송 과정
 
 - User Agent
   - MUA(Mail User Agent) :  MTA와 사용자 간의 인터페이스를 제공하는데, 쉽게 이야기하면 PC에서 사용하는 "메일 프로그램"이라고 생각하면 된다. 대표적인 예로 유닉스의 메일프로그램인 /bin/mail, elm, pine 이나 유도라, 마이크로소프트 아웃룩 익스프레스 등이 있다.
@@ -181,7 +181,7 @@ Apparently-To, From
     - ⑥ : 특별한 헤더가 추가되지 않는다.(???)
 
 
-> 6.2. Received Header 
+## 6.2. Received Header 
 
 - 구조(2가지)
   - Received: ["from" 발송 호스트] "by" 수신 호스트 ["with" 메일 프로토콜] "id" 문자열 ["for 수신자메일주소" ] ";" 날짜 및 시각
