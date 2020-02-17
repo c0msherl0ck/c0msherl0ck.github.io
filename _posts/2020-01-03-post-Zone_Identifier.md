@@ -1,10 +1,10 @@
 ---
-title: "Zone.Identifier"
+title: "Zone Identifier"
 categories:
   - File System
 tags:
-  - Alternative Data Stream
-  - Zone.Identifier
+  - Zone Identifier
+  - ADS
 comments: true
 ---
 
@@ -21,28 +21,28 @@ EnCase에서는 다음과 같이 Zone.Identifier 파일들을 확인할 수 있�
 
 <center><img src="/assets/2020-01-03-post-Zone_Identifier/encase.jpg"></center>
 
-
+<br>
 # 2. Zone Identifier
 
 인터넷에서 파일을 다운로드 받을 때 다음과 같은 경고창이 뜬다. 이 때 `이런 형식의 파일을 열기 전 항상 확인` 체크를 한 상태로 다운로드 할 경 Windows의 NTFS 파일 시스템은 다운로드 파일의 출처(URL)를 기록한다.
 
 <center><img src="/assets/2020-01-03-post-Zone_Identifier/warning.jpg"></center>
 
-
+<br>
 Zone Identifer가 기록된 파일들의 속성을 확인해보면 `보안 : 이 파일은 다른 컴퓨터로부터 왔으며 사용자의 컴퓨터를 보호하기 위해 차단 되었을 수도 있습니다.` 문구가 추가되어 있는 것을 확인할 수 있다.
 
 <center><img src="/assets/2020-01-03-post-Zone_Identifier/security.jpg"></center>
 
-
+<br>
 다운로드 파일의 출처(URL)은 `DOS` 창에서도 다음과 같이 확인이 가능하다. (침해사고 분석 시 악성코드 출처를 밝히는데 용이)
 
 ```
 dir /r
 ```
-
+<br>
 <center><img src="/assets/2020-01-03-post-Zone_Identifier/cmd.jpg"></center>
 
-
+<br>
 # 3. Zone Id
 
 Zone Identifer는 인터넷 뿐만이 아닌, 다양한 네트워크 환경에서 다운로드 받은 파일에도 기록된다. Zone ID 값을 통해 내부망/외부망 중 어떤 네트워크에서 다운로드 받았는지 유추할 수 있다.
@@ -52,13 +52,13 @@ Zone Identifer는 인터넷 뿐만이 아닌, 다양한 네트워크 환경에�
 - URLZONE_INTERNET = 3
 - URLZONE_UNTRUSTED = 4 
 
-
+<br>
 # 4. 참고
 
 http://www.sandersonforensics.com/Files/ZoneIdentifier.pdf
 
-
-
+<br>
+<br>
 
 {% if page.comments %}
 
