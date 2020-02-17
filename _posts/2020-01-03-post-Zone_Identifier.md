@@ -8,18 +8,23 @@ tags:
 comments: true
 ---
 
-EnCase에서 파일 목록 확인 시, 파일 이름의 끝에 Zone.Identifier가 붙은 파일들을 확인할 수 있다. 해당 파일들은 사실 파일이 아니며 NTFS 파일 시스템의 Alternative Data Stream에 저장된 데이터를 의미한다. 이번 글에서는 Zone.Identifier가 언제 생성되는지, 어떠한 데이터를 저장하는지 알아본다.
+포렌식 도구에서 확인 가능한 파일명의 끝에 Zone.Identifier가 붙는 파일들은 무엇인가? Windows 탐색기에서는 확인이 되지 않는데, 해당 파일들은 언제 생성되었고, 어떠한 데이터를 저장하는 것일까?
 
-<center><p><img src="/assets/2020-01-03-post-Zone_Identifier/파일명.jpg"><br><em>EnCase - Zone.Identifier 확인</em></p></center>
-
->
->
->
+> 1. 파일 확인(EnCase)
+> 2. 
+> 3. 
 
 
+# 1. 파일 확인(EnCase)
 
+EnCase에서는 다음과 같이 Zone.Identifier 파일들을 확인할 수 있다. 해당 파일들은 **사실 파일이 아니며** NTFS 파일 시스템의 `ADS`(Alternative Data Stream)에 저장된 데이터를 EnCase가 불러와 파일 형태로 보여주는 것이다.
 
-# 제목
+<center><img src="/assets/2020-01-03-post-Zone_Identifier/encase.jpg"><em></em></center>
+
+# 2. Zone Identifier 기능
+
+인터넷에서 파일을 다운로드 받을 때, Windows의 NTFS 파일 시스템은 그 출처(URL)를 기록한다. 
+
 
 - aa
   - bb
