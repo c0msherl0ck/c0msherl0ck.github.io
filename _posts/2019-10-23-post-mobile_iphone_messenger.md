@@ -30,7 +30,7 @@ iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를
 |---|---|
 |문자|System Files/HomeDomain/SMS/sms.db|
 |카카오톡|User App Files/com.iwilab.KakaoTalk/Libray/PrivateDocuments/Message.sqlite|
-|페이스북 메신저|확인되지 않음(추가 연구 필요)|
+|페이스북 메신저|iTunes을 통해 백업을 획득하였을 경우 확인 불가(JailBreaking 이후 물리적 이미지 획득하여야함)|
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone_messenger/SMS.jpg" width="100%">
