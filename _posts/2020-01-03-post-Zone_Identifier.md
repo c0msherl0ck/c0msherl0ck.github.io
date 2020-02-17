@@ -40,7 +40,7 @@ Zone Identifer가 기록된 파일들의 속성을 확인해보면 `보안 : 이
 
 # 3. Zone Id
 
-Zone Identifer는 인터넷 뿐만이 아닌, 다양한 네트워크 환경에서 다운로드 받은 파일에도 기록된다. Zone ID 값을 통해 내부망/외부망 중 어떠한 네트워크에서 다운로드 받았는지 유추할 수 있다.
+Zone Identifer는 인터넷 뿐만이 아닌, 다양한 네트워크 환경에서 다운로드 받은 파일에도 기록된다. Zone ID 값을 통해 내부망/외부망 중 어떤 네트워크에서 다운로드 받았는지 유추할 수 있다.
 
 - URLZONE_INTRANET = 1
 - URLZONE_TRUSTED = 2
