@@ -1,5 +1,5 @@
 ---
-title: "운영체제 OS 정보"
+title: "[레지스트리] 운영체제 OS 정보"
 categories:
   - Data Leakage Case
 tags:
@@ -9,7 +9,7 @@ tags:
 comments: true
 ---
 
-#3. Explain installed OS information in detail. (OS name, install date, registered owner…)
+CFReDS-Data Leakage Case #3. Explain installed OS information in detail. (OS name, install date, registered owner…)
 
 윈도우 OS 정보는 다음 레지스트리 경로에 있다.
 ```
