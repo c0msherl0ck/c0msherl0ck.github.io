@@ -13,15 +13,15 @@ comments: true
 
 Autopsy는 EnCase와 같은 통합 포렌식 분석 도구이며 무료이다. 흔히 무료라고 하면 기능상의 제약이 있을 것 같지만, 안드로이드 이미지 프로세싱에 적합한 android analyzer 등 강력한 기능을 제공한다.
 
-> 1. Autopsy 를 이용한 안드로이드 이미지 분석
+> 1. Autopsy 를 이용한 안드로이드 증거 분석
 > 2. 결과 분석
 > 3. 비할당 영역
 > 4. Timeline 분석
 > 5. 참고
 
-# 1. Autopsy 를 이용한 안드로이드 이미지 분석
+# 1. Autopsy 를 이용한 안드로이드 증거 분석
 
-이전글 [안드로이드 핸드폰 이미지 획득](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile-android/)에서 획득한 이미지를 분석한다.
+이전글 [안드로이드 핸드폰 증거 획득](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile-android/)에서 획득한 이미지를 분석한다.
 
 Autopsy 도구는 매우 직관적이고 간편하므로 별도의 설명없이 다음의 그림 순서에 따라 분석을 진행한다.
 
