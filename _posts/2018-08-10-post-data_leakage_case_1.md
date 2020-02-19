@@ -9,12 +9,12 @@ tags:
 comments: true
 ---
 
-What are the hash values (MD5 & SHA-1) of all images? Does the acquisition and verification hash value match?
+#1. What are the hash values (MD5 & SHA-1) of all images? Does the acquisition and verification hash value match?
 
 > 1. 이미지 및 해시 종류
 > 2. 확인방법
 
-#1. 이미지 및 해시 종류
+# 1. 이미지 및 해시 종류
 
 |Image Type|특징|
 |---|---|
@@ -26,7 +26,7 @@ What are the hash values (MD5 & SHA-1) of all images? Does the acquisition and v
 |Acquisition Hash|Computed Hash|분석도구에 추가한 증거물에 대해 해시를 계산한 것|
 |Verification Hash|Stored Verification hash|증거물 내에 저장되어 있던 해시값|
 
-#2. 확인방법
+# 2. 확인방법
 
 FTK Imager를 통해 증거물의 정보를 확인한다.
 
