@@ -18,8 +18,10 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 
 > Tools
 
-- 이미지 내 레지스트리 획득 : Arsenal Image mounter, WinHex 
-- 레지스트리 분석 : Registry explorer
+이미지 내 레지스트리 획득 : Arsenal Image mounter, WinHex 
+레지스트리 분석 : Registry explorer
+
+<br>
 
 # 1. Arsenal Image Mounter 로 이미지 파일 마운팅하기
 `1.1.` 왼쪽 하단의 mount image 를 클릭하고, 이미지 파일을 선택한다.
