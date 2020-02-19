@@ -15,7 +15,7 @@ CFReDS-Data Leakage Case #8. When was the last recorded shutdown date/time?
 HKLM\System\ControlSet\Control\Windows
 ```
 
-Shutdown time : 57-A9-48-B5-10-67-D0-01 (2015-03-25 15:31:05)
+`Shutdown time` : 57-A9-48-B5-10-67-D0-01 (2015-03-25 15:31:05)
 
 <center><img src="/assets/2018-08-10-post-data_leakage_case_8/1.jpg"></center>
 <center><img src="/assets/2018-08-10-post-data_leakage_case_8/2.jpg"></center>
