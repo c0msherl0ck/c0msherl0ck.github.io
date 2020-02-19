@@ -50,7 +50,7 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 WinHex에서 partition#2의 `\Windows\System32\config` 에서 components, system, sam, security, software 5개의 파일을 추출한다.
 [우클릭] - [Recover/Copy]
 
-3. Registry Explorer 를 통한 분석
+# 3. Registry Explorer 를 통한 분석
 3.1. [File]-[Load offline hive]
 3.2. Winhex 에서 추출한 5개의 파일을 로드한다.
 3.3. 5개의 파일이 다 로드되면 다음과 같다.
