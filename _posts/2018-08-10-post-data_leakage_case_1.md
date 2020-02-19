@@ -1,5 +1,5 @@
 ---
-title: "이미징 해시값"
+title: "이미징 해시값 검증"
 categories:
   - Data Leakage Case
 tags:
