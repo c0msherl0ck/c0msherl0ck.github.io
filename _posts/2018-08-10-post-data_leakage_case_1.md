@@ -1,5 +1,5 @@
 ---
-title: "이미징 해시값 검증"
+title: "[E01] 이미징 해시값 검증"
 categories:
   - Data Leakage Case
 tags:
@@ -9,7 +9,7 @@ tags:
 comments: true
 ---
 
-#1. What are the hash values (MD5 & SHA-1) of all images? Does the acquisition and verification hash value match?
+CFReDS-Data Leakage Case #1. What are the hash values (MD5 & SHA-1) of all images? Does the acquisition and verification hash value match?
 
 > 1. 이미지 및 해시 종류
 > 2. 확인방법
