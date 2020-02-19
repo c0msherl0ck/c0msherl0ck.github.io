@@ -52,15 +52,15 @@ SID(Security Identifier)란 윈도우에서 계정을 하나의 코드 값으로
 
 S-1-5-{Sub-authority value}-{relative ID(RID)}
 
-1) S : SID 를 의미한다.
-2) 1 : revision number(SID 명세버전)
-3) 5 : Identifier authority value(48bit, 윈도우 보안 권한)
-4) Sub-authority value
-- 도메인 또는 로컬 컴퓨터 구분자이다.
-- 시스템의 고유한 숫자로, 시스템을 설치할 때 시스템의 특성을 수집하여 생성된다.
-5) relative ID(RID)
-- 기본적으로 생성되는 builtin 계정이 아니라면, 1000보다 큰 숫자의 RID 가 생성된다.
-- 관리자(Administrator)는 500번, Guest 계정은 501번, 일반 사용자는 1000번 이상의 숫자를 갖는다.
+- S : SID 를 의미한다.
+- 1 : revision number(SID 명세버전)
+- 5 : Identifier authority value(48bit, 윈도우 보안 권한)
+- Sub-authority value
+  - 도메인 또는 로컬 컴퓨터 구분자이다.
+  - 시스템의 고유한 숫자로, 시스템을 설치할 때 시스템의 특성을 수집하여 생성된다.
+- relative ID(RID)
+  - 기본적으로 생성되는 builtin 계정이 아니라면, 1000보다 큰 숫자의 RID 가 생성된다.
+  - 관리자(Administrator)는 500번, Guest 계정은 501번, 일반 사용자는 1000번 이상의 숫자를 갖는다.
 
 |SID|Description|
 |---|---|
