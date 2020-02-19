@@ -1,5 +1,5 @@
 ---
-title: "[모바일 포렌식] 아이폰 이미지 획득 및 분석"
+title: "[모바일 포렌식] 아이폰 증거 획득(이미징) 및 분석"
 categories:
   - Mobile Forensic
 tags:
