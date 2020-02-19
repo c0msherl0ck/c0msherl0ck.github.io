@@ -28,7 +28,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
 - `부가적인 정보` : login count, last logon date, created on time, total login count, invalid login count 등
 
 <center><img src="/assets/2018-08-10-post-data_leakage_case_6/1.jpg"></center>
-
+<br>
 
 # 2. ProfileList
 
@@ -44,7 +44,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList
 |S-1-5-{21-xxx}-1003|C:\Users\temporary|
 
 <center><img src="/assets/2018-08-10-post-data_leakage_case_6/2.jpg"></center>
-
+<br>
 
 # 3. SID
 
