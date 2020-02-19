@@ -1,5 +1,5 @@
 ---
-title: "파티션 정보"
+title: "[MBR] 파티션 정보"
 categories:
   - Data Leakage Case
 tags:
