@@ -1,5 +1,5 @@
 ---
-title: "[모바일 포렌식] 안드로이드 핸드폰 이미지 획득"
+title: "[모바일 포렌식] 안드로이드 핸드폰 증거 획득(이미징)"
 categories:
   - Mobile Forensic
 tags:
