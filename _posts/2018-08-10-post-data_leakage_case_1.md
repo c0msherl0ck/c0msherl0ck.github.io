@@ -30,23 +30,23 @@ What are the hash values (MD5 & SHA-1) of all images? Does the acquisition and v
 
 FTK Imager를 통해 증거물의 정보를 확인한다.
 
-2.1. [File]-[Add Evidence Item]
+`2.1.` [File]-[Add Evidence Item]
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_1/1.jpg"></p></center>
 
-2.2. Image file 선택
+`2.2.` Image file 선택
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_1/2.jpg"></p></center>
 
-2.3. E01 만 로드하면 된다.(E01, E02, E03, E04 는 분할 압축 파일 개념과 유사하다.)
+`2.3.` E01 만 로드하면 된다.(E01, E02, E03, E04 는 분할 압축 파일 개념과 유사하다.)
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_1/3.jpg"></p></center>
 
-2.4. [File]-[Verify drive/image] 를 통해 이미지 해시를 검증한다. (Computed Hash 계산)
+`2.4.` [File]-[Verify drive/image] 를 통해 이미지 해시를 검증한다. (Computed Hash 계산)
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_1/4.jpg"></p></center>
 
-2.5. [View]-[Properties] 를 통해, 이미지의 해시값을 비롯한 여러 정보를 확인할 수 있다.
+`2.5.` [View]-[Properties] 를 통해, 이미지의 해시값을 비롯한 여러 정보를 확인할 수 있다.
 
 - Acquire date : 2015-04-23
 - Acquired on OS : Windows 7
