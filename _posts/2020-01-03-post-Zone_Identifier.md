@@ -60,10 +60,9 @@ Zone Identifer는 인터넷 뿐만이 아닌, 다양한 네트워크 환경에�
 
 # 4. 참고
 
-http://www.sandersonforensics.com/Files/ZoneIdentifier.pdf
-https://kr.bandisoft.com/bandizip/help/zone-identifier/
+http://www.sandersonforensics.com/Files/ZoneIdentifier.pdf<br>
+https://kr.bandisoft.com/bandizip/help/zone-identifier/<br>
 
-<br>
 
 {% if page.comments %}
 
