@@ -15,20 +15,14 @@ MBR에서 파티션 정보를 확인하는 방법은 (MBR과 EBR 분석)[https:/
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_2/1.jpg"></p></center>
 
-|partition Number|partition info|
+|partition#1|
 |---|
-|1|Boot flag : 80 / File system type : 07 / LBA : 00 00 08 00 / SIZE : 00 03 20 00
-부트 파티션 / NTFS / 시작위치 : 0x8000 sector(=0x1000000 bytes) / 크기 : 0x32000 sector(=0x6400000 bytes = 104857600 bytes = 100MB)|
-|2|Boot flag : 00 / File system type : 07 / LBA : 00 03 28 00 / SIZE : 02 7C D0 00
-부트 파티션 아님 / NTFS / 시작위치 : 0x32800 sector(=0x6500000 bytes) / 크기 : 0x27CD000 sector (=0x4F9A00000 bytes = 21367881728 bytes = 20378MB)|
+|Boot flag : 80 / File system type : 07 / LBA : 00 00 08 00 / SIZE : 00 03 20 00|
+|부트 파티션 / NTFS / 시작위치 : 0x8000 sector(=0x1000000 bytes) / 크기 : 0x32000 sector(=0x6400000 bytes = 104857600 bytes = 100MB)|
 
-partition#1
-Boot flag : 80 / File system type : 07 / LBA : 00 00 08 00 / SIZE : 00 03 20 00
-부트 파티션 / NTFS / 시작위치 : 0x8000 sector(=0x1000000 bytes) / 크기 : 0x32000 sector(=0x6400000 bytes = 104857600 bytes = 100MB)
-
-partition#2
-Boot flag : 00 / File system type : 07 / LBA : 00 03 28 00 / SIZE : 02 7C D0 00
-부트 파티션 아님 / NTFS / 시작위치 : 0x32800 sector(=0x6500000 bytes) / 크기 : 0x27CD000 sector (=0x4F9A00000 bytes = 21367881728 bytes = 20378MB)
+|partition#2|
+|Boot flag : 00 / File system type : 07 / LBA : 00 03 28 00 / SIZE : 02 7C D0 00|
+|부트 파티션 아님 / NTFS / 시작위치 : 0x32800 sector(=0x6500000 bytes) / 크기 : 0x27CD000 sector (=0x4F9A00000 bytes = 21367881728 bytes = 20378MB)|
 
 <br>
 
