@@ -11,7 +11,7 @@ comments: true
 #2. Identify the partition information of PC image.
 
 파티션 정보는 MBR에 저장되어 있다. 만약, MBR에 저장이 안되어있다면, 이것은 GPT 방식으로 GUID Partition Tables를 확인해야 한다.
-MBR에서 파티션 정보를 확인하는 방법은 (MBR과 EBR 분석)[https://c0msherl0ck.github.io/file%20system/post-MBR/]를 참고한다.
+MBR에서 파티션 정보를 확인하는 방법은 [MBR과 EBR 분석](https://c0msherl0ck.github.io/file%20system/post-MBR/)를 참고한다.
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_2/1.jpg"></p></center>
 
