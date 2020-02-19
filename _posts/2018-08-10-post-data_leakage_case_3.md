@@ -22,13 +22,28 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 
 # 1. Arsenal Image Mounter 로 이미지 파일 마운팅하기
 `1.1.` 왼쪽 하단의 mount image 를 클릭하고, 이미지 파일을 선택한다.
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/1.1.jpg"></p></center>
+
 `1.2.` 다음과 같이 이미지 파일이 마운트 되어 있는 것을 확인할 수 있다.
 이미지 마운팅을 하지 않고, Winhex 에서 이미지를 바로 연후, [Specialist]-[Interpret Image File As Disk]를 하여도 된다.
 
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/1.2.jpg"></p></center>
+
 # 2. Winhex 에서 레지스트리 파일 추출하기
-2.1. [Tools]-[Open disk]
-2.2. Arsenal Virtual 클릭
-2.3. 레지스트리 파일 추출
+`2.1.` [Tools]-[Open disk]
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/2.1.jpg"></p></center>
+
+`2.2.` Arsenal Virtual 클릭
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/2.2.jpg"></p></center>
+
+`2.3.` 레지스트리 파일 추출
+
+WinHex에서 partition#2의 `\Windows\System32\config` 에서 components, system, sam, security, software 5개의 파일을 추출한다. [우클릭] - [Recover/Copy]
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/2.3.jpg"></p></center>
 
 [(FP) 레지스트리 포렌식과 보안 (Registry Forensics)](https://github.com/proneer/Slides/tree/master/Windows)를 참고하면, 레지스트리 파일은 hive 파일 형태로 저장되어 있으며, 윈도우 7의 레지스트리 파일 경로는 다음과 같다.
 
@@ -47,19 +62,26 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
   - HKEY_USERS\<SID of username>_Classes `UserProfile%\AppData\Local\Microsoft\Windows\Usrclass.dat`
   - HKEY_USERS\.DEFAULT `%SystemRoot%\System32\Config\DEFAULT`
 
-WinHex에서 partition#2의 `\Windows\System32\config` 에서 components, system, sam, security, software 5개의 파일을 추출한다.
-[우클릭] - [Recover/Copy]
-
 # 3. Registry Explorer 를 통한 분석
-3.1. [File]-[Load offline hive]
-3.2. Winhex 에서 추출한 5개의 파일을 로드한다.
-3.3. 5개의 파일이 다 로드되면 다음과 같다.
-3.4. HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion 경로의 registry 를 보면 다음과 같다.
+`3.1.` [File]-[Load offline hive]
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/3.1.jpg"></p></center>
+
+`3.2.` Winhex 에서 추출한 5개의 파일을 로드한다.
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/3.2.jpg"></p></center>
+
+`3.3.` 5개의 파일이 다 로드되면 다음과 같다.
+
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/3.3.jpg"></p></center>
+
+`3.4.` HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion 경로의 registry에서 다음을 확인할 수 있다.
+
 - ProductName : Windows 7 Ultimate
 - InstallDate : 1427034866(unix time) = Sunday, March 22nd 2015, 14:34:26 (GMT+0)
 - RegisteredOwner : informant
 
-
+<center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/3.4.jpg"></p></center>
 
 <br>
 
