@@ -34,13 +34,17 @@ Zone Identifer가 기록된 파일들의 속성을 확인해보면 `보안 : 이
 <center><img src="/assets/2020-01-03-post-Zone_Identifier/security.jpg"></center>
 
 <br>
-다운로드 파일의 출처(URL)은 `DOS` 창에서도 다음과 같이 확인이 가능하다. (침해사고 분석 시 악성코드 출처를 밝히는데 용이)
+다운로드 파일의 출처(URL)가 저장된 파일 목록과 내용은 `DOS` 창에서도 다음과 같이 확인이 가능하다. (침해사고 분석 시 악성코드 출처를 밝히는데 용이)
 
 ```
 dir /r
+more < "파일명:Zone.Identifier"
 ```
+
+<center><img src="/assets/2020-01-03-post-Zone_Identifier/cmd.jpg"><em>파일 목록 조회</em></center>
 <br>
-<center><img src="/assets/2020-01-03-post-Zone_Identifier/cmd.jpg"></center>
+<center><img src="/assets/2020-01-03-post-Zone_Identifier/url.jpg"><em>URL 확인</em></center>
+
 <br>
 
 # 3. Zone Id
@@ -51,6 +55,7 @@ Zone Identifer는 인터넷 뿐만이 아닌, 다양한 네트워크 환경에�
 - URLZONE_TRUSTED = 2
 - URLZONE_INTERNET = 3
 - URLZONE_UNTRUSTED = 4 
+
 <br>
 
 # 4. 참고
