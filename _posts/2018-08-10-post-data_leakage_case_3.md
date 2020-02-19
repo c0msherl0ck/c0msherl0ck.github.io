@@ -3,7 +3,6 @@ title: "[레지스트리] 운영체제 OS 정보"
 categories:
   - Data Leakage Case
 tags:
-  - OS
   - Registry
   - Windows Artifacts
 comments: true
