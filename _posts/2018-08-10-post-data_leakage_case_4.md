@@ -3,9 +3,8 @@ title: "[레지스트리] TimeZone"
 categories:
   - Data Leakage Case
 tags:
-  - E01
-  - DD
-  - Hash
+  - Registry
+  - Windows Artifacts
 comments: true
 ---
 
