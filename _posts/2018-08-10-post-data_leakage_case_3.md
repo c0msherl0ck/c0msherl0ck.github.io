@@ -17,8 +17,9 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 ```
 
 > Tools
+
 - 이미지 내 레지스트리 획득 : Arsenal Image mounter, WinHex 
-- 레지스트리 분석 : registry explorer
+- 레지스트리 분석 : Registry explorer
 
 # 1. Arsenal Image Mounter 로 이미지 파일 마운팅하기
 `1.1.` 왼쪽 하단의 mount image 를 클릭하고, 이미지 파일을 선택한다.
@@ -26,7 +27,7 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/1.1.jpg"></p></center>
 
 `1.2.` 다음과 같이 이미지 파일이 마운트 되어 있는 것을 확인할 수 있다.
-이미지 마운팅을 하지 않고, Winhex 에서 이미지를 바로 연후, [Specialist]-[Interpret Image File As Disk]를 하여도 된다.
+이미지 마운팅을 하지 않고, Winhex에서 이미지를 바로 연후, [Specialist]-[Interpret Image File As Disk]를 하여도 된다.
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/1.2.jpg"></p></center>
 
@@ -75,7 +76,7 @@ WinHex에서 partition#2의 `\Windows\System32\config` 에서 components, system
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_3/3.3.jpg"></p></center>
 
-`3.4.` HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion 경로의 registry에서 다음을 확인할 수 있다.
+`3.4.` `HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion` 경로의 레지스트리에서 다음을 확인할 수 있다.
 
 - ProductName : Windows 7 Ultimate
 - InstallDate : 1427034866(unix time) = Sunday, March 22nd 2015, 14:34:26 (GMT+0)
