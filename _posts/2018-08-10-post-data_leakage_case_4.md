@@ -30,14 +30,12 @@ CurrentControlSet은 현재 로그인한 유저의 세팅값(Hardware profile �
 `HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation` 레지스트리 값을 해석하면 다음과 같다.
 
 <div class="notice">
-<p>
-Bias : 300 minutes
-DaylightBias : -60 minutes
-ActiveTimeBias = Bias + DaylightBias = 240 minutes
-
-즉, UTC-4가 timezone 값이다.
-[주의] UTC+4 가 아닌 UTC-4 임에 유의한다.
-</p>
+Bias : 300 minutes<br>
+DaylightBias : -60 minutes<br>
+ActiveTimeBias = Bias + DaylightBias = 240 minutes<br>
+<br>
+즉, UTC-4가 timezone 값이다.<br>
+[주의] UTC+4 가 아닌 UTC-4 임에 유의한다.<br>
 </div>
 
 <center><p><img src="/assets/2018-08-10-post-data_leakage_case_4/2.jpg"></p></center>
