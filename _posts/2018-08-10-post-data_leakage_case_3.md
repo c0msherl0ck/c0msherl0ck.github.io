@@ -21,9 +21,9 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 - 레지스트리 분석 : registry explorer
 
 # 1. Arsenal Image Mounter 로 이미지 파일 마운팅하기
-1.1. 왼쪽 하단의 mount image 를 클릭하고, 이미지 파일을 선택한다.
-1.2. 다음과 같이 이미지 파일이 마운트 되어 있는 것을 확인할 수 있다.
-1.3. 이미지 마운팅을 하지 않고, Winhex 에서 이미지를 바로 연후, [Specialist]-[Interpret Image File As Disk]를 하여도 된다.
+## 1.1. 왼쪽 하단의 mount image 를 클릭하고, 이미지 파일을 선택한다.
+## 1.2. 다음과 같이 이미지 파일이 마운트 되어 있는 것을 확인할 수 있다.
+이미지 마운팅을 하지 않고, Winhex 에서 이미지를 바로 연후, [Specialist]-[Interpret Image File As Disk]를 하여도 된다.
 
 # 2. Winhex 에서 레지스트리 파일 추출하기
 2.1. [Tools]-[Open disk]
