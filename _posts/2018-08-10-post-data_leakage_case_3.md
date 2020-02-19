@@ -18,7 +18,7 @@ HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion
 
 > Tools
 
-이미지 내 레지스트리 획득 : Arsenal Image mounter, WinHex 
+이미지 내 레지스트리 획득 : Arsenal Image mounter, WinHex<br>
 레지스트리 분석 : Registry explorer
 
 <br>
