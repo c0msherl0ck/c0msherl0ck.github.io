@@ -1,5 +1,5 @@
 ---
-title: "[E01] 이미징 해시값 검증"
+title: "[E01] 증거물 무결성 검증(이미지 해시값 비교)"
 categories:
   - Data Leakage Case
 tags:
