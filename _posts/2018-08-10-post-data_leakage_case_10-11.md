@@ -29,19 +29,19 @@ CFReDS-Data Leakage Case #10 ~ 11 #10. What applications were installed by the s
 
 `1.1.` 프로그램 설치 흔적 확인
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/1.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/1.1.jpg"></center>
 
 `1.2.` 실행파일 실행 기록 확인
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/1.2.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/1.2.jpg"></center>
 
 `1.3.` 바로가기 실행 기록 확인
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/1.3.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/1.3.jpg"></center>
 
 `1.4.` 가장 최근에 실행되었던 프로그램 확인
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/1.4.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/1.4.jpg"></center>
 
 
 # 2. 링크파일(.lnk) 분석
@@ -59,20 +59,20 @@ LNK 파일이라고 하면 특정 응용프로그램을 설치했을 때 바탕�
 
 `2.1.` Winhex 에서 Explore recursively 기능을 통해 partition 2 에 있는 모든 파일을 탐색한다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/2.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/2.1.jpg"></center>
 
 `2.2.` 확장자로 정렬하여 .lnk 파일을 모두 추출한다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/2.2.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/2.2.jpg"></center>
 
 `2.3.` LinkParser 툴을 이용하여 추출한 링크 파일들이 있는 폴더를 불러온다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/2.3.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/2.3.jpg"></center>
 
 `2.4.` LinkCreationDate 로 정렬하여 프로그램 실행흔적을 분석한다.<br>
 (`링크가 생성된 시점이 파일이 실행된 시점이기 때문이다.`)
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/2.4.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/2.4.jpg"></center>
 
 
 # 3. 프리패치(.pf) 분석
@@ -93,13 +93,13 @@ LNK 파일이라고 하면 특정 응용프로그램을 설치했을 때 바탕�
 
 `3.1.` Winhex 에서 분석 PC 의 Prefetch 폴더를 [우클릭]-recover/copy 한다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/3.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/3.1.jpg"></center>
 
 `3.2.` WinPrefetchView 프로그램에서 해당 폴더를 다음과 같이 불러온다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/3.2.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/3.2.1.jpg"></center>
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/3.2.2.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/3.2.2.jpg"></center>
 
 `3.3.` Last Run Time 을 기준으로 정렬한다.
 
@@ -107,11 +107,11 @@ LNK 파일이라고 하면 특정 응용프로그램을 설치했을 때 바탕�
   - 분석 PC 의 Time zone 은 Eastern Standard Time (UTC-5) 에 daylight time bias -60 minutes (+1 hour) 적용한 UTC-4 이다. 그러므로, 현재 보여지는 Last Run Time에서 -13 hour 를 해준값이, 분석 PC 의 time zone 에 해당하는 값이 된다.
 - Created Time, modified time 등은 분석이미지에서 host PC 로 recover/copy 할때의 시간값이므로, 분석에 의미없는 값이다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/3.3.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/3.3.jpg"></center>
 
 `3.4.` 다음과 같이 HTML Report 로 따로 뽑아낼 수도 있다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/3.4.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/3.4.jpg"></center>
 
 
 # 4. 호환성 아티팩트(Shimcache, AppCompatCache) 분석
@@ -135,21 +135,21 @@ ShimCache(=AppCompatCache) 호환성 아티팩트란?
 
 `4.1.` Eric Zimmerman's tools 의 AppCompatCacheParser (a.k.a shimcacheparser)사용한다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/4.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/4.1.jpg"></center>
 
 `4.2.` 프로그램 설명
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/4.2.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/4.2.jpg"></center>
 
 `4.3.` 다음의 명령어를 통해 분석 대상 PC의 SYSTEM 레지스트리에서 shimcache 관련 정보를 추출한다.
 ```
 AppCompatCacheParser.exe --csv [결과파일 경로] -t --f [SYSTEM 레지스트리 하이브 파일 경로]
 ```
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/4.3.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/4.3.jpg"></center>
 
 `4.4.` 생성된 결과파일을 확인하면 다음과 같다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_10/4.4.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_10-11/4.4.jpg"></center>
 
 
 # 5. 참고
