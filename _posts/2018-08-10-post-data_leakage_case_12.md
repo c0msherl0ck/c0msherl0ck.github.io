@@ -3,8 +3,8 @@ title: "윈도우 이벤트 로그(System on/off)"
 categories:
   - Data Leakage Case
 tags:
-  - 
-  -
+  - Event Log
+  - Windows Artifacts
 comments: true
 ---
 
