@@ -1,23 +1,33 @@
 ---
-title: "[레지스트리] 네트워크 정보(IP 주소 등)"
+title: "[] "
 categories:
   - Data Leakage Case
 tags:
-  - Registry
-  - Windows Artifacts
+  - 
+  -
 comments: true
 ---
 
-CFReDS-Data Leakage Case #9. Explain the information of network interface(s) with an IP address assigned by DHCP
+CFReDS-Data Leakage Case #
 
-네트워크 정보는 다음 레지스트리 경로에서 확인 가능하다.
-```
-\HKLM\System\ControlSet001\services\Tcpip\Parameters\Interfaces\[하위키]
-```
+> 1. 
+> 2. 
 
-`DhcpIPAddress` : 10.11.11.129
+# 1. 
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_9/1.jpg"></center>
+# 2. 
+
+|||
+|---|---|
+||
+||
+
+
+`2.1.` 소제목
+
+<center><img src="/assets/2018-08-10-post-data_leakage_case_00/.jpg"></center>
+
+
 
 <br>
 
