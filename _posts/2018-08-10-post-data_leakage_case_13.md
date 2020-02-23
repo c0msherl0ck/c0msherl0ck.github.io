@@ -1,5 +1,5 @@
 ---
-title: "웹 브라우저 확인 "
+title: "사용한 웹 브라우저"
 categories:
   - Data Leakage Case
 tags:
