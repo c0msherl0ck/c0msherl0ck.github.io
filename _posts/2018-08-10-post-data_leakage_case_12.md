@@ -47,7 +47,8 @@ CFReDS-Data Leakage Case #12. List all traces about the system on/off and the us
 
 Add folder 메뉴는 버그로 작동하지 않아, Add files 를 통해 모든 파일을 불러온다.
 
-<center><img src="/assets/2018-08-10-post-data_leakage_case_12/2.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_12/2.1.1.jpg"></center>
+<center><img src="/assets/2018-08-10-post-data_leakage_case_12/2.1.2.jpg"></center>
 
 `2.2.` "Create a new query" 를 통해 새로운 질의창을 생성하고, Log Type: EVTLOG 를 선택한다.
 
