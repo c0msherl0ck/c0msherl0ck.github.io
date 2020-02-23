@@ -1,15 +1,16 @@
 ---
-title: "[] "
+title: "프로그램 설치 및 실행 흔적 분석"
 categories:
   - Data Leakage Case
 tags:
-  - 
-  -
+  - Registry
+  - LNK
+  - Prefetch
+  - Shimcache
 comments: true
 ---
 
-CFReDS-Data Leakage Case #10~11 #10. What applications were installed by the suspect after installing OS? #11. List application execution logs.
-
+CFReDS-Data Leakage Case #10 ~ 11 #10. What applications were installed by the suspect after installing OS? #11. List application execution logs.
 
 > 1. 레지스트리 분석(UserAssist, RunMRU, Uninstall)
 > 2. 링크파일 분석(LinkParser)
@@ -73,6 +74,7 @@ LNK 파일이라고 하면 특정 응용프로그램을 설치했을 때 바탕�
 
 <center><img src="/assets/2018-08-10-post-data_leakage_case_10/2.4.jpg"></center>
 
+
 # 3. 프리패치(.pf) 분석
 
 프리패치 파일이란?
@@ -110,6 +112,7 @@ LNK 파일이라고 하면 특정 응용프로그램을 설치했을 때 바탕�
 `3.4.` 다음과 같이 HTML Report 로 따로 뽑아낼 수도 있다.
 
 <center><img src="/assets/2018-08-10-post-data_leakage_case_10/3.4.jpg"></center>
+
 
 # 4. 호환성 아티팩트(Shimcache, AppCompatCache) 분석
 
