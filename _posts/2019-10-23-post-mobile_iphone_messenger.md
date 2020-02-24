@@ -44,7 +44,7 @@ iTunes를 이용해 생성한 아이폰 백업 파일에서 iBackupBot 도구를
 
 <center><p>
 <img src="/assets/2019-10-22-post-mobile_iphone_messenger/facebook.jpg" width="100%">
-<em>페이스북 메신저-확인되지 않음(추가 연구 필요)</em>
+<em>페이스북 메신저-확인되지 않음</em>
 </p></center>
 
 # 2. 문자 DB 분석(sms.db)
@@ -94,6 +94,11 @@ message 테이블에서 시간 속성인 date_read는 `UNIX Time` 으로 기록�
 # 4. 페이스북 메신저 분석
 
 페이스북 메신저를 비롯하여, 텔레그램 등의 메신저 앱들은 iTunes Backup 시 대화 내용을 백업하지 않도록 설정되어 있다.(*안티포렌식*) 해당 앱들의 대화 내용 데이터를 얻기 위해서는 JailBreak(관리자 권한 획득) 이후, **물리적 이미지**를 획득해야 한다.
+
+물리적 이미지 획득 시 다음의 경로 확인 필요
+
+    /private/var/mobile/Containers/Shared/AppGroup/<UUID>/_store_<ID>/messenger_messages_v1/orca2.db
+
 
 # 5. 참고
 
