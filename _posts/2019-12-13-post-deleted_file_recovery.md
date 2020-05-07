@@ -52,13 +52,13 @@ EnCase의 경우 $R~ 파일에 대응되는 $I~ 파일의 정보를 이용하여
 
 # 2. Shift + Delete
 
-`Shift + Delete`를 통한 삭제는 앞서 기술한 `휴지통 비우기`와 **같은 방법**으로 $MFT에서 해당 파일과 관련된 Records를 삭제하고, 데이터가 차지하고 있는 영역을 Unallocated로 변경하여, 해당 영역에 다른 데이터가 저장 가능하도록 한다.
+`Shift + Delete`를 통한 삭제는 앞서 기술한 `휴지통 비우기`와 **같은 방법**으로 $MFT에서 해당 파일과 관련된 MFT Entry의 Flag를 업데이트하고(삭제로 표기), 데이터가 차지하고 있는 영역을 Unallocated로 변경하여, 해당 영역에 다른 데이터가 저장 가능하도록 한다.
 
-**그러나,** $R~, $I~ 파일이 없기 때문에, 삭제된 비할당 영역에 대한 정보(데이터 위치 및 파일 이름)를 알기 위해서는 **$MFT 파일 내에서 삭제된 Records를 분석**해야 한다. EnCase 에서는 $MFT 분석을 통해 파일 복구를 지원하며, **File Path** 확인이 가능하다.
+**그러나,** $R~, $I~ 파일이 없기 때문에, 삭제된 비할당 영역에 대한 정보(데이터 위치 및 파일 이름)를 알기 위해서는 **$MFT 파일 내에서 삭제 표시된 MFT Entry를 분석**해야 한다. EnCase 에서는 $MFT 분석을 통해 파일 복구를 지원하며, **File Path** 확인이 가능하다.
 
 <center><p><img src="/assets/2019-12-13-post-deleted_file_recovery/EnCase Recovery.jpg" width="60%"><br><em>EnCase - Recovering Folders</em></p></center>
 
-`Winhex` 도구의 `File Recovery by Type` 기능을 이용하면 **$MFT 파일을 분석하지 않고** 파일 복구가 가능하다(**단,** 폴더는 복구 대상이 아님). 해당 기능은 디스크 전체에서 파일 시그니처 기반의 파일 카빙을 통해 특정 파일 유형(Pictures, Documents, E-mail 등)을 선택하여 **다수의 파일들**을 복구하고, 그 중 찾는 파일이 있는지 **일일이 내용을 확인**하는 방식으로 진행한다(**단,** $MFT를 분석하지 않았기 때문에 파일 이름은 알 수 없음).
+`Winhex` 도구의 `File Recovery by Type` 기능을 이용하면 **$MFT 파일을 분석하지 않고** 파일 복구가 가능하다. (단, 폴더는 복구 대상이 아님) 해당 기능은 디스크 전체에서 파일 시그니처 기반의 파일 카빙을 통해 특정 파일 유형(Pictures, Documents, E-mail 등)을 선택하여 **다수의 파일들**을 복구하고, 그 중 찾는 파일이 있는지 **일일이 내용을 확인**하는 방식으로 진행한다. (단, $MFT를 분석하지 않았기 때문에 파일 이름은 알 수 없음)
 
 <center><p><img src="/assets/2019-12-13-post-deleted_file_recovery/Winhex Recovery.jpg" width="70%"><br><em>Winhex - File Recovery by Type</em></p></center>
 
@@ -77,7 +77,7 @@ EnCase의 경우 $R~ 파일에 대응되는 $I~ 파일의 정보를 이용하여
 *△ : 해당 영역이 덮어씌워지지 않았을 경우 복구 가능*
 
 <div class="notice">
-$MFT에서 파일 시스템 로그(파일 생성, 삭제, 수정 등)를 분석하여 File Path를 알 수 있지만, 기간이 오래 되면(약 일주일 이상) 복구할 수 없다. 사용자의 PC 사용 습관에 따라 차이가 있지만, PC가 켜져 있을 경우 시스템 파일들이 계속해서 생성 및 삭제되기 때문에 $MFT 내 삭제된 Records 흔적들이 덮어씌워지기 때문이다.
+$MFT에서 파일 시스템 로그(파일 생성, 삭제, 수정 등)를 분석하여 File Path를 알 수 있지만, 기간이 오래 되면(약 일주일 이상) 복구할 수 없다. 사용자의 PC 사용 습관에 따라 차이가 있지만, PC가 켜져 있을 경우 시스템 파일들이 계속해서 생성 및 삭제되기 때문에 $MFT 내 삭제된 MFT Entry 흔적들이 덮어씌워지기 때문이다.
 </div>
 
 <br>
