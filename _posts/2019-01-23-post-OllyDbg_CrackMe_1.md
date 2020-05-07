@@ -1,5 +1,5 @@
 ---
-title: "OllyDbg 를 이용한 CrackMe1.exe 크랙하기"
+title: "[리버싱] OllyDbg 를 이용한 CrackMe1.exe 크랙하기"
 categories:
   - Reversing
 tags:
