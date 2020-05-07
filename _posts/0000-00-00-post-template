@@ -22,28 +22,29 @@ comments: true
 - dd
 
 
+// code page
 ```
 aaaaaaaaaaaaaaaaa
 ```
 
+// 글자 배경
+`bbbbb`
 
-`bbbbbbbbbbbbbb`
-
-
+//표
 |파일명|역할|
 |---|---|
 |||
 |||
 |||
 
+// 이미지
 <center><p><img src="/assets/폴더명/파일명.jpg"></p></center>
-
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
+![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg)
 
-> 참고
-
+// 링크 삽입
+<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
 [](https://)
-
 [인라인 링크](https://)
 
 
