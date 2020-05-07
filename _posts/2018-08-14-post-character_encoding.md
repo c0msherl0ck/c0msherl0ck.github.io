@@ -59,6 +59,8 @@ URL의 문자열 인코딩은 Percent Encoding 인데 반해, 메모장의 문�
 <center><p><img src="/assets/2018-08-14-post-character_encoding/ANSI.jpg"></p></center>
 
 # 4. 참고
+- [한글 인코딩의 이해 1편: 한글 인코딩의 역사와 유니코드](https://d2.naver.com/helloworld/19187)
+- [한글 인코딩의 이해 2편: 유니코드와 Java를 이용한 한글 처리](https://d2.naver.com/helloworld/76650)
 - [FREESTROKES' Develog - 인코딩과 디코딩 (Encoding & Decoding)](https://freestrokes.tistory.com/71)
 - [ASCII 와 ANSI encoding](https://pragp.tistory.com/entry/ASCII-%EC%99%80-ANSI-encoding)
 - [퍼센트 인코딩](https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9)
