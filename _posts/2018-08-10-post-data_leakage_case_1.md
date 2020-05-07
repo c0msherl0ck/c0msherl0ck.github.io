@@ -23,8 +23,8 @@ CFReDS-Data Leakage Case #1. What are the hash values (MD5 & SHA-1) of all image
 
 |EnCase|FTK Imager|용도|
 |---|---|---|
-|Acquisition Hash|Computed Hash|분석도구에 추가한 증거물에 대해 해시를 계산한 것|
-|Verification Hash|Stored Verification hash|증거물 내에 저장되어 있던 해시값|
+|Verification Hash|Computed Hash|분석도구에 추가한 증거물에 대해 해시를 계산한 것|
+|Acquisition Hash|Stored Verification hash|증거물 내에 저장되어 있던 해시값|
 
 # 2. 확인방법
 
