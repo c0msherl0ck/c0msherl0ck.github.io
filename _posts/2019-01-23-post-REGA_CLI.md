@@ -1,5 +1,5 @@
 ---
-title: "REGA.exe 후킹(Hooking)하기"
+title: "[리버싱] REGA.exe 후킹(Hooking)하기"
 categories:
   - Reversing
 tags:
