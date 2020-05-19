@@ -47,7 +47,7 @@ test 폴더 내 desktop.ini 파일을 생성하고, 메모장으로 `LocalizedRe
 위 원리를 이용하면 기본폴더에 해당하는 폴더들이 사용자 환경에 따라서 각각 다른 언어로 표시되도록 할 수 있다.
 
 
-# 참고
+# 3. 참고
 
 
 [다운로드폴더가 일반폴더처처럼 영문으로 바뀌었을 때 해결방법](ttps://answers.microsoft.com/ko-kr/windows/forum/windows_7-files/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/cdf75cc7-58b9-49ab-8262-771bf9a894da)
