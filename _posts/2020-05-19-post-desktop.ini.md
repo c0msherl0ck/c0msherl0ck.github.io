@@ -49,12 +49,12 @@ test 폴더 내 desktop.ini 파일을 생성하고, 메모장으로 `LocalizedRe
 
 # 참고
 
-<p>
-다운로드폴더가 일반폴더처처럼 영문으로 바뀌었을 때 해결방법, (https://answers.microsoft.com/ko-kr/windows/forum/windows_7-files/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/cdf75cc7-58b9-49ab-8262-771bf9a894da)
-How to Customize Folders with Desktop.ini, https://docs.microsoft.com/en-us/windows/win32/shell/how-to-customize-folders-with-desktop-ini
-Desktop.ini Documentation, https://hwiegman.home.xs4all.nl/desktopini.html
-폴더 이름을 desktop.ini로 다른 이름으로 표시하기, https://studioxga.net/1430
-</p>
+
+[다운로드폴더가 일반폴더처처럼 영문으로 바뀌었을 때 해결방법](ttps://answers.microsoft.com/ko-kr/windows/forum/windows_7-files/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/cdf75cc7-58b9-49ab-8262-771bf9a894da)
+<br>[How to Customize Folders with Desktop.ini](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-customize-folders-with-desktop-ini)
+<br>[Desktop.ini Documentation](https://hwiegman.home.xs4all.nl/desktopini.html)
+<br>[폴더 이름을 desktop.ini로 다른 이름으로 표시하기](https://studioxga.net/1430)
+<br>
 
 {% if page.comments %}
 
