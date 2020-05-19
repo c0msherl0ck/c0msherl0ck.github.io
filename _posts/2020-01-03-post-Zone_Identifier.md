@@ -1,7 +1,7 @@
 ---
 title: "Zone Identifier"
 categories:
-  - File System
+  - Windows
 tags:
   - Zone Identifier
   - ADS
