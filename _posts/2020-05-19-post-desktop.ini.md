@@ -1,5 +1,5 @@
 ---
-title: "desktop.ini 설정 변경을 통한 Folder Customizing"
+title: "Desktop.ini 설정 변경을 통한 Folder Customizing"
 categories:
   - Windows
 tags:
@@ -40,7 +40,7 @@ test 폴더 내 desktop.ini 파일을 생성하고, 메모장으로 `LocalizedRe
 <center><p><img src="/assets/desktop.ini/5. 적용.jpg"></p></center>
 
 다음과 같이 파일 시스템 상에서는 test 폴더라는 이름은 그대로이나, 
-윈도우 탐색기 창에서 표시되는 폴더명 `LocalizedResourceName` 에서 설정한 값으로 변경된 것을 알 수 있다.
+윈도우 탐색기 창에서 표시되는 폴더명은 `LocalizedResourceName` 에서 설정한 값으로 변경된 것을 알 수 있다.
 
 <center><p><img src="/assets/desktop.ini/6. 변경후.jpg"></p></center>
 
