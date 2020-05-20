@@ -36,21 +36,21 @@ comments: true
 MP4 파일은 동영상 파일 확장자로 010 Editor에서 MP4 Template 적용을 통해 구조를 파악할 수 있다.
 시각 정보는 Movie Header Box와 각 트랙의 Track Header Box에서 확인가능하다.
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/1. MP4 구조.jpg"></p></center>
-<center><p><em>MP4 구조</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/1. MP4 구조.jpg">
+<br><em>MP4 구조</em></p></center>
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/2. Movie_Header_Box.jpg"></p></center>
-<center><p><em>Movie_Header_Box</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/2. Movie_Header_Box.jpg">
+<br><em>Movie_Header_Box</em></p></center>
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/3. Track_Header_Box.jpg"></p></center>
-<center><p><em>Track_Header_Box</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/3. Track_Header_Box.jpg">
+<br><em>Track_Header_Box</em></p></center>
 
 # 3. MP4BOX
 
 GPAC Installers를 통해 MP4BOX를 설치할 수 있다. 다운로드 경로 <https://gpac.wp.imt.fr/downloads/>
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/9. MP4BOX 다운로드.jpg"></p></center>
-<center><p><em>MP4BOX 다운로드</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/9. MP4BOX 다운로드.jpg">
+<br><em>MP4BOX 다운로드</em></p></center>
 
 설치 후 다음의 명령어를 통해 MP4 영상의 정보를 확인한다.
 
@@ -58,8 +58,8 @@ GPAC Installers를 통해 MP4BOX를 설치할 수 있다. 다운로드 경로 <h
 mp4box -info [파일명]
 ```
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/4. MP4B0X 정보확인.jpg"></p></center>
-<center><p><em>MP4B0X 정보확인</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/4. MP4B0X 정보확인.jpg">
+<br><em>MP4B0X 정보확인</em></p></center>
 
 확인결과 총 3개의 트랙으로 이루어져 있으며, 첫번째 트랙은 영상(video), 두번째 트랙은 소리(sound), 세번째 트랙은 자막(text)에 해당하는 것을 알 수 있다.
 블랙박스의 경우 자막트랙에 비영상정보를 저장하는 경우가 많으므로 상세확인을 위해 다음과 같이 추출한다.
@@ -68,8 +68,8 @@ mp4box -info [파일명]
 mp4box -raw [자막트랙 번호] [파일명]
 ```
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/5. MP4B0X 자막추출.jpg"></p></center>
-<center><p><em>MP4B0X 자막추출</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/5. MP4B0X 자막추출.jpg"><br>
+<br><em>MP4B0X 자막추출</em></p></center>
 
 추출한 자막(text)파일을 notepad++ 로 확인한 결과 "gsensor" 문자열과 관련 데이터를 확인할 수 있었다.
 
@@ -83,8 +83,8 @@ gsensor란?
 [출처] http://www.inavi.com/CustCenter/Notice/Dtls/741?notidiv
 </div>
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/6. MP4BOX gsensor.jpg"></p></center>
-<center><p><em>MP4BOX gsensor</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/6. MP4BOX gsensor.jpg"><br>
+<br><em>MP4BOX gsensor</em></p></center>
 
 
 # 4. 전용뷰어
@@ -94,11 +94,11 @@ gsensor란?
 
 전용뷰어가 아닌 일반플레이어를 통해 영상을 확인할 경우 정상적인 비영상 정보 확인이 어렵다.
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/7. 전용뷰어.jpg"></p></center>
-<center><p><em>전용뷰어</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/7. 전용뷰어.jpg">
+<br><em>전용뷰어</em></p></center>
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/8. 곰플레이어.jpg"></p></center>
-<center><p><em>곰플레이어</em></p></center>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/8. 곰플레이어.jpg">
+<br><em>곰플레이어</em></p></center>
 
 
 # 5. 결론
