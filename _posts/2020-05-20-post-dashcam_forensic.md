@@ -68,7 +68,7 @@ mp4box -info [파일명]
 mp4box -raw [자막트랙 번호] [파일명]
 ```
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/5. MP4B0X 자막추출.jpg"><br>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/5. MP4B0X 자막추출.jpg">
 <br><em>MP4BOX 자막추출</em></p></center>
 
 추출한 자막(text)파일을 notepad++ 로 확인한 결과 "gsensor" 문자열과 관련 데이터를 확인할 수 있었다.
@@ -81,7 +81,7 @@ gsensor란?
 [출처] http://www.inavi.com/CustCenter/Notice/Dtls/741?notidiv
 </div>
 
-<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/6. MP4BOX gsensor.jpg"><br>
+<center><p><img src="/assets/2020-05-20-post-dashcam_forensic/6. MP4BOX gsensor.jpg">
 <br><em>gsensor</em></p></center>
 
 
