@@ -74,13 +74,11 @@ mp4box -raw [자막트랙 번호] [파일명]
 추출한 자막(text)파일을 notepad++ 로 확인한 결과 "gsensor" 문자열과 관련 데이터를 확인할 수 있었다.
 
 <div class="notice">
-<p>
 gsensor란?
-
+<br><br>
 아이나비가 세계 최초로 적용한 G센서기술이란 자북(북극) 방향의 절대방향과 자차의 진행방향을 감지할 수 있는 3축 지자기 센서(Geomagnetic-Sensor)와 X, Y, Z 벡터 값을 이용한 차의 움직임 감지가 가능한 3축 가속도 센서(Gravity-Sensor)를 아이나비 맵매칭(Map Matching)엔진과 결합했다. 이에 따라 진행방향 인지(認知)와 좌우회전 인지, 오르막길 인지, 내리막길 인지, 주행인지와 정차인지를 가장 빠르고 정확하게 알 수 있다.
-
+<br><br>
 [출처] http://www.inavi.com/CustCenter/Notice/Dtls/741?notidiv
-</p>
 </div>
 
 <center><p><img src="/assets/2020-05-20-post-dashcam_forensic/6. MP4BOX gsensor.jpg"><br>
