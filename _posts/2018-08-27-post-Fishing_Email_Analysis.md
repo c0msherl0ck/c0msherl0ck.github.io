@@ -195,36 +195,15 @@ Apparently-To, From
 # 참고
 
 [eml 파일 열기](http://gbworld.tistory.com/929)<br>
+
 [SPF(Sender Policy Framework)를 사용하여 위조된 전자 메일 처리](https://docs.oracle.com/cd/E19957-01/820-0512/gdpno/index.html)<br>
+
 [메일서버등록제(SPF: Sender Policy Framework)](https://www.kisarbl.or.kr/whiteip/whiteip_tutorial2.jsp)<br>
+
 [port 3316](https://www.auditmypc.com/tcp-port-3316.asp)<br>
+
 [이메일 헤더 분석](http://maj3sty.tistory.com/980)<br>
+
 [메일 헤더 분석하기](http://www.ylabs.co.kr/index.php?document_srl=6020&mid=board_centos&search_target=regdate&search_keyword=201009&sort_index=readed_count&order_type=desc)<br>
+
 [Email 구조, 왜 헤더가 중요한가?](http://yahon.tistory.com/55)<br>
-
-<br>
-
-{% if page.comments %}
-
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-{% endif %}
