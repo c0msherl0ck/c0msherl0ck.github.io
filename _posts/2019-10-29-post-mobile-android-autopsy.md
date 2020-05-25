@@ -69,7 +69,7 @@ Processing 이 종료되면 다음과 같이 카테고리 별 분석 결과를 �
 dd 방식의 이미징은 물리적 이미지 획득 방법으로 비할당 영역에서의 복구가 가능하다. 다음의 그림에서 선택한 파일은 "비지니스_Tool_요약.docx" 이지만, 해당 파일이 삭제된 이후 해당 영역(비할당 영역)이 다른 파일(사진)로 덮어씌워진 것이다.
 
 <center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/unallocated.jpg" width="100%">
+<img src="/assets/2019-10-29-post-mobile-android-autopsy/unallocated2.jpg" width="100%">
 <em>unallocated space</em>
 </p></center>
 
