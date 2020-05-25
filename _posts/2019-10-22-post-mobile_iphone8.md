@@ -124,34 +124,9 @@ fileID = SHA1 (domain + "-" + relativePath)
 # 4. 참고
 
 [[Tech Report] 아이폰 백업 파일의 흔적을 찾아라](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?menu_dist=2&seq=20118)
-<br>
+
 [[Tech Report] 앱을 읽으면 사용자의 라이프스타일이 보인다](http://v3.nonghyup.com/secu_info_view.asp?list=/secu_info_list.asp&seq=20245&pageno=100&v_num=1425)
-<br>
+
 [플래시 메모리 이미지 획득/IOS](http://forensic.korea.ac.kr/DFWIKI/index.php/%ED%94%8C%EB%9E%98%EC%8B%9C_%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%9D%B4%EB%AF%B8%EC%A7%80_%ED%9A%8D%EB%93%9D/IOS)
-<br>
+
 [Forensic Analysis on IOS Devices](https://www.sans.org/reading-room/whitepapers/forensics/paper/34092)
-
-{% if page.comments %}
-
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-{% endif %}
