@@ -51,32 +51,9 @@ test 폴더 내 desktop.ini 파일을 생성하고, 메모장으로 `LocalizedRe
 
 
 [다운로드폴더가 일반폴더처처럼 영문으로 바뀌었을 때 해결방법](ttps://answers.microsoft.com/ko-kr/windows/forum/windows_7-files/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C/cdf75cc7-58b9-49ab-8262-771bf9a894da)
-<br>[How to Customize Folders with Desktop.ini](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-customize-folders-with-desktop-ini)
-<br>[Desktop.ini Documentation](https://hwiegman.home.xs4all.nl/desktopini.html)
-<br>[폴더 이름을 desktop.ini로 다른 이름으로 표시하기](https://studioxga.net/1430)
-<br>
 
-{% if page.comments %}
+[How to Customize Folders with Desktop.ini](https://docs.microsoft.com/en-us/windows/win32/shell/how-to-customize-folders-with-desktop-ini)
 
-<div id="disqus_thread"></div>
-<script>
+[Desktop.ini Documentation](https://hwiegman.home.xs4all.nl/desktopini.html)
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                            
-{% endif %}
+[폴더 이름을 desktop.ini로 다른 이름으로 표시하기](https://studioxga.net/1430)
