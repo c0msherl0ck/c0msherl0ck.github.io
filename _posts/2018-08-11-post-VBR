@@ -1,1 +1,98 @@
+---
+title: "VBR 분석 (FAT32/NTFS)"
+categories:
+  - File System
+tags:
+  - VBR
+  - Boot Sector
+  - FAT32
+  - NTFS
+comments: true
+---
 
+FAT32, NTFS 파일 시스템에서 VBR 분석을 통해 각 영역의 위치 및 볼륨크기를 구하는 방법에 대해 기술한다.
+
+> 1. VBR 이란?
+> 2. FAT32 VBR
+> 3. NTFS VBR
+> 4. 참고
+
+# 1. VBR 이란?
+
+Volume Boot Record의 줄임말로, 부팅 가능한 파티션(볼륨)의 첫번째 섹터이며 Boot Sector라고도 불린다.
+Boot Sector, 볼륨크기, FAT 위치, $MFT 위치 등 볼륨에 관한 다양한 정보를 포함하고 있다.
+
+VBR 이 손상되면 볼륨의 정상적인 인식이 불가능하며 의도적으로 볼륨의 존재를 숨기기 위해 VBR을 훼손하는 경우가 존재한다.
+VBR 손상 시에는 `Backup VBR`을 통해 복구가 가능하며 FAT32의 경우 첫번째 볼륨에서 6번째 위치에 존재하고, NTFS의 경우 볼륨의 마지막 섹터에 존재한다.
+
+|FAT32|NTFS|
+|---|---|
+|볼륨의 첫번째 섹터 + 6|볼륨의 마지막 섹터|
+
+
+# 2. FAT32 VBR
+
+
+
+
+
+
+
+
+- aa
+  - bb
+    - cc
+- dd
+
+
+// code page
+```
+aaaaaaaaaaaaaaaaa
+```
+
+// 글자 배경
+`bbbbb`
+
+//표
+|파일명|역할|
+|---|---|
+|||
+|||
+|||
+
+// 이미지
+<center><p><img src="/assets/폴더명/파일명.jpg"></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
+![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg)
+
+// 링크 삽입
+<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
+[](https://)
+[인라인 링크](https://)
+
+
+
+{% if page.comments %}
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://https-c0msherl0ck-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
+{% endif %}
