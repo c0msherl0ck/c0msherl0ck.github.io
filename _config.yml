@@ -20,10 +20,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   디지털 포렌식이란 법의학의 디지털 분야이다.
 baseurl: 
 url: https://c0msherl0ck.github.io
+teaser: "/assets/images/sher.jpg"
 twitter_username:
 github_username: c0msherl0ck
 minimal_mistakes_skin: default # air, mint etc.
 search: true
+comments:
+  provider : "disqus"
+  disqus:
+    shortname : "c0msherl0ck-github-io"
 
 # Build settings
 markdown: kramdown
