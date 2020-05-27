@@ -33,13 +33,15 @@ Any information relating to the original image is contained within the photos.sq
 /var/mobile/media/PhotoData, unfortunately each record relating to the thumbnail is deleted when the original image file is deleted,
 depending on the version of iOS some details may be obtainable using a tool capable of recovering deleted sqlite records.  
 
+확인할 것
+원본 사진 삭제 시 sqlite db 내 record는 삭제되지만, .ithmb 파일들은 남는지 여부
 
 도구
 http://www.ithmbconverter.com/
 https://www.compuclever.com/products/ithmb-viewer/
 
 경로
-/var/mobile/Media/PhotoData/Thumbnails/[.iThmbs]
+/var/mobile/Media/PhotoData/Thumbnails/[.ithmb]
 /var/mobile/media/PhotoData/photos.sqlite
 
 
