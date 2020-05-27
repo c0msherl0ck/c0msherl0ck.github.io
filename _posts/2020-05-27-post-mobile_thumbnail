@@ -14,8 +14,6 @@ comments: true
 몰카, 아동음란물 소지 등의 범죄에 있어서 범죄자가 증거인멸을 위해 범죄와 관련된 사진, 영상 등을 삭제하더라도,
 핸드폰 내 자동적으로 생성된 썸네일이라는 파일을 증거로 범죄를 소명할 수 있다.
 
-이번 글에서는 고려대학교 석사학위논문 윤대호, 안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구', 2017.12 을 바탕으로 작성되었습니다.
-
 > 1. 썸네일이란?
 > 2. 썸네일의 포렌식적 의미
 > 3. 아이폰 썸네일 확인
@@ -34,7 +32,30 @@ comments: true
 # 2. 썸네일의 포렌식적 의미
 
 썸네일은 시스템이 자동으로 생성하며, 원본 파일이 삭제 되더라도 삭제되지 않는다.
+{: .notice}
 
+혐의자가 증거인멸을 위해 범죄와 관련된 이미지, 동영상을 삭제한다고 하더라도 그러한 삭제행위를 하기 위해서는 사진, 갤러리 어플리케이션 등을 실행해야 하고,
+사진, 갤러리 어플리케이션이 실행되면 썸네일이 자동적으로 생성된다.
+
+만약, 혐의자가 촬영 직후 어플리케이션을 통해 원본 삭제를 진행하지 않고 파일 시스템에 접근하여 명령어를 통해 원본을 삭제할 경우, 
+사진, 갤러리 어플리케이션이 실행되지 않았기 때문에 썸네일이 남지 않을 수 있으나 이는 현실적으로 어려운 방법이다.
+
+# 3. 아이폰 썸네일 확인
+
+
+
+# 4. 안드로이드 썸네일 확인
+
+|구분|파일|경로|
+||---|---|
+|썸네일|ThumbCache|/sdcard/Android/data/com.sec.android.gallery3d/cache/(Samsung)|
+|썸네일|ThumbCache|/sdcard/Android/data/com.android.gallery3d/cache/(LG)|
+|썸네일|.thumbnails|/sdcard/.thumbnails/|
+|썸네일|.face|/sdcard/.face/(Samsung only)|
+|데이터베이스|External.db|/data/com.android.providers.media/databases/|
+|데이터베이스|es0.db|/data/com.google.android.apps.plus/databases/|
+
+# 5. 결론
 
 
 
