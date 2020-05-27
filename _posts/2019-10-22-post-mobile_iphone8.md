@@ -1,5 +1,5 @@
 ---
-title: "[모바일 포렌식] 아이폰 증거 획득(iTunes 백업) 및 분석"
+title: "[아이폰 포렌식] iTunes 백업을 이용한 논리적 이미지 획득"
 categories:
   - Mobile Forensic
 tags:
