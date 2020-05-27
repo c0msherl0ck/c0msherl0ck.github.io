@@ -34,3 +34,21 @@ Any information relating to the original image is contained within the photos.sq
 depending on the version of iOS some details may be obtainable using a tool capable of recovering deleted sqlite records.  
 
 
+도구
+http://www.ithmbconverter.com/
+https://www.compuclever.com/products/ithmb-viewer/
+
+경로
+/var/mobile/Media/PhotoData/Thumbnails/[.iThmbs]
+/var/mobile/media/PhotoData/photos.sqlite
+
+
+
+
+
+
+
+
+
+
+
