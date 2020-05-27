@@ -18,3 +18,19 @@ iThmb Converter[23]나 CompuClever ITHMB Viewer[24] 등의 프로그램들이 �
 [22] Alex Golding, Internet, http://dig-forensics.blogspot.kr/2013/05/ios-ithmbs.html
 [23] iThmb Converter, Internet, http://www.ithmbconverter.com/
 [24] CompuClever ITHMB Viewer, Internet, http://https://www.microsoft.com/ko-kr/store/p/compuclever-ithmb-viewer/9wzdncrdm8hg
+
+
+
+http://dig-forensics.blogspot.kr/2013/05/ios-ithmbs.html
+
+iOS iThmbs
+
+On iOS devices all thumbnails are kept in a file named based on the dimensions
+e.g. 128x128.ithmb within the folder /var/mobile/Media/PhotoData/Thumbnails.
+These files are also backed up with a standard itunes backup meaning they should be recoverable from all iOS devices.  
+
+Any information relating to the original image is contained within the photos.sqlite database on the device within the folder
+/var/mobile/media/PhotoData, unfortunately each record relating to the thumbnail is deleted when the original image file is deleted,
+depending on the version of iOS some details may be obtainable using a tool capable of recovering deleted sqlite records.  
+
+
