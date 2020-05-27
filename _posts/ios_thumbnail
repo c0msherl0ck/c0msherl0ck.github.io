@@ -1,0 +1,20 @@
+다. iOS 썸네일
+iOS에서 사용하는 썸네일은 안드로이드 썸네일과는 달리 그 구조가 일반적으
+로 노출되지 않았으며 관련된 학계의 연구도 없다. 또한 원본 그래픽 파일이 삭
+제되면 해당 파일과 연계된 썸네일 역시 삭제되는 특징을 가지고 있어서 iOS에
+서 썸네일을 디지털 포렌식 관점에서 분석하여도 크게 의미있는 결과를 얻을 수
+없다[22].
+iOS의 썸네일은 /var/mobile/media/PhotoData/Thumbnails 경로에 .ithmb라는
+확장자로 저장이 되는데 해상도 별로 서로 다른 .ithmb 파일 내에 그래픽 파일
+별로 썸네일이 저장된다. .ithmb 파일 내부에는 시간정보와 같은 디지털 포렌식
+관점에서 분석에 중요한 메타데이터가 없으며 썸네일만을 추출할 수 있는
+iThmb Converter[23]나 CompuClever ITHMB Viewer[24] 등의 프로그램들이 공
+개되어 있어 본 논문에서는 iOS의 썸네일에 대한 내용은 배제하고 안드로이드
+썸네일에 대해서만 알아본다.
+
+[흔적 썸네일] 윤대호, 안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구, 고려대학교학위논문
+
+
+[22] Alex Golding, Internet, http://dig-forensics.blogspot.kr/2013/05/ios-ithmbs.html
+[23] iThmb Converter, Internet, http://www.ithmbconverter.com/
+[24] CompuClever ITHMB Viewer, Internet, http://https://www.microsoft.com/ko-kr/store/p/compuclever-ithmb-viewer/9wzdncrdm8hg
