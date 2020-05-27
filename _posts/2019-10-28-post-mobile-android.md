@@ -1,5 +1,5 @@
 ---
-title: "[모바일 포렌식] 안드로이드 핸드폰 증거 획득(루팅)"
+title: "[안드로이드 포렌식] 루팅(Rooting)을 통한 물리적 이미지 획득"
 categories:
   - Mobile Forensic
 tags:
