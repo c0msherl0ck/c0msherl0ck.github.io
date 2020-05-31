@@ -55,6 +55,7 @@ comments: true
 필자의 경우 총 3가지 크기로 구분되어 있으며 각각의 아카이브 내 썸네일 사진들을 확인하기 위해서는 iThmb Converter, iThmb Viewer 등의 별도의 도구가 필요하다.
 
 iThmb Converter, <http://www.ithmbconverter.com/>
+
 CompuClever ITHMB Viewer, <http://https://www.microsoft.com/ko-kr/store/p/compuclever-ithmb-viewer/9wzdncrdm8hg>
 
 두 도구다 유료이며 무료버전에서는 일부만을 지원하고, 전체 썸네일을 확인하기 위해서는 별도의 추가 비용을 지불하여야 한다.
