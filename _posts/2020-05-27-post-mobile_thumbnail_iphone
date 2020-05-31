@@ -1,6 +1,6 @@
 
 ---
-title: "[모바일 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안"
+title: "[아이폰 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 1편"
 categories:
   - Mobile Forensic
 tags:
@@ -8,6 +8,8 @@ tags:
   - 몰카
   - 증거인멸
   - Thumbnail
+  - iThmb Converter
+  - iThmb Viewer
 comments: true
 ---
 
@@ -17,9 +19,8 @@ comments: true
 > 1. 썸네일이란?
 > 2. 썸네일의 포렌식적 의미
 > 3. 아이폰 썸네일 확인
-> 4. 안드로이드 썸네일 확인
-> 5. 결론
-> 6. 참고
+> 4. 안드로이드 
+> 5. 참고
 
 # 1. 썸네일이란?
 
@@ -66,50 +67,10 @@ CompuClever ITHMB Viewer, <http://https://www.microsoft.com/ko-kr/store/p/compuc
 
 # 4. 안드로이드 썸네일 확인
 
-|구분|파일|경로|
-||---|---|
-|썸네일|ThumbCache|/sdcard/Android/data/com.sec.android.gallery3d/cache/(Samsung)|
-|썸네일|ThumbCache|/sdcard/Android/data/com.android.gallery3d/cache/(LG)|
-|썸네일|.thumbnails|/sdcard/.thumbnails/|
-|썸네일|.face|/sdcard/.face/(Samsung only)|
-|데이터베이스|External.db|/data/com.android.providers.media/databases/|
-|데이터베이스|es0.db|/data/com.google.android.apps.plus/databases/|
+안드로이드 편은 이어서 다음 글에서 다루도록 하겠다.
 
-# 5. 결론
-
-
-
-# 6. 참고
+# 5. 참고
 
 윤대호, 안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구', 2017.12, 고려대학교 석사학위 논문
 
 
-- aa
-  - bb
-    - cc
-- dd
-
-// code page
-```
-aaaaaaaaaaaaaaaaa
-```
-
-// 글자 배경
-`bbbbb`
-
-//표
-|파일명|역할|
-|---|---|
-|||
-|||
-|||
-
-// 이미지
-<center><p><img src="/assets/폴더명/파일명.jpg"></p></center>
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
-![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg)
-
-// 링크 삽입
-<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
-[](https://)
-[인라인 링크](https://)
