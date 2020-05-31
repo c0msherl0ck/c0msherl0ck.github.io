@@ -55,13 +55,14 @@ userdata/data/com.android.chrome/files/images
 userdata/media/0/DCIM/.thumbnails/
 ```
 
-해당 경로에는 thumbdata3 아카이브 파일과 jpg 형태의 개별 파일이 저장되어 있다.
-
 <center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/thumbnail.jpg"><br><em>thumbnail</em></p></center>
 
-윤대호, "안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구", 2017.12 
-논문에서는 안드로이드에서도 다음과 같은 경로의 아카이브 형태의 썸네일에 대해 분석하였으나, 
-필자가 분석한 기종과 버전에서는 해당 경로에서 ThumbCache 파일이 발견되지 않았다.
+해당 경로에는 thumbdata3 아카이브 파일과 jpg 형태의 개별 파일이 저장되어 있다.
+jpg 형태의 썸캐시는 thumbdata3 아카이브 파일 내의 썸캐시보다 해상도가 더 큰 형태로 저장되는 것으로 썸네일의 내용에 차이가 있는 것은 아니다. 
+따라서 아이폰과는 다르게 별도의 도구가 없더라도 썸네일 확인이 가능하다.
+
+이외에도 참고한 논문(윤대호 저)에서는 다음의 경로에 있는 아카이브 형태의 썸캐시에 대해 분석하였으나, 
+필자가 분석한 기종과 버전에서는 논문에서 소개된 썸캐시과 다른 형태의 캐시 파일이 발견되었다.
 
 |제조사|ThumbCache Path|
 |---|---|
@@ -72,34 +73,3 @@ userdata/media/0/DCIM/.thumbnails/
 
 
 
-
-- aa
-  - bb
-    - cc
-- dd
-
-
-// code page
-```
-aaaaaaaaaaaaaaaaa
-```
-
-// 글자 배경
-`bbbbb`
-
-//표
-|파일명|역할|
-|---|---|
-|||
-|||
-|||
-
-// 이미지
-<center><p><img src="/assets/폴더명/파일명.jpg"></p></center>
-<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
-![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg)
-
-// 링크 삽입
-<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
-[](https://)
-[인라인 링크](https://)
