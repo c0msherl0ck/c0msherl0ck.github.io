@@ -1,7 +1,7 @@
 ---
 title: "[안드로이드 포렌식] Autopsy 도구를 이용한 증거 분석"
 categories:
-  - Mobile Forensic
+  - 모바일 포렌식
 tags:
   - mobile
   - forensic
