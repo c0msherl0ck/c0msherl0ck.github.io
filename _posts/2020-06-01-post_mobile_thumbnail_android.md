@@ -18,11 +18,11 @@ comments: true
 
 이번글에서는 이전에 분석한 내용을 토대로 진행되었기 때문에 이전의 글들을 참고하여야 한다.
 
-[안드로이드 포렌식] Autopsy 도구를 이용한 증거 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile-android-autopsy/)
+[안드로이드 포렌식 Autopsy 도구를 이용한 증거 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile-android-autopsy/)
 에서 Autopsy의 Android analyzer 프로세싱을 진행한 이후 본 글에서의 분석을 진행할 수 있으며,
 
 썸네일의 기본 개념에 대해서는 다음의 글을 참고한다. 
-[아이폰 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_thumbnail_iphone/)
+[아이폰 포렌식 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_thumbnail_iphone/)
 
 
 
