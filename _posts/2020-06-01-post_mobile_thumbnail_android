@@ -11,8 +11,8 @@ comments: true
 이전 글에 이어 Autopsy 도구를 이용하여 안드로이드 핸드폰에서의 썸네일을 분석한다.
 
 > 1. 들어가기 전에
-> 2. 안드로이드 썸네일 확인
-> 
+> 2. 이미지 파일 확인
+> 3. 썸네일 확인
 
 # 1. 들어가기 전에
 
@@ -21,7 +21,54 @@ comments: true
 이전글 [안드로이드 포렌식] Autopsy 도구를 이용한 증거 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile-android-autopsy/)
 에서 Autopsy의 Android analyzer 프로세싱을 진행한 이후 본 글에서의 분석을 진행할 수 있다.
 
-# 2. 안드로이드 썸네일 확인
+# 2. 이미지 파일 확인
+
+Autopsy 에서 View - File Types - By Extension - Images 에서는 삭제된 것을 포함하여 모든 이미지 파일을 확인할 수 있다.
+썸네일 또한 이미지 파일이므로 이곳에서 확인할 수 있으나, 사진, 스크린 샷 등의 일반 이미지 파일과 혼재되어 있다.
+
+<center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/Autposy_thumbnail.jpg"><br><em>Autposy 이미지 파일 확인</em></p></center>
+
+모든 이미지 파일들이 나온 경로를 추출하여 엑셀에서 중복을 제거한 뒤 확인한 결과는 다음과 같다.
+
+```
+userdata/system/recent_images
+userdata/media/0/PlayMemories Mobile
+userdata/media/0/Pictures/Screenshots
+userdata/media/0/NaverMap/navi/UserData/OBN/Route/.NIGHT
+userdata/media/0/NaverMap/navi/UserData/OBN/Route/.DAY
+userdata/media/0/KakaoTalkDownload
+userdata/media/0/DCIM/.thumbnails
+userdata/media/0/Android/data/com.kakao.talk/contents/91040664126874
+userdata/data/com.sec.android.app.samsungapps
+userdata/data/com.samsung.clipboardsaveservice/files
+userdata/data/com.omnitel.android.dmb/files
+userdata/data/com.hanabank.ebk.channel.android.hananbank/aria/temp
+userdata/data/com.hanabank.ebk.channel.android.hananbank/aria
+userdata/data/com.android.chrome/files/images
+```
+
+# 3. 썸네일 확인
+
+앞서 살펴본 이미지 파일의 경로 중 썸네일에 해당하는 경로는 다음과 같다.
+
+```
+userdata/media/0/DCIM/.thumbnails/
+```
+
+해당 경로에는 thumbdata3 아카이브 파일과 jpg 형태의 개별 파일이 저장되어 있다.
+
+<center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/thumbnail.jpg"><br><em>thumbnail</em></p></center>
+
+윤대호, "안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구", 2017.12 
+논문에서는 안드로이드에서도 다음과 같은 경로의 아카이브 형태의 썸네일에 대해 분석하였으나, 
+필자가 분석한 기종과 버전에서는 해당 경로에서 ThumbCache 파일이 발견되지 않았다.
+
+|제조사|ThumbCache Path|
+|---|---|
+|삼성|userdata/data/com.sec.android.gallery3d/cache/|
+|LG|userdata/data/com.sec.android.gallery3d/cache/|
+
+<center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/thumbcache.jpg"><br><em>thumbcache</em></p></center>
 
 
 
