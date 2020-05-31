@@ -1,1 +1,58 @@
+---
+title: "[안드로이드 포렌식] Autopsy 도구를 이용한 썸네일 분석"
+categories:
+  - 모바일 포렌식
+tags:
+  - 썸네일
+  - Autopsy
+comments: true
+---
 
+이전 글에 이어 Autopsy 도구를 이용하여 안드로이드 핸드폰에서의 썸네일을 분석한다.
+
+> 1. 들어가기 전에
+> 2. 안드로이드 썸네일 확인
+> 
+
+# 1. 들어가기 전에
+
+이번글에서는 이전에 분석한 내용을 토대로 진행되었기 때문에 이전의 글들을 참고하여야 한다.
+
+이전글 [안드로이드 포렌식] Autopsy 도구를 이용한 증거 분석](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile-android-autopsy/)
+에서 Autopsy의 Android analyzer 프로세싱을 진행한 이후 본 글에서의 분석을 진행할 수 있다.
+
+# 2. 안드로이드 썸네일 확인
+
+
+
+
+- aa
+  - bb
+    - cc
+- dd
+
+
+// code page
+```
+aaaaaaaaaaaaaaaaa
+```
+
+// 글자 배경
+`bbbbb`
+
+//표
+|파일명|역할|
+|---|---|
+|||
+|||
+|||
+
+// 이미지
+<center><p><img src="/assets/폴더명/파일명.jpg"></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
+![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg)
+
+// 링크 삽입
+<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
+[](https://)
+[인라인 링크](https://)
