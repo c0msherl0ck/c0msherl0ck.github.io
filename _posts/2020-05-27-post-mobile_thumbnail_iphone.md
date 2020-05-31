@@ -1,7 +1,7 @@
 ---
 title: "[아이폰 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 제1편"
 categories:
-  - Mobile Forensic
+  - 모바일 
 tags:
   - 썸네일
   - 몰카
