@@ -69,6 +69,6 @@ CompuClever ITHMB Viewer, <http://https://www.microsoft.com/ko-kr/store/p/compuc
 
 # 5. 참고
 
-윤대호, 안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구', 2017.12, 고려대학교 석사학위 논문
+윤대호, "안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구", 2017.12, 고려대학교 석사학위 논문
 
 
