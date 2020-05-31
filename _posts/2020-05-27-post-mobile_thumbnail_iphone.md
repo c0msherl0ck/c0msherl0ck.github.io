@@ -1,5 +1,5 @@
 ---
-title: "[아이폰 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 제1"
+title: "[아이폰 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 제1편"
 categories:
   - Mobile Forensic
 tags:
@@ -42,7 +42,7 @@ comments: true
 
 # 3. 아이폰 썸네일 확인
 
-아이폰 썸네일의 경로는 다음과 같으며, 필자는 이전글에서 iTunes를 이용한 백업 파일에서 iBackupBot을 이용해 추출하였다.
+아이폰 썸네일의 경로는 다음과 같으며, 필자는 이전글 [iTunes를 이용한 백업](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_iphone8/) 파일에서 iBackupBot을 이용해 추출하였다.
 
 ```
 /var/mobile/media/PhotoData/Thumbnails/[.ithmb]
@@ -52,14 +52,12 @@ comments: true
 
 <p>
 추출한 ithumb 파일은 아카이브 형태이며, 썸네일 크기 별로 ithumb 파일이 다르게 구성되어 있다.
-필자의 경우 총 3가지 크기로 구분되어 있으며 각각의 아카이브 내 썸네일 사진들을 확인하기 위해서는 iThmb Converter, iThmb Viewer 등의 별도의 도구가 필요하다.
+필자의 경우 총 3가지 크기로 구분되어 있으며 각각의 아카이브 내 썸네일 사진들을 확인하기 위해서는 iThmb Converter, iThmb Viewer 등의 별도의 도구가 필요하다. 두 도구다 유료이며 무료버전에서는 일부만을 지원하고, 전체 썸네일을 확인하기 위해서는 별도의 추가 비용을 지불하여야 한다.
+</p>
 
 iThmb Converter, <http://www.ithmbconverter.com/>
 
 CompuClever ITHMB Viewer, <http://https://www.microsoft.com/ko-kr/store/p/compuclever-ithmb-viewer/9wzdncrdm8hg>
-
-두 도구다 유료이며 무료버전에서는 일부만을 지원하고, 전체 썸네일을 확인하기 위해서는 별도의 추가 비용을 지불하여야 한다.
-</p>
 
 <center><p><img src="/assets/2020-05-27-post-mobile_thumbnail/iThmb_Converter.jpg"><br><em>iThmb_Converter</em></p></center>
 
