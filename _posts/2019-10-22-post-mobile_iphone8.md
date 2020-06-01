@@ -1,7 +1,7 @@
 ---
 title: "[아이폰 포렌식] iTunes 백업을 이용한 논리적 이미지 획득"
 categories:
-  - 모바일 포렌식
+  - Mobile Forensic
 tags:
   - mobile
   - forensic
