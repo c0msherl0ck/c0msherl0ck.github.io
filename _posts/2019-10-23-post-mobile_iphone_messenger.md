@@ -1,7 +1,7 @@
 ---
 title: "[아이폰 포렌식] 아이폰 메신저 앱(문자, 카카오톡, 페이스북) 분석"
 categories:
-  - 모바일 포렌식
+  - Mobile Forensic
 tags:
   - mobile
   - forensic
