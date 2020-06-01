@@ -1,7 +1,7 @@
 ---
 title: "[안드로이드 포렌식] 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 제2편"
 categories:
-  - 모바일 포렌식
+  - Mobile Forensic
 tags:
   - 썸네일
   - Autopsy
