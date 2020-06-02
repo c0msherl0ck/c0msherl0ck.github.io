@@ -8,6 +8,7 @@ tags:
   - pst
   - ost
   - msg
+  - nst
 comments: true
 ---
 
@@ -16,7 +17,8 @@ comments: true
 > 1. OST
 > 2. PST
 > 3. MSG
-> 4. 참고
+> 4. NST
+> 5. 참고
 
 # 1. OST
 
@@ -80,6 +82,21 @@ Outlook 2016 에서 `.pst` 파일은 주로 **백업**을 위해 사용된다. `
 <em>아웃룩 메세지 형식</em>
 </p></center>
 
-# 4. 참고
+# 4. NST
 
-[Outlook 데이터 파일(.pst 및 .ost) 소개](https://support.office.com/ko-kr/article/outlook-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%8C%8C%EC%9D%BC-pst-%EB%B0%8F-ost-%EC%86%8C%EA%B0%9C-222eaf92-a995-45d9-bde2-f331f60e2790)
+nst 파일은 아웃룩(Outlook 2016)에서 MS Office 365 계정을 사용하고자 할 때 생성되는 캐시 파일이다. 
+캐시 파일이란 응용 프로그램이 데이터에 접근을 빠르게 하기 위해서 로컬 PC에 생성하는 파일을 의미한다.
+
+<https://www.systoolsgroup.com/nst/>에 nst 관련 설명히 상세히 나와있다. 이 중 일부를 발췌하였다.
+
+<div class="notice">
+<p>
+If a user wants to access Office 365 Groups in Outlook, it needs to be configured in cached Exchange mode. The reason behind it is that only cached mode let users work in offline with group conversations. But, keep in mind that users cannot access the group document library unless you have a cached local copy available locally. So, when users find out this new file extension (.nst) with large size, they get confused. They think of deleting it as GST with .nst extension occupied a large amount of storage space. But, now it is clear that this NST file stores Office 365 group cached copy on the local machine.  
+<p>
+</div>
+
+# 5. 참고
+
+Outlook 데이터 파일(.pst 및 .ost) 소개, <https://support.office.com/ko-kr/article/outlook-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%8C%8C%EC%9D%BC-pst-%EB%B0%8F-ost-%EC%86%8C%EA%B0%9C-222eaf92-a995-45d9-bde2-f331f60e2790>
+
+What is NST File Format?, <https://www.systoolsgroup.com/nst/>
