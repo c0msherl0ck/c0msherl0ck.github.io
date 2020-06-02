@@ -12,7 +12,7 @@ tags:
 comments: true
 ---
 
-아웃룩 데이터 파일은 다음과 같이 크게 3가지 확장자가 있다. `.pst` `.ost` `.msg` 3가지 모두 아웃룩의 데이터(메일 등)를 저장한다는 점은 같지만, 사용방식과 저장되는 정보에는 차이가 있다. 각 파일별 특징에 대해 알아보자
+아웃룩 데이터 파일은 다음과 같이 크게 4가지 확장자가 있다. `.pst` `.ost` `.msg` `.nst` 4가지 모두 아웃룩의 데이터(메일 등)를 저장한다는 점은 같지만, 사용방식과 저장되는 정보에는 차이가 있다. 각 파일별 특징에 대해 알아보자
 
 > 1. OST
 > 2. PST
@@ -85,14 +85,15 @@ Outlook 2016 에서 `.pst` 파일은 주로 **백업**을 위해 사용된다. `
 # 4. NST
 
 nst 파일은 아웃룩(Outlook 2016)에서 MS Office 365 계정을 사용하고자 할 때 생성되는 캐시 파일이다. 
-캐시 파일이란 응용 프로그램이 데이터에 접근을 빠르게 하기 위해서 로컬 PC에 생성하는 파일을 의미한다.
+캐시 파일이란 응용 프로그램이 데이터에 접근을 빠르게 하기 위해서 로컬 PC에 생성하는 파일을 의미한다. 
+생성 경로는 ost 와 동일하다.
 
 <https://www.systoolsgroup.com/nst/>에 nst 관련 설명히 상세히 나와있다. 이 중 일부를 발췌하였다.
 
 <div class="notice">
 <p>
 If a user wants to access Office 365 Groups in Outlook, it needs to be configured in cached Exchange mode. The reason behind it is that only cached mode let users work in offline with group conversations. But, keep in mind that users cannot access the group document library unless you have a cached local copy available locally. So, when users find out this new file extension (.nst) with large size, they get confused. They think of deleting it as GST with .nst extension occupied a large amount of storage space. But, now it is clear that this NST file stores Office 365 group cached copy on the local machine.  
-<p>
+</p>
 </div>
 
 # 5. 참고
