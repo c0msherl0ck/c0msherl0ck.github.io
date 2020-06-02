@@ -55,7 +55,8 @@ userdata/data/com.android.chrome/files/images
 
 # 3. 썸네일 확인
 
-앞서 살펴본 이미지 파일의 경로 중 썸네일에 해당하는 경로는 다음과 같다.
+이전글에서 알아본 바와 같이 혐의자가 증거인멸을 위해 사진을 삭제했다고 하더라도 썸네일은 삭제되지 않는다. 
+앞서 알아본 모든 이미지 파일의 저장 경로 중 썸네일에 해당하는 경로는 다음과 같다.
 
 ```
 userdata/media/0/DCIM/.thumbnails/
@@ -64,18 +65,25 @@ userdata/media/0/DCIM/.thumbnails/
 <center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/thumbnail.jpg"><br><em>thumbnail</em></p></center>
 
 해당 경로에는 `thumbdata3` 아카이브 파일과 `jpg` 형태의 개별 파일이 저장되어 있다.
-jpg 형태의 썸네일은 thumbdata3 아카이브 파일 내의 썸네일보다 해상도가 더 큰 형태로 저장되는 것으로 썸네일의 내용에 차이가 있는 것은 아니다. 
+`jpg` 형태의 썸네일은 `thumbdata3` 아카이브 파일 내의 썸네일보다 해상도가 더 큰 형태로 저장되는 것으로 썸네일의 내용에 차이가 있는 것은 아니다. 
 따라서 아이폰과는 다르게 별도의 도구가 없더라도 썸네일 확인이 가능하다.
 
-이외에도 참고한 논문(윤대호 저)에서는 다음의 경로에 있는 아카이브 형태의 썸캐시에 대해 분석하였으나, 
-필자가 분석한 기종과 버전에서는 논문에서 소개된 썸캐시과 다른 형태의 캐시 파일이 발견되었다.
+이외에도 참고한 논문(윤대호 저)에서는 다음의 경로에 있는 아카이브 형태의 썸캐시에 대해서 언급하였다.
 
 |제조사|ThumbCache Path|
 |---|---|
 |삼성|userdata/data/com.sec.android.gallery3d/cache/|
 |LG|userdata/data/com.android.gallery3d/cache/|
 
+위 경로를 확인결과 25KB 크기의 com.android.opengl.shaders_cache 파일이 존재했으며 분석을 위해 추출하였다. 
+추출한 파일을 <https://formats.kaitai.io/android_opengl_shaders_cache/python.html> 사이트에서 제공하는 파이썬 라이브러리를 통해 분석하고자 하였으나 썸캐시 파일이 온전하지 않은지 다음과 같은 파일크기 관련 에러가 발생하였다. 이 부분은 다른 안드로이드폰을 통해 추가적인 확인이 필요하다.
+
+<div class="notice">
+EOFError: requested 15335424 bytes, but got only 23906 bytes
+</div>
+
 <center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/thumbcache.jpg"><br><em>thumbcache</em></p></center>
+
 
 # 4. 참고
 
