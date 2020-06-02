@@ -26,35 +26,17 @@ Autopsy는 EnCase와 같은 통합 포렌식 분석 도구이며 무료이다. �
 
 Autopsy 도구는 매우 직관적이고 간편하므로 별도의 설명없이 다음의 그림 순서에 따라 분석을 진행한다.
 
-<center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/1.jpg" width="100%">
-<em>Case Information</em>
-</p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/1.jpg"><br><em>Case Information</em></p></center>
 
-<center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/2.jpg" width="100%">
-<em>Optional Information</em>
-</p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/2.jpg"><br><em>Optional Information</em></p></center>
 
-<center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/3.jpg" width="100%">
-<em>Select Type of Data Source</em>
-</p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/3.jpg"><br><em>Select Type of Data Source</em></p></center>
 
-<center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/4.jpg" width="100%">
-<em>Select Data Source</em>
-</p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/4.jpg"><br><em>Select Data Source</em></p></center>
 
-<center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/android_analyzer.jpg" width="100%">
-<em>Configure Ingest Modules(processing option)에서 android analyzer 선택</em>
-</p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/android_analyzer.jpg"><br><em>Configure Ingest Modules(processing option)에서 android analyzer 선택</em></p></center>
 
-<center><p>
-<img src="/assets/2019-10-29-post-mobile-android-autopsy/processing.jpg" width="100%">
-<em>Processing 상태</em>
-</p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/processing.jpg"><em>Processing 상태</em></p></center>
 
 # 2. 파일시스템 분석 및 데이터 추출 (Data Source)
 
