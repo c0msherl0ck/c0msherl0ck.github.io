@@ -1,5 +1,5 @@
 ---
-title: "[아웃룩] PST, OST, MSG 파일"
+title: "[아웃룩] PST, OST, NST, MSG 파일"
 categories:
   - E-mail
 tags:
