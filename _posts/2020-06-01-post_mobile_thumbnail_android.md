@@ -25,15 +25,14 @@ comments: true
 [아이폰 포렌식 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_thumbnail_iphone/)
 
 
+# 2. 삭제된 이미지 파일 확인
 
-# 2. 이미지 파일 확인
+Autopsy 에서 Views 메뉴에서는 삭제된 이미지를 포함하여 모든 이미지 파일을 확인할 수 있다. 만약 혐의자가 증거 인멸을 위해 사진을 삭제했다고 하더라도 해당 영역이 다른 데이터로 덮어씌워지지 않았다면 확인 및 복구가 가능하다.
 
-Autopsy 에서 View - File Types - By Extension - Images 에서는 삭제된 것을 포함하여 모든 이미지 파일을 확인할 수 있다.
-썸네일 또한 이미지 파일이므로 이곳에서 확인할 수 있으나, 사진, 스크린 샷 등의 일반 이미지 파일과 혼재되어 있다.
+<center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/image.jpg"><br><em>삭제된 이미지 파일 확인</em></p></center>
 
-<center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/image.jpg"><br><em>Autposy 이미지 파일 확인</em></p></center>
-
-모든 이미지 파일들이 나온 경로를 추출하여 엑셀에서 중복을 제거한 뒤 확인한 결과는 다음과 같다.
+Views 메뉴에서 보여주는 이미지 파일들의 저장위치를 알기 위해서는 원본 경로를 알아야 한다. 
+이를 위해 모든 이미지 파일들에 대해 Location 컬럼에서 경로를 추출하여 엑셀에서 중복을 제거한 뒤 확인한 결과는 다음과 같다.
 
 ```
 userdata/system/recent_images
@@ -51,6 +50,7 @@ userdata/data/com.hanabank.ebk.channel.android.hananbank/aria/temp
 userdata/data/com.hanabank.ebk.channel.android.hananbank/aria
 userdata/data/com.android.chrome/files/images
 ```
+
 
 # 3. 썸네일 확인
 
@@ -72,7 +72,7 @@ jpg 형태의 썸네일은 thumbdata3 아카이브 파일 내의 썸네일보다
 |제조사|ThumbCache Path|
 |---|---|
 |삼성|userdata/data/com.sec.android.gallery3d/cache/|
-|LG|userdata/data/com.sec.android.gallery3d/cache/|
+|LG|userdata/data/com.android.gallery3d/cache/|
 
 <center><p><img src="/assets/2020-06-01-post_mobile_thumbnail_android/thumbcache.jpg"><br><em>thumbcache</em></p></center>
 
