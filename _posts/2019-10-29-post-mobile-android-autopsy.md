@@ -34,7 +34,7 @@ Autopsy 도구는 매우 직관적이고 간편하므로 별도의 설명없이 
 
 <center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/4.jpg"><br><em>Select Data Source</em></p></center>
 
-<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/android_analyzer.jpg"><br><em>Configure Ingest Modules(processing option)에서 android analyzer 선택</em></p></center>
+<center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/android_analyzer.jpg"><br><em>android analyzer 선택</em></p></center>
 
 <center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/processing.jpg"><em>Processing 상태</em></p></center>
 
