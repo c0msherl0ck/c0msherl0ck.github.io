@@ -23,7 +23,7 @@ comments: true
 에서 Autopsy의 Android analyzer 프로세싱을 진행한 이후 본 글에서의 분석을 진행할 수 있으며,
 
 썸네일의 기본 개념에 대해서는 다음의 글을 참고한다. 
-[아이폰 포렌식 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_thumbnail_iphone/)
+[아이폰 포렌식 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 제1편](https://c0msherl0ck.github.io/mobile%20forensic/post-mobile_thumbnail_iphone/)
 
 
 # 2. 삭제된 이미지 파일 확인
