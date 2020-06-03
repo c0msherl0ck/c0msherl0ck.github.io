@@ -12,7 +12,8 @@ comments: true
 
 > 1. MBR의 한계점
 > 2. MBR vs GPT
-> 3. Quiz
+> 3. Forensic Proof 파일시스템 강의자료
+> 4. 참고
 
 # 1. MBR의 한계점
 
@@ -39,8 +40,6 @@ comments: true
 |파티션 라벨|파티션 ID|GUID|
 |파티션 작성 툴|fdisk|parted|
 
-[출처 : 하드 디스크의 이해](http://webdir.tistory.com/160)
-
 ## 2.2 파티션 할당 방식 차이
 
 이전 글 [MBR과 EBR 분석](https://c0msherl0ck.github.io/file%20system/post-MBR/)과 [GPT 분석](https://c0msherl0ck.github.io/file%20system/post-GPT/)을 참고한다.
@@ -53,9 +52,12 @@ comments: true
 
 <br>
 
-# 3. Quiz
+# 3. Forensic Proof 파일시스템 강의자료
 
-PDF 자료 [MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/master/Filesystem) 내 Quiz 에 대한 정답은 아래와 같다.
+Forensic Proof 블로그에 공개된 파일시스템 관련 PDF 자료를 공부하며 MBR과 GPT 파일시스템 관련 Quiz에 대한 답을 작성하였다. 
+PDF 자료는 다음 링크에서 다운로드 받을 수 있다.
+
+<https://github.com/proneer/Slides/tree/master/Filesystem>
 
 ## 3.1 MBR 과 GPT
 
@@ -100,3 +102,9 @@ PDF 자료 [MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/mas
   - 볼륨 : 논리적으로 연속된 섹터들의 모음
 - 윈도우가 기본 인식(마운트)할 수 있는 파일시스템은?
   - FAT(12/16/32), exFAT, NTFS
+
+# 4. 참고
+
+[출처 : 하드 디스크의 이해](http://webdir.tistory.com/160)
+
+[MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/master/Filesystem)
