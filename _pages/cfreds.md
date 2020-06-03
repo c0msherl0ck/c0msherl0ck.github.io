@@ -45,7 +45,7 @@ title: "CFReDS 문제풀이"
 
 14 [artifacts of WEB](https://holywaterkim.tistory.com/36)
 
-15 [https://holywaterkim.tistory.com/37](https://holywaterkim.tistory.com/37)
+15 [website access logs](https://holywaterkim.tistory.com/37)
 
 16 [kewords using web browser](https://holywaterkim.tistory.com/38)
 
