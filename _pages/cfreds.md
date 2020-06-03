@@ -1,5 +1,5 @@
 ---
-permalink: //
+permalink: /cfreds/
 title: "CFReDS 문제풀이"
 ---
 
