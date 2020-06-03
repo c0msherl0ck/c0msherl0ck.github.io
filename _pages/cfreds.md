@@ -9,6 +9,10 @@ title: "CFReDS 문제풀이"
 <https://www.cfreds.nist.gov/>
 
 
+> 1. Data Leakage Case (정보유출사고)
+> 2. Hacking Case (침해사고)
+
+
 # 1. Data Leakage Case (정보유출사고)
 
 문제 : <https://www.cfreds.nist.gov/data_leakage_case/data-leakage-case.html>
