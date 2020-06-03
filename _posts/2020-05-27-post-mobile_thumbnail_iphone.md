@@ -67,6 +67,8 @@ CompuClever ITHMB Viewer, <http://https://www.microsoft.com/ko-kr/store/p/compuc
 
 안드로이드 편은 이어서 다음 글에서 다루도록 하겠다.
 
+[안드로이드 포렌식 썸네일을 이용한 몰카, 아동음란물 소지 범죄의 입증방안 제2편](https://c0msherl0ck.github.io/mobile%20forensic/post_mobile_thumbnail_android/)
+
 # 5. 참고
 
 윤대호, "안드로이드 스마트폰 썸네일의 디지털 포렌식 조사 기법 연구", 2017.12, 고려대학교 석사학위 논문
