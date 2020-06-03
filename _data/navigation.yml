@@ -1,7 +1,7 @@
 main:
   - title: "Posts"
-#     url: /posts/
     url: /
+#     url: /posts/    
   - title: "Categories"
     url: /categories/
   - title: "CFReDS 문제풀이"
