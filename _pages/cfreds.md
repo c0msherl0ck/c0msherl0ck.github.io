@@ -11,9 +11,7 @@ title: "CFReDS 문제풀이"
 
 # 1. Data Leakage Case (정보유출사고)
 
-시나리오와 실습파일은 다음 URL 에서 확인할 수 있다. 
-
-<https://www.cfreds.nist.gov/data_leakage_case/data-leakage-case.html>
+문제 : <https://www.cfreds.nist.gov/data_leakage_case/data-leakage-case.html>
 
 * * *
 
@@ -107,9 +105,7 @@ title: "CFReDS 문제풀이"
 
 # 2. Hacking Case (침해사고)
 
-시나리오와 실습파일은 다음 URL 에서 확인할 수 있다. 
-
-<https://www.cfreds.nist.gov/Hacking_Case.html>
+문제 : <https://www.cfreds.nist.gov/Hacking_Case.html>
 
 * * *
 
