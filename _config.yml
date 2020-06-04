@@ -29,7 +29,12 @@ comments:
   provider : "disqus"
   disqus:
     shortname : "c0msherl0ck-github-io"
-
+# Analytics
+analytics:
+  provider               : "google" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-168549084-1"
+    anonymize_ip         : true # true, false (default)
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
