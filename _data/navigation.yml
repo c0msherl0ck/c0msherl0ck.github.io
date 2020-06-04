@@ -1,6 +1,6 @@
 main:
   - title: "Posts"
-    url: https://c0msherl0ck.github.io/
+    url: /posts/
   - title: "Categories"
     url: /categories/
   - title: "CFReDS 문제풀이"
