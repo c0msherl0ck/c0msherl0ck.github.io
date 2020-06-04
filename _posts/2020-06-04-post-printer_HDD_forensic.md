@@ -1,7 +1,7 @@
 ---
 title: "[프린터 포렌식] 복합기 내 하드디스크(HDD) 분석"
 categories:
-  - Printer Forensic
+  - Embedded Forensic
 tags:
   - 복합기
   - 하드디스크
