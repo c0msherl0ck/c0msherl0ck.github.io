@@ -42,11 +42,11 @@ comments: true
 
 A사의 경우 HDD를 마운트 시켰을 때, 파일시스템이 Linux OS 기반인 것을 확인하였고 인쇄물이 저장되는 파티션(볼룸)을 식별하였다. 
 해당 파티션은 헥사 단위로 분석하였을 때 Entry 관련 정보와 File Data 영역을 구분하여 저장하였다. 
-File Data의 경우 JBIG 이미지 압축포맷을 사용하고 있었고 추출 후 `jbg`로 확장자를 변경 후 Viewer를 통해 내용(스캔본)을 확인할 수 있었다.
+File Data의 경우 `JBIG` 이미지 압축포맷을 사용하고 있었고 추출 후 `jbg`로 확장자를 변경 후 Viewer를 통해 내용(스캔본)을 확인할 수 있었다.
 
 ## 3.2. B사 분석 (tiff, Big Endian)
 
-B사의 경우 HDD를 마운트 시켰으나 OS 관련 정보는 확인할 수 없었다. File Data 영역의 경우 tiff 형태로 저장하고 있었으며, 
+B사의 경우 HDD를 마운트 시켰으나 OS 관련 정보는 확인할 수 없었다. File Data 영역의 경우 `tiff` 형태로 저장하고 있었으며, 
 특히 Byte Order 가 Little Endian 이 아닌, `Big Endian`으로 기록되어 있어 추출 후 파일을 확인하기 위해서는 Byte Order를 변경하는 작업이 필요하였다.
 
 # 4. 참고자료
