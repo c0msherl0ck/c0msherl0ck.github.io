@@ -1,7 +1,7 @@
 ---
 title: 차량 블랙박스 포렌식(비영상정보)
 categories:
-  - Video
+  - Embedded Forensic
 tags:
   - dashcam
   - 블랙박스
