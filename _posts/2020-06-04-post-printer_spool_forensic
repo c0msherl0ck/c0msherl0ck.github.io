@@ -15,6 +15,7 @@ comments: true
 > 2. 스풀 파일 분석(Spool)
 > 3. 참고
 
+
 # 1. 프린트 흔적 (Print Artifacts)
 
 PC에서 프린트를 진행할 경우, PC 내 **임시파일** 형태로 프린트와 관련된 데이터를 저장하고 이를 프린터기에 전송한다. 
@@ -77,8 +78,16 @@ EMF 방식의 경우 FP0000XX.SHD, FP000XX.SPL 파일이름으로 생성되었�
 
 <center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/EMF 방식.jpg"><br><em>EMF 방식</em></p></center>
 
-EMF 방식의 스풀 파일의 경우 그 내용 확인이 용이하며 많은 도구들이 이를 지원한다. 
-대표적으로 
+SPL 파일에는 인쇄물이 EMF 포맷으로 저장되는데, 내용 확인이 용이하며 많은 도구들이 이를 지원한다. 
+대표적으로 SPLView64 도구가 있으며 다음의 경로에서 다운로드 받을 수 있다.
+
+- http://www.lvbprint.de/html/download.html
+
+별도의 도구 없이도 SPL Header를 제거하고 파일의 확장자를 EMF 로 변환하면 윈도우 기본 그림판으로도 확인이 가능하다.
+
+<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_HEADER.jpg"><br><em>SPL_HEADER</em></p></center>
+
+<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/EMF 파일로 변경 후 확인.jpg"><br><em>EMF 확장자로 변경 후 확인</em></p></center>
 
 # 3. 참고
 
