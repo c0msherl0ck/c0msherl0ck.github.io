@@ -69,7 +69,7 @@ Views 메뉴에서는 파일 유형 별 조회가 가능하다.
 |By Extension|확장자별 분류|
 |Documents|알려진 문서 속성|
 |Executable|실행파일|
-|By MIME Type|이메일 관련 파일|
+|By MIME Type|파일 변환(File Signature 분석 시 확인 가능)|
 
 Autopsy 에서는 파일카빙을 통해 비할당 영역에서의 파일복구를 지원한다. 
 만약, 삭제된 파일영역이 다른 데이터로 덮어씌워지지 않았다면 복구가 가능하다.
