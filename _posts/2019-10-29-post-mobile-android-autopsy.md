@@ -15,7 +15,7 @@ Autopsy는 EnCase와 같은 통합 포렌식 분석 도구이며 무료이다. �
 
 > 1. Autopsy를 이용한 프로세싱 (android analyzer)
 > 2. 파일시스템 분석 및 데이터 추출 (Data Source)
-> 3. 파일 확인 및  (Views)
+> 3. 파일 확인 및 복구 (Views)
 > 4. 기본 앱 분석 (Results)
 > 5. Timeline 분석을 통한 사용자 행위 추적
 > 6. 참고
@@ -60,7 +60,7 @@ Autopsy 도구는 매우 직관적이고 간편하므로 별도의 설명없이 
 <center><p><img src="/assets/2019-10-29-post-mobile-android-autopsy/카카오톡 데이터 추출.jpg"><br><em>카카오톡 데이터 추출</em></p></center>
 
 
-# 3. 파일 확인 및 파일 복구 (Views)
+# 3. 파일 확인 및 복구 (Views)
 
 Views 메뉴에서는 파일 유형 별 조회가 가능하다.
 
