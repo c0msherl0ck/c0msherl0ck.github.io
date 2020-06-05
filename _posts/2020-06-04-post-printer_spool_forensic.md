@@ -53,7 +53,7 @@ USB 케이블을 재연결하면 해당 스풀파일들은 삭제된다.
 
 Raw 방식의 경우 000XX.SHD, 000XX.SPL 파일이름으로 생성되었다.
 
-<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/Raw 방식.jpg"><br><em>Raw 방식</em></p></center>
+<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/RAW 방식.jpg"><br><em>Raw 방식</em></p></center>
 
 각각의 파일을 헥사에디터로 확인한 결과 사용한 프린터기, PC, 윈도우 계정, 프린트한 파일명 등의 작업 정보를 확인할 수 있었다.
 그러나, 인쇄물에 해당하는 데이터의 경우 그 내용을 확인 및 유추하기 어렵다.
