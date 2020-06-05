@@ -28,8 +28,8 @@ PC에서 프린트를 진행할 경우, PC 내 **임시파일** 형태로 프린
 한편, 스풀러 방식에는 Raw 방식과 EMF 방식이 있다. 프린터속성에서 변경 가능하며 각각의 방식에 따라 스풀 파일 내 저장되는 정보가 다르다.
 
 <center><p>
-<img src="/assets/2020-06-04-post-printer_spool_forensic/프린터속성.jpg" width="30%">
-<img src="/assets/2020-06-04-post-printer_spool_forensic/스풀방식.jpg" width="70%">
+<img src="/assets/2020-06-04-post-printer_spool_forensic/프린터속성.jpg" width="25%">
+<img src="/assets/2020-06-04-post-printer_spool_forensic/스풀방식.jpg" width="65%">
 </p></center>
 
 |파일 확장자|Raw|EMF|
@@ -47,7 +47,7 @@ PC에서 프린트를 진행할 경우, PC 내 **임시파일** 형태로 프린
 프린터로 전송이 되지 못한 스풀파일들이 남아있는 상태에서 파일 복사 후 분석하였다. 
 USB 케이블을 재연결하면 해당 스풀파일들은 삭제된다.
 
-<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/케이블 연결 해제.jpg"><br><em>USB 케이블 제거 후 프린트 시 장애화면</em></p></center>
+<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/케이블 연결 해제.jpg" width="50%"><br><em>USB 케이블 제거 후 프린트 시 장애화면</em></p></center>
 
 ## 2.1 Raw 방식
 
@@ -59,14 +59,14 @@ Raw 방식의 경우 000XX.SHD, 000XX.SPL 파일이름으로 생성되었다.
 그러나, 인쇄물에 해당하는 데이터의 경우 그 내용을 확인 및 유추하기 어렵다.
 
 <center><p>
-<img src="/assets/2020-06-04-post-printer_spool_forensic/SHD_1.jpg" width="50%">
-<img src="/assets/2020-06-04-post-printer_spool_forensic/SHD_2.jpg" width="50%">
+<img src="/assets/2020-06-04-post-printer_spool_forensic/SHD_1.jpg" width="45%">
+<img src="/assets/2020-06-04-post-printer_spool_forensic/SHD_2.jpg" width="45%">
 <br><em>SHD</em>
 </p></center>
 
 <center><p>
-<img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_1.jpg" width="50%">
-<img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_2.jpg" width="50%">
+<img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_1.jpg" width="45%">
+<img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_2.jpg" width="45%">
 <br><em>SPL</em>
 </p></center>
 
@@ -87,7 +87,7 @@ SPL 파일에는 인쇄물이 EMF 포맷으로 저장되는데, 내용 확인이
 
 <center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_HEADER.jpg"><br><em>SPL_HEADER</em></p></center>
 
-<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/EMF 파일로 변경 후 확인.jpg"><br><em>EMF 확장자로 변경 후 확인</em></p></center>
+<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/EMF 파일로 변경 후 확인.jpg" width="60%"><br><em>EMF 확장자로 변경 후 확인</em></p></center>
 
 # 3. 참고
 
