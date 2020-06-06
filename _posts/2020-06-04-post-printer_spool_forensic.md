@@ -86,7 +86,7 @@ SPL 파일에는 인쇄물이 EMF 포맷으로 저장되는데, 내용 확인이
 
 별도의 도구 없이도 SPL Header를 제거하고 파일의 확장자를 EMF 로 변환하면 윈도우 기본 그림판으로도 확인이 가능하다.
 
-<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_HEADER.jpg"><br><em>SPL_HEADER</em></p></center>
+<center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/SPL_HEADER.jpg"><br><em>SPL HEADER</em></p></center>
 
 <center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/EMF 파일로 변경 후 확인.jpg" width="60%"><br><em>EMF 확장자로 변경 후 확인</em></p></center>
 
