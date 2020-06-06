@@ -1,5 +1,5 @@
 ---
-title: "[안드로이드 포렌식] Autopsy 도구를 이용한 분석"
+title: "[안드로이드 포렌식] Autopsy 도구를 이용한 증거 분석"
 categories:
   - Mobile Forensic
 tags:
