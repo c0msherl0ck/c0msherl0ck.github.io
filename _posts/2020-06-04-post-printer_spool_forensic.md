@@ -5,6 +5,7 @@ categories:
 tags:
   - SHD
   - SPL
+  - Spool
 comments: true
 ---
 
@@ -12,7 +13,7 @@ comments: true
 다른 하나는 프린트를 진행한 복합기 및 프린터기를 직접 분석하는 것이다. 이번 글에서는 프린트 명령을 내린 PC 를 분석하는 방법에 대해 소개한다.
 
 > 1. 프린트 흔적 (Print Artifacts)
-> 2. 스풀 파일 분석(Spool)
+> 2. 스풀(Spool) 파일 분석 (SHD, SPL)
 > 3. 참고
 
 
@@ -38,7 +39,7 @@ PC에서 프린트를 진행할 경우, PC 내 **임시파일** 형태로 프린
 |SPL|프린트 작업 정보 + 인쇄물 데이터|프린트 작업 정보 + 인쇄물을 EMF로 변환한 데이터|
 
 
-# 2. 스풀 파일 분석(SHD, SPL)
+# 2. 스풀(Spool) 파일 분석 (SHD, SPL)
 
 스풀파일은 인쇄가 종료되면 자동으로 삭제되기 때문에 분석 PC의 이미지를 획득 후 파일 복구를 통해 분석해야한다.
 그러나, SSD를 사용하는 PC에서 C 볼룸에 위치하는 파일을 복구하는 것은 가능성이 높지 않다.
@@ -73,7 +74,7 @@ Raw 방식의 경우 000XX.SHD, 000XX.SPL 파일이름으로 생성되었다.
 
 ## 2.2 EMF 방식
 
-EMF 방식의 경우 FP0000XX.SHD, FP000XX.SPL 파일이름으로 생성되었다. 
+EMF 방식의 경우 FP000XX.SHD, FP000XX.SPL 파일이름으로 생성되었다. 
 단, SHD 파일의 경우 파일이 생성되기는 하지만 0 KB로 데이터를 저장하지는 않는다.
 
 <center><p><img src="/assets/2020-06-04-post-printer_spool_forensic/EMF 방식.jpg"><br><em>EMF 방식</em></p></center>
