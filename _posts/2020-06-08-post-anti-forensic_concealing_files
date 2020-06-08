@@ -26,12 +26,11 @@ comments: true
 copy /b [원본 파일명] + [은닉할 파일명] [은닉한 파일이 포함된 새로운 파일명]
 ```
 
-<>
+<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files/DOS 명령어.jpg"><br><em>DOS 명령어</em></p></center>
 
-
-File Signature 분석을 통해 알 수 있다.
+은닉된 파일은 HxD 에서 File Signature 분석을 통해 알 수 있다.
 통상적인 Signature 분석의 경우 파일의 앞 부분인 Header Signature에 대해서만 분석을 하는 경우가 많지만, 
-다수의 이미지 파일의 경우 Footer Signature 를 가지고 있으므로 다음을 확인한다.
+다수의 이미지 파일의 경우 Footer Signature 를 가지고 있으므로 다음을 확인하면 파일의 은닉여부를 알 수 있다.
 
 - Footer Signature 가 파일의 마지막이 맞는지 여부
 - Footer Signature 가 Header Signature 에서 확인한 파일과 일치하는지 여부
