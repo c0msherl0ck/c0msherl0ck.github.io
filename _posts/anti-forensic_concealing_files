@@ -20,6 +20,23 @@ comments: true
 
 # 1. 이미지 파일 내 은닉
 
+이미지 파일 내 은닉한 파일은 `이미지 파일 + 은닉 파일`의 형태로 이루어며, DOS 명령어를 통한 방법은 다음과 같다.
+
+```
+copy /b [원본 파일명] + [은닉할 파일명] [은닉한 파일이 포함된 새로운 파일명]
+```
+
+<>
+
+
+File Signature 분석을 통해 알 수 있다.
+통상적인 Signature 분석의 경우 파일의 앞 부분인 Header Signature에 대해서만 분석을 하는 경우가 많지만, 
+다수의 이미지 파일의 경우 Footer Signature 를 가지고 있으므로 다음을 확인한다.
+
+- Footer Signature 가 파일의 마지막이 맞는지 여부
+- Footer Signature 가 Header Signature 에서 확인한 파일과 일치하는지 여부
+
+
 
 
 # 2. PK 파일 내 은닉
