@@ -1,0 +1,42 @@
+---
+title: "[안티 포렌식] 파일 은닉 방법에 관한 연구 제2편 (문서 파일 내 은닉)"
+categories:
+  - anti-forensic
+tags:
+  - Steganography
+  - PK
+  - OLE
+  - OOXML
+  - Compound Files
+comments: true
+---
+
+파일을 은닉하는 방법에는 이미지 내 파일 은닉, 문서 파일 내 은닉, ADS 내 은닉하는 방법 등이 있다.
+이번 글에서는 문서파일 내 은닉한 데이터를 발견 및 복구하는 방법에 대해 알아본다.
+
+> 1. 복합문서 파일 내 은닉
+> 2. PK 파일 내 은닉
+> 3. 
+> 4. 
+
+문서파일에는 크게 두 가지 종류가 존재하며 다음과 같다. 
+
+- OLE 구조를 가지는 복합문서 파일 (doc, ppt, xls, hwp)
+- OOXML 구조를 가지는 PK 파일 (docx, pptx, xlsx)
+
+# 1. 복합문서 파일 내 은닉
+
+김은광, "복합문서 파일에 은닉된 데이터 탐지 기법에 대한 연구", 2015.12, 정보보호학회논문지
+
+
+<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_PK/DDDDDDD.jpg">
+<br><em>DDDDDD</em></p></center>
+
+
+# 2. 
+
+
+
+# 4. 참고
+
+김은광, "복합문서 파일에 은닉된 데이터 탐지 기법에 대한 연구", 2015.12, 정보보호학회논문지
