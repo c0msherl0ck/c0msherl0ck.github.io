@@ -39,11 +39,28 @@ ADS 영역은 다음의 DOS 명령어를 통해 그 존재유무를 확인할 �
 dir /r
 ```
 
+<center><p><img src="/assets/2020-06-10-post-anti-forensic_concealing_files_in_ADS/ADS 존재유무 확인.jpg">
+<br><em>ADS 존재유무 확인</em></p></center>
+
 위에서 확인한 ADS 이름을 매개로 그 내용을 확인하는 방법은 다음과 같다.
 
 ```
 more < [파일명]:[ADS 이름]
 ```
+
+<center><p><img src="/assets/2020-06-10-post-anti-forensic_concealing_files_in_ADS/ADS 내용 확인.jpg">
+<br><em>ADS 내용 확인</em></p></center>
+
+ADS 내 파일 및 문자열을 은닉하는 방법은 다음과 같다.
+
+```
+type [은닉할 파일] > [원본 파일]:[ADS 이름 지정] // 파일 은닉
+echo "은닉할 문자열" >> [원본 파일]:[ADS 이름 지정] // 문자열 은닉
+```
+
+<center><p><img src="/assets/2020-06-10-post-anti-forensic_concealing_files_in_ADS/ADS 파일 은닉.jpg">
+<br><em>ADS 파일 은닉</em></p></center>
+
 
 
 # 3. 참고
