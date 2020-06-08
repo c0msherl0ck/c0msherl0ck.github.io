@@ -1,5 +1,15 @@
-
-검색어 : 이미지 footer 파일 은닉
+---
+title: "[안티 포렌식] 다양한 파일 은닉 방법에 관한 연구"
+categories:
+  - anti-forensic
+tags:
+  - Steganography
+  - PK
+  - JPG
+  - PNG
+  - ADS
+comments: true
+---
 
 > 1. 이미지 파일 내 은닉
 > 2. PK 파일 내 은닉
@@ -18,6 +28,8 @@
 
 
 # 4. 참고
+
+구글 검색어 : "이미지 footer 파일 은닉"
 
 안티 포렌식 - Passion - 티스토리, <https://duddnr0615k.tistory.com/283>
 
