@@ -26,10 +26,13 @@ comments: true
 
 # 1. 복합문서 파일 내 은닉
 
-김은광, "복합문서 파일에 은닉된 데이터 탐지 기법에 대한 연구", 2015.12, 정보보호학회논문지
+OLE 구조를 가지는 복합문서 파일 내 은닉방법은 다음의 논문을 참고하였다.
+
+- 김은광, "복합문서 파일에 은닉된 데이터 탐지 기법에 대한 연구", 2015.12, 정보보호학회논문지
 
 
-<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_PK/DDDDDDD.jpg">
+
+<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_Document/DDDDDDD.jpg">
 <br><em>DDDDDD</em></p></center>
 
 
