@@ -44,7 +44,7 @@ OLE 구조를 가지는 복합문서 파일 내 은닉방법은 다음의 논문
 
 아래는 문서 파일 내 txt 파일을 로드시켜 은닉한 것이다.
 
-<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_Document/SSView 파일은닉.jpg">
+<center><p><img src="/assets/2020-06-09-post-anti-forensic_concealing_files_in_Document/SSView 파일은닉.jpg">
 <br><em>SSViewer 데이터 스트림 추가를 통한 파일은닉</em></p></center>
 
 # 2. PK 파일 내 은닉
@@ -54,7 +54,7 @@ docx, pptx, xlsx 파일의 확장자를 zip 으로 변경 후 반디집 등을 �
 
 또한, 반디집의 파일 추가 기능을 통해 은닉할 파일을 추가할 수 있으며, 앞서 살펴본 복합문서 파일 형식 조작 때와 마찬가지로 문서 열람 시 별다른 특이점을 발견할 수 없다.
 
-<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_Document/PK 은닉.jpg">
+<center><p><img src="/assets/2020-06-09-post-anti-forensic_concealing_files_in_Document/PK 은닉.jpg">
 <br><em>PK 파일 내 은닉</em></p></center>
 
 # 3. 참고
