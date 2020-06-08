@@ -48,7 +48,7 @@ copy /b [원본 파일명] + [은닉할 파일명] [은닉한 파일이 포함�
 가령, 파일의 앞 부분을 보았을 때 PNG 파일의 Header Signature에 해당하나, 파일의 마지막 부분 Footer Signature를 확인하였을 때 
 JPG Footer Signature에 해당한다면 PNG 파일 내 JPG 파일이 은닉되었는지 의심해볼 수 있다.
 
-해당 문제 유형의 문제와 풀이는 다음을 참고한다.
+해당 유형의 문제와 풀이는 다음을 참고한다.
 
 - [xcz.kr] 1번 End Of Image 풀이, <https://h4nu.tistory.com/1>
 - [UTCTF 2020 Forensics] Observe Closely, <https://hjh0703.tistory.com/4>
