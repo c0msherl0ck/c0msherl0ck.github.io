@@ -16,8 +16,8 @@ comments: true
 
 > 1. 복합문서 파일 내 은닉
 > 2. PK 파일 내 은닉
-> 3. 
-> 4. 
+> 3. 참고
+
 
 문서파일에는 크게 두 가지 종류가 존재하며 다음과 같다. 
 
@@ -39,14 +39,24 @@ OLE 구조를 가지는 복합문서 파일 내 은닉방법은 다음의 논문
 |미사용 영역에 데이터 은닉|HxD를 통해 Byte 단위 확인|
 |복합문서 파일 형식 조작(Data Stream 추가)|SS Viewer, CFX 도구를 통한 확인 및 추출(알려진 문서 구조에 해당하지 않는 스트림)|
 
+위 방법 중 복합문서 파일 형식 조작 시 SSViewer 도구를 통해 은닉할 파일을 Load Stream으로 불러올 수 있다. 
+이렇게 은닉된 파일의 경우 문서 구조에 영향을 주지 않으며, 문서 열람 시에도 별다른 특이점을 발견할 수 없다.
 
+아래는 문서 파일 내 txt 파일을 로드시켜 은닉한 것이다.
 
-# 2. 
+<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_Document/SSView 파일은닉.jpg">
+<br><em>SSViewer 데이터 스트림 추가를 통한 파일은닉</em></p></center>
 
-<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_Document/DDDDDDD.jpg">
-<br><em>DDDDDD</em></p></center>
+# 2. PK 파일 내 은닉
 
+PK 파일의 경우 압축파일 형태로 손쉽게 확인이 가능하다. 
+docx, pptx, xlsx 파일의 확장자를 zip 으로 변경 후 반디집 등을 통해 파일 내부를 확인할 수 있다.
 
-# 4. 참고
+또한, 반디집의 파일 추가 기능을 통해 은닉할 파일을 추가할 수 있으며, 앞서 살펴본 복합문서 파일 형식 조작 때와 마찬가지로 문서 열람 시 별다른 특이점을 발견할 수 없다.
+
+<center><p><img src="/assets/2020-06-08-post-anti-forensic_concealing_files_in_Document/PK 은닉.jpg">
+<br><em>PK 파일 내 은닉</em></p></center>
+
+# 3. 참고
 
 김은광, "복합문서 파일에 은닉된 데이터 탐지 기법에 대한 연구", 2015.12, 정보보호학회논문지
