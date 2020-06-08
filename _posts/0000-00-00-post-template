@@ -40,6 +40,7 @@ aaaaaaaaaaaaaaaaa
 // 이미지
 <center><p><img src="/assets/폴더명/파일명.jpg"></p></center>
 <center><p><img src="/assets/폴더명/파일명.jpg" width="100%"><br><em>주석</em></p></center>
+<center><p><img src="/assets/폴더명/파일명.jpg"><br><em>주석</em></p></center>
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/bio-photo-keyboard.jpg)
 
 // 링크 삽입
