@@ -62,7 +62,6 @@ echo "은닉할 문자열" >> [원본 파일]:[ADS 이름 지정] // 문자열 �
 <br><em>ADS 파일 은닉</em></p></center>
 
 
-
 # 3. 참고
 
 [NTFS - 속성($STANDARD_INFORMATION, $FILE_NAME, $DATA) 및 ADS(Alternate Data Stream)](http://blog.naver.com/PostView.nhn?blogId=sjhmc9695&logNo=221409012223&categoryNo=37&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=search)
