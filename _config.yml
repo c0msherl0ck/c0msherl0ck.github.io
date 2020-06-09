@@ -16,8 +16,7 @@
 title: Science of Deduction
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  법의학의 창시자 로카르는 다음과 같이 말했다. "모든 사건 현장에는 추적가능한 흔적이 남는다."
-  디지털 포렌식이란 법의학의 디지털 분야이다.
+  Every contact leaves a trace.
 baseurl: 
 url: https://c0msherl0ck.github.io
 # teaser: "/assets/images/sher.jpg"
