@@ -20,9 +20,6 @@ comments: true
 Alternative Data Stream 의 약자로 NTFS 파일시스템에서 맥킨토시에서 사용하는 파일시스템과 호환성 유지를 위해 제공하는 Data Stream 영역이다. 
 MFT Entry 의 속성을 살펴보면 **$Data가 1개가 아닌 2개 이상인 경우**가 존재하며, ADS에 저장되는 데이터로는 대표적으로 Zone Identifer가 있다.
 
-Zone Identifer에 대해서는 이전글을 참고한다. 
-- [Zone Identifier](https://c0msherl0ck.github.io/windows/post-Zone_Identifier/)
-
 한편, NTFS 파일 시스템에서는 File Data를 저장할 때 $Data 속성을 이용하며, 파일 크기에 따라 실제 파일 데이터가 저장되는 위치에는 차이가 있다.
 
 |파일 크기|데이터 저장 위치|
