@@ -36,7 +36,7 @@ adb란? Android Debug Bridge 의 약자로, PC에서 명령어를 통해 안드�
 adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices`를 입력하고 결과를 확인한다. 정상적으로 설치가 되었을 경우 다음과 같은 연결 정보가 뜬다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/adb_devices.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/adb_devices.jpg">
 <em>adb devices 결과</em>
 </p></center>
 
@@ -49,14 +49,14 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 먼저, 상기의 사이트에서 자신의 핸드폰 기종을 확인하여 루팅에 필요한 파일을 다운로드 받는다. 필자의 경우 다음과 같이 Samsung SHV-E330K 모델에 해당하는 파일을 다운로드하였다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/autoroot.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/autoroot.jpg">
 <em>autoroot 사이트</em>
 </p></center>
 
 다운로드 파일의 합축을 해제하면, 다음과 같이 `odin` 소프트웨어와 루팅에 필요한 파일이 존재한다. 
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/download_files.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/download_files.jpg">
 <em>다운로드 파일</em>
 </p></center>
 
@@ -70,14 +70,14 @@ adb가 제대로 작동하는지 확인하기 위해, cmd 창에서 `adb devices
 `odin`을 실행하고, `AP` 버튼을 클릭하여 다운로드 받은 파일 중 md5 파일을 선택하고, `start`를 누른다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/odin.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/odin.jpg">
 <em>odin software</em>
 </p></center>
 
 완료 시 다음과 같이 obin software에서는 `Succeed` 메세지를 확인할 수 있고, 핸드폰에서는 `SuperUser 파일`이 생성된 것을 확인할 수 있다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/odin_succeed.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/odin_succeed.jpg">
 <em>odin software 의 succeed 메세지</em>
 </p></center>
 
@@ -101,7 +101,7 @@ su
 `su` 입력 시 명령어 입력창이 `#` 형태로 바뀌면 root 권한으로 상승한 것으로 루팅이 성공한 것이다. 만약, 권한이 없다는 메세지가 뜬다면 루팅에 실패한 것이다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/su.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/su.jpg">
 <em>su 명령어를 통한 root 권한 취득 확인</em>
 </p></center>
 
@@ -118,7 +118,7 @@ adb -d install BusyBox.apk
 </div>
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/busybox_install.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/busybox_install.jpg">
 <em>BusyBox 설치</em>
 </p></center>
 
@@ -147,7 +147,7 @@ cmd 창을 2개 띄운다. (CMD_1)하나는 컴퓨터에 명령어를 입력하�
 CMD_1 터미널 : adb forward tcp:8888 tcp:8888
 </div>
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/tcp.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/tcp.jpg">
 <em>tcp 연결</em>
 </p></center>
 
@@ -166,22 +166,22 @@ dd 명령어를 통해 물리 이미지를 획득하고, 파이프라인에 연�
 CMD_2 터미널 : dd if=/dev/block/mmcblk0 | busybox nc -l -p 8888
 </div>
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/dd.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/dd.jpg">
 <em>dd 명령어를 통한 이미지 획득 및 netcat을 통한 전송</em>
 </p></center>
 <div class="notice">
 CMD_1 터미널 : nc 127.0.0.1 8888 > android_data.dd
 </div>
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/nc_computer.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/nc_computer.jpg">
 <em>netcat을 이용한 데이터 수신 및 컴퓨터 내 파일 생성</em>
 </p></center>
 
 이미지 획득이 완료되면 다음과 같은 메세지가 뜬다. 필자의 경우 약 15GB의 이미지를 획득하는데 1시간 정도 소요되었다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/imaging_completed.jpg" width="100%">
-<img src="/assets/2019-10-28-post-mobile-android/final.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/imaging_completed.jpg">
+<img src="/assets/2019-10-28-post-mobile-android/final.jpg">
 <em>이미지 획득 완료</em>
 </p></center>
 
