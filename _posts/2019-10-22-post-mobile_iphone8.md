@@ -33,7 +33,7 @@ iTunes를 이용한 백업 파일은 다음의 경로에 저장이 된다.
 |---|---|
 |Windows XP   |C:\Documents and Settings\[user name]\Application Data\Apple Computer\MobileSync\Backup\ |
 |Windows 7  |C:\Users\[user name]\AppData\Roaming\AppleComputer\MobileSync\Backup\ |
-|Windows 10   |C:\Users\holywater\AppData\Roaming\Apple Computer\MobileSync\Backup\ |
+|Windows 10   |C:\Users\[user name]\AppData\Roaming\Apple Computer\MobileSync\Backup\ |
 |MAC OS X   |~/Library/Application Support/MobileSync/Backup/ |
 
 <br>
