@@ -3,7 +3,7 @@ permalink: /cfreds/
 title: "CFReDS 문제풀이"
 ---
 
-미국국립표준기술연구소(NIST, National Institute of Standards and Technology)에서 제공하는 정보유출사고, 침해사고 관련 시스템 이미지를 분석하여 문제 풀이 방법을 아래와 같이 정리하였다. 
+미국국립표준기술연구소(NIST, National Institute of Standards and Technology)에서 제공하는 정보유출사고, 침해사고 관련 시스템 이미지를 분석하고 문제 풀이 방법을 아래와 같이 정리하였다. 
 
 
 > 1. Data Leakage Case (정보유출사고)
