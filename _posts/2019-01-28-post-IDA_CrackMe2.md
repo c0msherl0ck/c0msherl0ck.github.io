@@ -1,5 +1,5 @@
 ---
-title: "[리버싱] IDA 를 이용하여 Crackme2.exe 크랙하기"
+title: "[리버싱] Crackme2.exe 크랙하기"
 categories:
   - Reversing
 tags:
