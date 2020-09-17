@@ -105,6 +105,6 @@ PDF 자료는 다음 링크에서 다운로드 받을 수 있다.
 
 # 4. 참고
 
-[출처 : 하드 디스크의 이해](http://webdir.tistory.com/160)
+[하드 디스크의 이해](http://webdir.tistory.com/160)
 
 [MBR, GPT, Filesystem.pdf](https://github.com/proneer/Slides/tree/master/Filesystem)
