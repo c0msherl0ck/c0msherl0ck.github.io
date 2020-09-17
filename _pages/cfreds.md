@@ -3,8 +3,7 @@ permalink: /cfreds/
 title: "CFReDS 문제풀이"
 ---
 
-미국국립표준기술연구소(NIST, National Institute of Standards and Technology)에서는 정보유출사고, 침해사고 관련 실습파일과 문제를 제공하고 있다. 
-윈도우 포렌식을 학습하는 가장 좋은 방법은 실습 이미지를 직접 분석해보는 것이며, 이에 도움이 되고자 필자가 과거에 학습하며 문제풀이를 기록하였던 이전 블로그의 게시물을 정리해두었다.
+미국국립표준기술연구소(NIST, National Institute of Standards and Technology)에서 제공하는 정보유출사고, 침해사고 관련 시스템 이미지를 분석하여 문제 풀이 방법을 아래와 같이 정리하였다. 
 
 
 > 1. Data Leakage Case (정보유출사고)
