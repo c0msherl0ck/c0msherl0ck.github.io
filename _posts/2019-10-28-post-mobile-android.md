@@ -29,7 +29,7 @@ adb란? Android Debug Bridge 의 약자로, PC에서 명령어를 통해 안드�
 먼저, 상기의 URL에서 `Windows 용 SDK 플랫폼 도구 다운로드` 클릭을 통해, adb 압축파일을 다운로드 받는다. 해당 압축 파일을 해제하고 생성된 폴더의 경로를 **환경변수** 상에 추가하면, windows의 cmd 창에서 adb 명령어를 사용할 수 있다.
 
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/adb_system_path.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/adb_system_path.jpg">
 <em>adb 폴더 환경변수 추가</em>
 </p></center>
 
@@ -157,7 +157,7 @@ CMD_2 터미널 : adb -d shell<br>
 CMD_2 터미널 : su
 </div>
 <center><p>
-<img src="/assets/2019-10-28-post-mobile-android/switch_user_root.jpg" width="100%">
+<img src="/assets/2019-10-28-post-mobile-android/switch_user_root.jpg">
 <em>switch user to root</em>
 </p></center>
 
