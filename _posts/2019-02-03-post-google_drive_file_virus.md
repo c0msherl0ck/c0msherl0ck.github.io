@@ -1,7 +1,7 @@
 ---
 title: "[구글 드라이브] 바이러스가 발견되어 파일을 다운로드 할 수 없습니다."
 categories:
-  - Cloud
+  - etc
 tags:
   - Google Drive
   - File Virus
