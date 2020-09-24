@@ -182,7 +182,7 @@ ls /var/lib/mediawiki/
 <center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/13.jpg"><br></p></center>
 
 
-# 관련 글
+# 6. 관련 글
 
 [AWS EC2 생성 및 접속](https://c0msherl0ck.github.io/cloud/post-AWS_EC2/)
 
