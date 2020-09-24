@@ -25,7 +25,7 @@ sudo apt-get install apache2 mysql-server php php-mysql libapache2-mod-php php-x
 ```
 apahce2 -v
 php -v
-mysql --V
+mysql -V
 ```
 
 apache2 구동 확인
