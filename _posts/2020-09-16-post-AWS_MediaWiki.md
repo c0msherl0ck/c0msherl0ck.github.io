@@ -23,7 +23,7 @@ sudo apt-get install apache2 mysql-server php php-mysql libapache2-mod-php php-x
 
 설치 및 버전 확인
 ```
-apahce2 -v
+apache2 -v
 php -v
 mysql -V
 ```
