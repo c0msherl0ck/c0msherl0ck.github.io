@@ -11,7 +11,51 @@ comments: true
 이번 글에서는 AWS EC2를 생성하고 접속하는 방법에 대해 기술한다.
 
 
-# 제목
+# EC2 생성
+
+Ubuntu 16.04 프리티어를 선택하고 시작한다. 
+(다른 옵션은 변경하지 않아도 된다.)
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/ec2_ubuntu_16.04.jpg"><br><em>Ubuntu 16.04</em></p></center>
+
+아마존에서는 서버 접속을 위한 비밀번호를 제공하는 것이 아니라, 암호화 키를 제공한다. 
+해당 키를 생성하고 다운로드 받는다.
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/ec2_pem_key.jpg"><br><em>pem 키</em></p></center>
+
+# 개인키 생성
+
+Putty에서는 암호화 키를 ppk 파일 형식을 지원하므로 PuttyGen을 통해 개인키를 생성한다.
+
+Putty 및 PuttyGen 다운로드
+
+[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+PuttyGen 실행 후 이전에 다운로드 받은 PEM 키를 로드(Load)하고 개인키를 저장한다(Save Private Key).
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/pem_to_ppk.jpg"><br><em>PEM to PPK</em></p></center>
+
+# 접속 확인
+
+## SSH by Putty
+
+putty 실행 후 SSH-AUTH 탭에서 개인키(ppk) 파일을 선택한다.
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/putty_key.jpg"><br><em>개인키 선택</em></p></center>
+
+Host Name (IP Address)에는 AWS Manager Console의 인스턴스 요약 정보의 Public IP, DNS 를 입력한다.
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/address.jpg"><br><em>인스턴스 요약 정보</em></p></center>
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/ssh.jpg"><br><em>putty ssh</em></p></center>
+
+계정명으로 ubuntu 입력 후 접속 확인
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/ssh_connect.jpg"><br><em>ubuntu 접속 확인</em></p></center>
+
+## SFTP by Putty
+
+## HTTP by Web Browser
 
 
 - aa
