@@ -35,6 +35,7 @@ PuttyGen 실행 후 이전에 다운로드 받은 PEM 키를 로드(Load)하고 
 
 <center><p><img src="/assets/2020-09-15-post-AWS_EC2/pem_to_ppk.jpg"><br><em>PEM to PPK</em></p></center>
 
+
 # 접속 확인
 
 ## SSH by Putty
@@ -53,10 +54,26 @@ Host Name (IP Address)에는 AWS Manager Console의 인스턴스 요약 정보�
 
 <center><p><img src="/assets/2020-09-15-post-AWS_EC2/ssh_connect.jpg"><br><em>ubuntu 접속 확인</em></p></center>
 
-## SFTP by Putty
+
+## SFTP by FileZilla
+
+SFTP는 SSH 프로토콜 위에서 동작하므로 포트의 추가 개방 없이 사용 가능하다. (Default: 22번 포트 개방)
+
+FileZilla 옵션에서 개인키 파일 선택 후 연결 확인
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/sftp_config.jpg"><br><em>옵션 설정</em></p></center>
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/sftp_connect.jpg"><br><em>SFTP 연결 확인</em></p></center>
+
 
 ## HTTP by Web Browser
 
+Ubuntu 16.04의 경우 Apache Web Server가 기본으로 설치되어 있다. 
+웹 브라우저를 통해 접속하기 위해서는 AWS Manage Console에서 80번(http) 포트를 개방해주어야 한다.
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/http_config.jpg"><br><em>80번 포트 개방</em></p></center>
+
+<center><p><img src="/assets/2020-09-15-post-AWS_EC2/http_connect.jpg"><br><em>브라우저 접속 확인</em></p></center>
 
 - aa
   - bb
