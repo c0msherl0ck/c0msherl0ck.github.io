@@ -1,0 +1,22 @@
+---
+title: "[Docker] MediaWiki 이미지 생성 및 배포하기"
+categories:
+  - Cloud
+tags:
+  - AWS
+  - Ubuntu
+  - MediaWiki
+comments: true
+---
+
+이전글에서 생성한 Ubuntu 16.04 환경에서 구축한 MediaWiki를 Docker 이미지로 만들어 배포하는 방안에 대해 기술한다.
+
+
+# 1. Docker란?
+
+|||
+|---|---|
+|||
+|||
+
+<center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
