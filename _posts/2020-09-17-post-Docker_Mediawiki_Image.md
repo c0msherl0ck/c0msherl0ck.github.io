@@ -21,7 +21,7 @@ VMware 가상머신하고 유사하며 차이는 있지만, 리눅스 환경에�
 ||VMware|Docker|
 |---|---|---|
 |주 사용|개인용 PC Windows/Mac|Linux 서버|
-|이미지 확장자|vmdk|?|
+|이미지 확장자|vmdk|-|
 |이미지 생성|snapshot|commit|
 
 
