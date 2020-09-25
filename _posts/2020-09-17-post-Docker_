@@ -93,12 +93,14 @@ bash 쉘에서 다음의 작업 진행
 ```
 
 이후 과정은 이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/)
-에서 진행한 작업을 도커에서 동일하게 진행한다. (단, MYSQL 설치는 많은 에러가 발생하므로 선처리가 필요하다.)
+에서 진행한 작업을 도커에서 동일하게 진행한다.
 
 이전 포스팅과의 차이점은 도커 설치 후 가상화 환경에서 Ubuntu 16.04 도커 이미지를 기반으로 환경을 구축한다는 점이다.
 
+*단, 도커 컨테이너 MYSQL 설치 시 에러가 발생하므로 주의가 필요하다.*
 
-# 4. MYSQL 설치 및 에러 처리
+
+## 3.1. MYSQL 설치 시 에러 처리
 
 우분투 16.04 컨테이너 내 MYSQL 설치 시 다음과 같이 에러가 발생한다.
 ```
@@ -135,38 +137,31 @@ mysql 재시작 후 정상작동 확인
     Active: active (running)
 ```
 
+## 3.2. 컨테이너 내로 파일 이동
 
+MediaWiki 설치 완료 후 LocalSettings.php를 다운로드 받으면 stfp를 통해 호스트 서버에 업로드한다. 
+그리고 다음의 명령어를 통해 컨테이너 내로 복사 후 작업을 완료한다.
+```
+$ docker cp /tmp/LocalSettings.php 2167281f67f7:/tmp/
+$ docker ps  
+$ docker exec -it [컨테이너 id] /bin/bash
 
-
-
-
+# ls -al /tmp/      
+# mv /tmp/LocalSettings.php /var/lib/mediawiki/
+# ls /var/lib/mediawiki/
 ```
 
+이로써 컨테이너 내 MediaWiki 설치가 완료되었다.
 
-ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'
+
+# 4. 도커 이미지 생성
+
 ```
-
-실행중인 컨테이너의 포트를 개방하는 것은 불가능하므로 작업 중인 이미지를 저장 후 포트 개방 조건과 함께 재실행한다.
-
+$ docker ps
+$ docker stop [container id]
+$ docker commit [container id] [image name]
+$ docker images
 ```
-sudo docker ps // 작업 중이던 컨테이너 ID 식별
-sudo docker stop [컨테이너 ID] // 컨테이너 중지
-sudo docker commit [컨테이너 ID] ubuntu-mysql-error // 도커 이미지 생성
-sudo docker images // 이미지 생성 확인
-
-  REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
-  ubuntu-mysql-error   latest              1c7367ef1384        21 seconds ago      855MB 
-  ubuntu               16.04               c871c45b1573        8 days ago          127MB
-```
-
-3306 포트포워딩 조건 추가하여 컨테이너 재실행 및 접속
-```
-sudo docker run -p 80:80 -p 3306:3306 -d --privileged ubuntu-mysql-error /sbin/init
-sudo docker ps // container id 확인
-sudo docker exec -it [container id] /bin/bash
-```
-
-
 
 
 <center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
