@@ -64,8 +64,48 @@ docker 에서 Ubuntu 16.04 이미지 실행 및 접속
  // 실행중인 ubuntu 16.04 컨테이너의 bash 쉘 실행
  ```
 
-이후 과정은 이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/) 에서 진행한 작업을 도커에서 동일하게 진행한다. 
+작업 전 다음 명령어 실행
+```
+apt-get update
+apt-get upgrade
+apt-get install wget
+apt-get install software-properties-common
+```
+
+이후 과정은 이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/)
+에서 진행한 작업을 도커에서 동일하게 진행한다. (`sudo` 만 제외, 이미 root 권한이므로)
 이전 포스팅과의 차이점은 도커 설치 후 가상화 환경에서 Ubuntu 16.04 도커 이미지를 기반으로 환경을 구축한다는 점이다.
+
+## MYSQL Error 처리
+
+처음 도커 이미지 실행 시 3306 포트포워딩을 하지 않았기 때문에 MYSQL 접속 시 다음과 같은 에러가 발생한다. 
+
+```
+root# mysql -u root -p
+
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'
+```
+
+실행중인 컨테이너의 포트를 개방하는 것은 불가능하므로 작업 중인 이미지를 저장 후 포트 개방 조건과 함께 재실행한다.
+
+```
+sudo docker ps // 작업 중이던 컨테이너 ID 식별
+sudo docker stop [컨테이너 ID] // 컨테이너 중지
+sudo docker commit [컨테이너 ID] ubuntu-mysql-error // 도커 이미지 생성
+sudo docker images // 이미지 생성 확인
+
+  REPOSITORY           TAG                 IMAGE ID            CREATED             SIZE
+  ubuntu-mysql-error   latest              1c7367ef1384        21 seconds ago      855MB 
+  ubuntu               16.04               c871c45b1573        8 days ago          127MB
+```
+
+3306 포트포워딩 조건 추가하여 컨테이너 재실행 및 접속
+```
+sudo docker run -p 80:80 -p 3306:3306 -d --privileged ubuntu-mysql-error /sbin/init
+sudo docker ps // container id 확인
+sudo docker exec -it [container id] /bin/bash
+```
+
 
 
 
@@ -78,5 +118,8 @@ https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/
 
 도커 기초
 https://www.44bits.io/ko/post/easy-deploy-with-docker#%EB%8F%84%EC%BB%A4%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C
+
+도커 실행중인 컨테이너 포트 추가
+https://oboki.net/workspace/system/docker/docker-%EC%8B%A4%ED%96%89-%EC%A4%91%EC%9D%B8-container%EC%97%90-%ED%8F%AC%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/
 
 
