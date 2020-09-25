@@ -12,11 +12,26 @@ comments: true
 이전글에서 생성한 Ubuntu 16.04 환경에서 구축한 MediaWiki를 Docker 이미지로 만들어 배포하는 방안에 대해 기술한다.
 
 
-# 1. Docker란?
+# 1. Docker 개념
 
-|||
-|--|--|
-|||
-|||
+## 1.1. VMware vs Docker
+
+VMware 가상머신하고 유사하며 차이는 있지만, 리눅스 환경에서 주로 사용하는 가상머신이라고 생각하면 편리하다. 
+
+||VMware|Docker|
+|---|---|---|
+|주 사용|개인용 PC Windows/Mac|Linux 서버|
+|이미지 확장자|vmdk|?|
+|이미지 생성|snapshot|commit|
+
+
+## 1.2. Docker 필요성 및 장점
+
+이전 글에서 MediaWiki 구축 당시 php 버전이 맞지 않아 에러가 발생하며 php 버전 수정이 필요했다. 
+이처럼 개발 환경과 운영 환경의 차이로 인해 어플리케이션 배포 시 환경 구성을 해주어야 하는데 이를 *프로비져닝(Provisioning)*이라고 한다. 
+Docker는 어플리케이션을 실행 환경을 포함한 이미지 구축 및 배포를 통해 프로비져닝 과정을 용이하게 한다. 
+
+
+# 2. Docker 설치
 
 <center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
