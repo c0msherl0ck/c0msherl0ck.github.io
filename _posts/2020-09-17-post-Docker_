@@ -47,41 +47,101 @@ $ sudo systemctl status docker
      Active: active (running) 
 ```
 
+사용자 계정(ubuntu 계정)에서도 도커를 직접 사용할 수 있도록 docker 그룹에 사용자 추가
+```
+$ sudo usermod -aG docker $USER
+$ sudo su - $USER
+```
+이제 ubuntu 계정에서 sudo 없이 docker 사용이 가능하다.
+
+
 # 3. Docker 환경 구축
 
-docker 에서 Ubuntu 16.04 이미지 실행 및 접속
-
- ```
- sudo docker run -p 80:80 -d --privileged ubuntu:16.04 /sbin/init
- // -d 옵션: 백그라운드로 실행 옵션
- // -p 포트옵션: 호스트 서버의 포트 80번을 docker image (ubuntu 16.04)의 80번 포트로 연결
- // --privileged: docker 내에서 systemctl 등의 명령어 사용을 위해서 권한 부여
- 
- sudo docker ps
- // Container ID 조회
- 
- sudo docker exec -it [컨테이너 ID] /bin/bash
- // 실행중인 ubuntu 16.04 컨테이너의 bash 쉘 실행
- ```
-
-작업 전 다음 명령어 실행
+Ubuntu 16.04 도커 이미지 다운로드
 ```
-apt-get update
-apt-get upgrade
-apt-get install wget
-apt-get install software-properties-common
+$ docker pull ubuntu:16.04
+16.04: Pulling from library/ubuntu
+001ecc9468da: Pull complete
+f2b966749869: Pull complete
+abe474042557: Pull complete
+e1bf2fb0fbbc: Pull complete
+Digest: sha256:e02d30494327090a50e9a6575c018d067428ae3abdcadb208e9ecd9cb496cf98
+Status: Downloaded newer image for ubuntu:16.04
+docker.io/library/ubuntu:16.04
+```
+
+이미지 실행 및 접속
+```
+$ docker run -d -p 80:80 -p 3306:3306 --privileged ubuntu:16.04 /sbin/init
+// -d : 데몬으로 실행(백그라운드에서 계속해서 실행)
+// -p : 포트포워딩
+// --privileged: docker 내에서 systemctl 등의 명령어 사용을 위해서 권한 부여
+ 
+$ docker ps
+// Container ID 조회
+ 
+$ docker exec -it [컨테이너 ID] /bin/bash
+// 실행중인 ubuntu 16.04 컨테이너의 bash 쉘 실행
+```
+
+bash 쉘에서 다음의 작업 진행
+```
+# apt-get update
+# apt-get upgrade
+# apt-get install wget
+# apt-get install software-properties-common
 ```
 
 이후 과정은 이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/)
-에서 진행한 작업을 도커에서 동일하게 진행한다. (`sudo` 만 제외, 이미 root 권한이므로)
+에서 진행한 작업을 도커에서 동일하게 진행한다. (단, MYSQL 설치는 많은 에러가 발생하므로 선처리가 필요하다.)
+
 이전 포스팅과의 차이점은 도커 설치 후 가상화 환경에서 Ubuntu 16.04 도커 이미지를 기반으로 환경을 구축한다는 점이다.
 
-## MYSQL Error 처리
 
-처음 도커 이미지 실행 시 3306 포트포워딩을 하지 않았기 때문에 MYSQL 접속 시 다음과 같은 에러가 발생한다. 
+# 4. MYSQL 설치 및 에러 처리
+
+우분투 16.04 컨테이너 내 MYSQL 설치 시 다음과 같이 에러가 발생한다.
+```
+# apt-get install mysql-server
+# service mysql start
+
+  Job for mysql.service failed because the control process exited with error code. 
+  See "systemctl status mysql.service" and "journalctl -xe" for details.
+
+# systemctl status mysql.service
+
+  systemd[1]: Starting MySQL Community Server...
+  mysqld[1109]: mysqld: Can't read dir of '/etc/mysql/conf.d/' (Errcode: 13 - Permission denied)
+  mysqld[1109]: mysqld: [ERROR] Fatal error in defaults handling. Program aborted!
+  systemd[1]: mysql.service: Main process exited, code=exited, status=1/FAILURE
+```
+
+AppArmor 에러로 상세사항은 다음의 링크를 참조한다.
+
+<https://minikube.sigs.k8s.io/docs/drivers/docker/#troubleshooting> 
+`Deploying MySql on a linux with AppArmor`
+
+*AppArmor에서 mysqld 예외처리* (이 부분이 가장 중요하다)
+```
+# ln -s /etc/apparmor.d/usr.sbin.mysqld /etc/apparmor.d/disable/
+# apparmor_parser -R /etc/apparmor.d/usr.sbin.mysqld
+```
+
+mysql 재시작 후 정상작동 확인
+```
+# systemctl status mysql
+  ● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
+    Active: active (running)
+```
+
+
+
+
+
 
 ```
-root# mysql -u root -p
+
 
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'
 ```
