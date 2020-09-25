@@ -49,14 +49,34 @@ $ sudo systemctl status docker
 
 # 3. Docker 환경 구축
 
+docker 에서 Ubuntu 16.04 이미지 실행 및 접속
+
  ```
- $ sudo docker run -it ubuntu:16.04 bash // ubuntu 16.04 이미지에서 bash 쉘 실행
- root@:/#
+ sudo docker run -p 80:80 -d --privileged ubuntu:16.04 /sbin/init
+ // -d 옵션: 백그라운드로 실행 옵션
+ // -p 포트옵션: 호스트 서버의 포트 80번을 docker image (ubuntu 16.04)의 80번 포트로 연결
+ // --privileged: docker 내에서 systemctl 등의 명령어 사용을 위해서 권한 부여
+ 
+ sudo docker ps
+ // Container ID 조회
+ 
+ sudo docker exec -it [컨테이너 ID] /bin/bash
+ // 실행중인 ubuntu 16.04 컨테이너의 bash 쉘 실행
  ```
 
-이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/) 에서 진행한 작업을 도커에서 동일하게 진행한다. 
-이전 포스팅과의 차이점은 Ubuntu 18.04 환경에서 도커 설치 후 가상화 환경에서 Ubuntu 16.04 도커 이미지를 기반으로 환경을 구축한다는 점이다.
+이후 과정은 이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/) 에서 진행한 작업을 도커에서 동일하게 진행한다. 
+이전 포스팅과의 차이점은 도커 설치 후 가상화 환경에서 Ubuntu 16.04 도커 이미지를 기반으로 환경을 구축한다는 점이다.
 
 
 
 <center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
+
+# 참고
+
+도커 명령어 
+https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/
+
+도커 기초
+https://www.44bits.io/ko/post/easy-deploy-with-docker#%EB%8F%84%EC%BB%A4%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C
+
+
