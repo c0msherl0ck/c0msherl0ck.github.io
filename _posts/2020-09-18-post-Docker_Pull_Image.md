@@ -26,7 +26,21 @@ $ docker run -d -p 80:80 -p 3306:3306 --privileged [image id] /sbin/init
 ```
 
 이처럼 어플리케이션을 위한 별도의 환경 구성(프로비져닝) 없이, 
-간단히 어플리케이션이 배포될 수 있도록 하는 것이 Docker의 장점이다. 
+간단히 어플리케이션이 배포될 수 있도록 하는 것이 Docker의 장점이다.
+
+# 유지보수
+
+백업 및 복원의 유지보수 과정도 간단히 진행할 수 있다.
+
+백업: 이미지 생성
+```
+docker commit [container id]
+```
+
+복원: 이미지 실행
+```
+docker run -d [image id] /sbin/init
+```
 
 
 # 참고
