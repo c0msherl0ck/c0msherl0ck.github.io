@@ -34,4 +34,13 @@ Docker는 어플리케이션 실행 환경을 포함한 이미지 구축 및 배
 
 # 2. Docker 설치
 
+Ubuntu 18.04 환경에서 Docker 설치
+
+```
+$ sudo apt install docker.io
+$ docker -v
+Docker version 19.03.6, build 369ce74a3c
+```
+
+
 <center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
