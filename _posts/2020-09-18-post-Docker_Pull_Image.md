@@ -25,3 +25,8 @@ $ docker run -d -p 80:80 -p 3306:3306 --privileged [image id] /sbin/init
 
 이처럼 어플리케이션을 위한 별도의 환경 구성(프로비져닝) 없이, 
 간단히 어플리케이션이 배포될 수 있도록 하는 것이 Docker의 장점이다. 
+
+
+> 참고
+
+[Docker MediaWiki 이미지 생성 및 배포하기](https://c0msherl0ck.github.io/cloud/post-Docker_Mediawiki_Image/)
