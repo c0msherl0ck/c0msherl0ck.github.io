@@ -167,7 +167,7 @@ $ docker images
 
 도커 로그인
 ```
-docker login
+$ docker login
 ```
 
 자신의 DOCKER HUB ID를 네임스페이스로 하여 이미지 이름 변경
@@ -184,12 +184,12 @@ $ docker push [new image name]
 <center><p><img src="/assets/2020-09-17-post-Docker_Mediawiki_Image/docker_hub.jpg"><br></p></center>
 
 
-# 참고
+# 5. 참고
 
-[도커 명령어](https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/)
+도커 명령어, <https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/>
 
-[도커 기초](https://www.44bits.io/ko/post/easy-deploy-with-docker#%EB%8F%84%EC%BB%A4%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C)
+도커 기초, <https://www.44bits.io/ko/post/easy-deploy-with-docker#%EB%8F%84%EC%BB%A4%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C>
 
-[도커 컨테이너 포트 추가](https://oboki.net/workspace/system/docker/docker-%EC%8B%A4%ED%96%89-%EC%A4%91%EC%9D%B8-container%EC%97%90-%ED%8F%AC%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/)
+도커 컨테이너 포트 추가, <https://oboki.net/workspace/system/docker/docker-%EC%8B%A4%ED%96%89-%EC%A4%91%EC%9D%B8-container%EC%97%90-%ED%8F%AC%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/>
 
-[도커 MYSQL](https://minikube.sigs.k8s.io/docs/drivers/docker/#troubleshooting)
+도커 MYSQL, <https://minikube.sigs.k8s.io/docs/drivers/docker/#troubleshooting>
