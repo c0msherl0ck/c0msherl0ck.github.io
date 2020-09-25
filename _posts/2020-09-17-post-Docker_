@@ -3,7 +3,7 @@ title: "[Docker] MediaWiki 이미지 생성 및 배포하기"
 categories:
   - Cloud
 tags:
-  - AWS
+  - Docker
   - Ubuntu
   - MediaWiki
 comments: true
