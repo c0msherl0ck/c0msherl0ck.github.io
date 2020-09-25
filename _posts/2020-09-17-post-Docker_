@@ -34,13 +34,22 @@ Docker는 어플리케이션 실행 환경을 포함한 이미지 구축 및 배
 
 # 2. Docker 설치
 
-Ubuntu 18.04 환경에서 Docker 설치
+Ubuntu 18.04 환경에서 Docker 설치 및 실행
 
 ```
 $ sudo apt install docker.io
 $ docker -v
-Docker version 19.03.6, build 369ce74a3c
+  Docker version 19.03.6, build 369ce74a3c
+$ sudo service docker start
+$ sudo systemctl status docker
+  ● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; disabled; vendor preset: enabled)
+     Active: active (running) 
 ```
 
+# 3. Docker 환경 구축
+
+이전 글 [AWS EC2 Ubuntu 16.04 에서 MediaWiki 구축하기](https://c0msherl0ck.github.io/cloud/post-AWS_MediaWiki/) 에서 진행한 작업을 도커에서 동일하게 진행한다. 
+이전 포스팅과의 차이점은 Ubuntu 18.04 환경에서 도커 설치 후 가상화 환경에서 Ubuntu 16.04 도커 이미지를 기반으로 환경을 구축한다는 점이다.
 
 <center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
