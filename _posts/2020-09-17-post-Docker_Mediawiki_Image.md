@@ -121,6 +121,7 @@ bash 쉘에서 다음의 작업 진행
 AppArmor 에러로 상세사항은 다음의 링크를 참조한다.
 
 <https://minikube.sigs.k8s.io/docs/drivers/docker/#troubleshooting> 
+
 `Deploying MySql on a linux with AppArmor`
 
 *AppArmor에서 mysqld 예외처리* (이 부분이 가장 중요하다)
@@ -154,8 +155,9 @@ $ docker exec -it [컨테이너 id] /bin/bash
 이로써 컨테이너 내 MediaWiki 설치가 완료되었다.
 
 
-# 4. 도커 이미지 생성
+# 4. 도커 이미지 생성 및 배포
 
+컨테이너 종료 후 이미지로 굽기
 ```
 $ docker ps
 $ docker stop [container id]
@@ -163,19 +165,31 @@ $ docker commit [container id] [image name]
 $ docker images
 ```
 
+도커 로그인
+```
+docker login
+```
 
-<center><p><img src="/assets/2020-09-16-post-AWS_MediaWiki/1.jpg"><br></p></center>
+자신의 DOCKER HUB ID를 네임스페이스로 하여 이미지 이름 변경
+```
+$ docker tag [original image name] [new image name]
+// new image name = <DOCKER_HUB_ID>/[original image name]
+```
+
+업로드
+```
+$ docker push [new image name]
+```
+
+<center><p><img src="/assets/2020-09-17-post-Docker_Mediawiki_Image/docker_hub.jpg"><br></p></center>
+
 
 # 참고
 
-도커 명령어 
-https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/
+[도커 명령어](https://nicewoong.github.io/development/2017/10/09/basic-usage-for-docker/)
 
-도커 기초
-https://www.44bits.io/ko/post/easy-deploy-with-docker#%EB%8F%84%EC%BB%A4%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C
+[도커 기초](https://www.44bits.io/ko/post/easy-deploy-with-docker#%EB%8F%84%EC%BB%A4%EC%99%80-%EB%B2%84%EC%A0%84-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9C)
 
-도커 컨테이너 포트 추가
-https://oboki.net/workspace/system/docker/docker-%EC%8B%A4%ED%96%89-%EC%A4%91%EC%9D%B8-container%EC%97%90-%ED%8F%AC%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/
+[도커 컨테이너 포트 추가](https://oboki.net/workspace/system/docker/docker-%EC%8B%A4%ED%96%89-%EC%A4%91%EC%9D%B8-container%EC%97%90-%ED%8F%AC%ED%8A%B8-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0/)
 
-도커 MYSQL 
-https://minikube.sigs.k8s.io/docs/drivers/docker/#troubleshooting
+[도커 MYSQL](https://minikube.sigs.k8s.io/docs/drivers/docker/#troubleshooting)
