@@ -60,14 +60,6 @@ $ sudo su - $USER
 Ubuntu 16.04 도커 이미지 다운로드
 ```
 $ docker pull ubuntu:16.04
-16.04: Pulling from library/ubuntu
-001ecc9468da: Pull complete
-f2b966749869: Pull complete
-abe474042557: Pull complete
-e1bf2fb0fbbc: Pull complete
-Digest: sha256:e02d30494327090a50e9a6575c018d067428ae3abdcadb208e9ecd9cb496cf98
-Status: Downloaded newer image for ubuntu:16.04
-docker.io/library/ubuntu:16.04
 ```
 
 이미지 실행 및 접속
@@ -132,6 +124,7 @@ AppArmor 에러로 상세사항은 다음의 링크를 참조한다.
 
 mysql 재시작 후 정상작동 확인
 ```
+# service mysql restart
 # systemctl status mysql
   ● mysql.service - MySQL Community Server
      Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset: enabled)
