@@ -49,7 +49,7 @@ Google Drive API의 경우 아래 링크에서 확인할 수 있으며 이를 �
 
 [https://developers.google.com/drive/api/v3/quickstart/python]
 
-<center><p><img src="/assets/폴더명/파일명.jpg"><br><em>파일명, id 확인</em></p></center>
+<center><p><img src="/assets/2020-12-10-post-CloudSelectiveSeizure/파일명.jpg"><br><em>파일명, id 확인</em></p></center>
 
 
 # 참고
