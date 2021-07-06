@@ -77,6 +77,4 @@ comments: true
 
 [Encdoing 정리. Unicode, ANSI, UTF, CP949](https://umbum.dev/328)
 
-[글 인코딩 종류 및 문제점 파악하기 (UTF-8 vs. EUC-KR)
-
 [퍼센트 인코딩](https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9)
