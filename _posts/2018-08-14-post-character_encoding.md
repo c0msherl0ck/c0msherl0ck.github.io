@@ -75,6 +75,6 @@ comments: true
 
 [문자열 인코딩 개념 정리(ASCII/ANSI/EUC-KR/CP949/UTF-8/UNICODE)](https://onlywis.tistory.com/2)
 
-[Encdoing 정리. Unicode, ANSI, UTF, CP949](https://umbum.dev/328)
+[Encding 정리. Unicode, ANSI, UTF, CP949](https://umbum.dev/328)
 
 [퍼센트 인코딩](https://ko.wikipedia.org/wiki/%ED%8D%BC%EC%84%BC%ED%8A%B8_%EC%9D%B8%EC%BD%94%EB%94%A9)
