@@ -148,9 +148,9 @@ $ docker exec -it [컨테이너 id] /bin/bash
 이로써 컨테이너 내 MediaWiki 설치가 완료되었다.
 
 
-# 4. 도커 이미지 생성 및 배포
+# 4. 도커 이미지 Commit, Push, Pull, and Run
 
-컨테이너 종료 후 이미지로 굽기
+`commit`: 컨테이너 종료 후 이미지로 굽기
 ```
 $ docker ps
 $ docker stop [container id]
@@ -169,12 +169,26 @@ $ docker tag [original image name] [new image name]
 // new image name = <DOCKER_HUB_ID>/[original image name]
 ```
 
-업로드
+
+`Push`: 이미지를 docker hub에 업로드
 ```
 $ docker push [new image name]
 ```
 
 <center><p><img src="/assets/2020-09-17-post-Docker_Mediawiki_Image/docker_hub.jpg"><br></p></center>
+
+
+`Pull`: docker hub에 있는 이미지를 다운로드
+```
+$ docker pull [image path of MediaWiki]
+```
+
+`Run`: 이미지 실행
+```
+$ docker run -d -p 80:80 -p 3306:3306 --privileged [image id] /sbin/init
+```
+
+이처럼 어플리케이션을 위한 별도의 환경 구성(프로비져닝) 없이 도커 이미지를 실행시키는 것만으로 서비스 운영이 가능하다는 점이 Docker의 장점이다.
 
 
 # 5. 참고
